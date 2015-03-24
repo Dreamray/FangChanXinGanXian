@@ -2408,8 +2408,130 @@ padding:5px;
 }
 .lpTJLP .tbtj-t-bg{
 	background:none;
-
 }
 .lpTJLP .lptjlptitle{
 	background:url(../images/lp/2_07.jpg) center top no-repeat;
+}
+.fczxl{
+	width: 260px;
+}
+.fczxl .hottopic-list{
+	padding:11px;
+}
+.fczxl .de{
+	width: 102px;
+	line-height: 1.6;
+	color:#71726f;
+}
+.fczxl .de i{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.fczxl .de i a{
+	color: #4584aa;
+}
+.fczxl .de span{
+	color:#4384aa;
+	font-weight: bold;
+	font-size: 14px;
+}
+.fczxrdzt{
+	height: 90px;
+}
+.fczxyzxwph .ye a{
+	color: #FF8B00;
+}
+.fczxm{
+	margin-left: 15px;
+	width: 444px;
+}
+.fczxlpes .bszx-bskd .b-b-hd ul li{
+	margin:-1px 4px 0 0;
+}
+.fczxlpes .detail{
+	padding-left:11px;
+}
+.b-b-first .detail span.fcaxlpesdd{
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #4386ac;
+}
+.b-b-first .detail span.fcaxlpesdd a{
+	color: #4386ac;
+}
+.fczxtbqb{
+	
+}
+.fczxtbqb .tt{
+	color: #fe0101;
+	font-size: 16px;
+	padding:8px;
+	font-weight: bold;
+	line-height: 2;border-bottom:dotted 1px #dcdcdc;
+}
+.fczxtbqb .tt span{
+	padding:11px 0 0 30px;
+	display:block;
+	float: left;
+}
+.fczxtbqb .bnzt{
+	border-bottom:dotted 1px #dcdcdc;
+}
+.fczxtbqb .bnzt ul{
+	list-style:square inside;
+	line-height: 1.8;
+	padding:13px 0;
+	padding-left:11px;
+}
+.fczxtbqb .bnzt li a{
+	font-size: 14px;
+	color: #000;
+}
+.fczxtbqb li.ye a{
+	color: #FF8B01;
+}
+.bnztti{
+	padding:11px 0 0 15px;
+}
+.bnztti span{
+	color: #FF0202;
+	font-size: 14px;
+	font-weight: bold;
+}
+.bnztti b{
+	color: #4385A8;
+	font-weight: bold;
+	padding-left:20px;
+	font-size: 14px;
+}
+.bdywqg .ye a{
+	color: #FF8B01;
+}
+.bdywqg .bdywqgul1 .t{
+	font-weight: bold;
+}
+.bdywqg .b-b-bd ul{
+	line-height: 1.8;
+	padding:10px 0 10px 0;
+}
+/*.bdywqg .b-b-bd ul{
+	line-height: 1.8;
+	padding:10px 0 10px 0;
+}*/
+.bdywqg .b-b-bd .bdywqgul1{
+	border-bottom:dotted 1px #dcdcdc;
+	padding-top: 0;
+}
+.fczxyzxwph .hottopic-list{
+	padding:0;
+}
+.fczxr .lshqqxt{
+	margin-bottom:17px;
+}
+.bdywqg .bszx-bskd .b-b-bd{
+	height:auto;
 }
