@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+	<div class="ad1100 top-banner-b"><img src="images/index/1_02.jpg"></div>
+<!--=================顶部条start====================-->
+	<div class="topbar-bg">
+		<div class="topbar cf">
+			<div class="loginBox pr fl">
+				<form action="">
+					<label class="logUsername pa">用户名：</label><input class="logInput1 pa" type="text" name="username"><label class="logPassword pa">密码：</label><input class="logInput2 pa" type="text" name="password"><input id="login" type="submit" value="登录"><div class="reg pa"><a href="#">注册</a></div>
+				</form>
+			</div>
+			<div class="qq-c fr">
+				<div class="qq"><a href="#">客服QQ：21487985</a></div>
+				<div class="addFav"><a href="#">加入收藏</a></div>
+				<div class="c-us"><a href="#">联系我们</a></div>
+				<div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+	<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_69.jpg"></a></div>
+<!--=================顶部条end====================-->
+<!--==================头部（logo到导航电话）start======================-->
+	<div class="headerBox">
+		<div class="headerTop cf">
+			<div class="logo"><a href="#"><img src="images/villa_index_34.jpg" width="178"></a></div>
+			<div class="city pr">
+				<div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16"><br>[切换城市]</div>
+				<!--<div class="chooseCity pa"><span><a href="#">济南</a></span><span><a href="#">青岛</a></span><span><a href="#">泰安</a></span></div>-->
+			</div>
+			<div class="searchBox">
+				<div class="slideSearchBox pr">
+					<div class="hd">
+						<ul id="sSBMenu" class="cf">
+							<li class="ssbmli two"><a href="#">楼盘</a></li>
+							<li class="ssbmli three"><a href="#">二手房</a></li>
+							<li class="ssbmli four"><a href="#">家居建材</a></li>
+							<li class="ssbmli two"><a href="#">招标</a></li>
+							<li class="ssbmli two"><a href="#">文章</a></li>
+							<li class="ssbmli two"><a href="#">论坛</a></li>
+							<li class="ssbmli three"><a href="#">惠房卡</a></li>
+							<li class="ssbmli four"><a href="#">房屋定制</a></li>
+							<div class="chou-mapSearch pa cf">
+								<div class="chou fl"><a href="#">抽奖</a></div>
+								<div class="mapSearch fr"><a href="#">电子地图找房</a>	</div>
+							</div>
+						</ul><script>jQuery("#sSBMenu").slide({trigger:"click",titCell:".ssbmli"});</script>
+					</div>
+					<div class="bd">
+						<ul>
+							<li>
+								<div class="searchSelect pr">
+									<div class="hd2">
+										<ul class="cf">
+											<form action="#">
+												<li class="hd2-1">区域</li>
+												<select class="sSH1 pa">
+													<option value ="">区域1</option>
+													<option value ="">区域2</option>
+													<option value="">区域3</option>
+												</select>
+												<li class="hd2-2">版块</li>
+												<select class="sSH2 pa">
+													<option value ="">版块1</option>
+													<option value ="">版块2</option>
+													<option value="">版块3</option>
+												</select>
+												<li class="hd2-3">物业类型</li>
+												<select class="sSH3 pa">
+													<option value ="">物业类型1</option>
+													<option value ="">物业类型2</option>
+													<option value="">物业类型3</option>
+												</select>
+												<div class="sSInput">
+													<input type="text" name="" placeholder="关键字">
+												</div>
+												<div class="sSSubm">
+													<input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+												</div>
+											</form>
+										</ul>
+									</div>
+									<div class="bd2">
+										<ul class="bd2-1">
+											<li>区域1</li>
+											<li>区域2</li>
+											<li>区域3</li>
+										</ul>
+										<ul>
+											<li>版块1</li>
+											<li>版块2</li>
+											<li>版块3</li>
+										</ul>
+										<ul>
+											<li>物业1</li>
+											<li>物业2</li>
+											<li>物业3</li>
+										</ul>
+									</div>
+								</div>
+								<script>
+									jQuery(".searchSelect").slide({trigger:"click",titCell:".hd2 li",mainCell:".bd2"});
+									$(".bd2-1").css("display","none");
+									$(".hd2-1").click(function(){
+										$(".bd2-1").css("display","block");
+									});
+									$(".sSH1").change(function(){
+										$(".hd2-1").text($(".sSH1").find("option:selected").text());
+									});
+									$(".sSH2").change(function(){
+										$(".hd2-2").text($(".sSH2").find("option:selected").text());
+									});
+									$(".sSH3").change(function(){
+										$(".hd2-3").text($(".sSH3").find("option:selected").text());
+									});
+								</script>
+							</li>
+						</ul>
+						<div class="hotSearch"><span class="hS1"><a href="#">地铁沿线周边盘</a></span><span><a href="#">品牌楼盘小户型</a></span><span><a href="#">35平米高租售比两遍精品小户</a></span><span><a href="#">招商泰格公寓</a></span><span><a href="#">送面积盘</a></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+		<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_69.jpg"></a></div>
+		<div class="mainNav cf">
+			<div class="mNSubNav mNSN1 fl">
+				<div class="mNSNTitle fl"><a href="#">房产</a></div>
+				<div class="mNSN-a mNSNa1 fr">
+					<div><span><a href="#">资讯</a></span><span><a href="#">楼盘</a></span><span><a href="#">写字楼商铺</a></span><span><a href="#">二手房</a></span></div>
+					<div><span><a href="#">别墅</a></span><span><a href="#">电商</a></span><span><a href="#">地产圈</a></span><span><a href="#">专题</a></span><span><a href="#">活动</a></span></div>
+				</div>
+			</div>
+			
+			<div class="mNSubNav mNSN2 fl">
+				<div class="mNSNTitle fl"><a href="#">装饰</a></div>
+				<div class="mNSN-a mNSNa2 fr">
+					<div><span><a href="#">资讯</a></span><span><a href="#">招标</a></span><span><a href="#">宝典</a></span><span><a href="#">装饰公司</a></span></div>
+					<div><span><a href="#">材料</a></span><span><a href="#">图库</a></span><span><a href="#">视频</a></span><span><a href="#">议和团</a></span></div>
+				</div>
+			</div>
+			
+			<div class="mNSubNav mNSN3 fl">
+				<div class="mNSNTitle fl"><a href="#">社区 </a></div>
+				<div class="mNSN-a mNSNa3 fr">
+					<div><span><a href="#">房产论坛</a></span><span><a href="#">生活</a></span><span><a href="#">业主论坛</a></span></div>
+					<div><span><a href="#">家居论坛</a></span><span><a href="#">营销</a></span><span><a href="#">家居设计</a></span></div>
+				</div>
+			</div>
+			<div class="mNSubNav mNSN4 fr"><img src="images/villa_index_60.jpg" width="166" alt="电话：028-4556897"></div>
+		</div>
+	</div>
+<!--==================头部（logo到导航电话）end======================-->
+<!--===================头部以下到最后 start====================-->
+<div class="wrapper">
+	<div class="container">
+		<div class="ad1100"><a href="#"><img src="images/villa_index_66.jpg" width="1100"></a></div>
+		<div class="ad1100"><a href="#"><img src="images/villa_index_69.jpg" width="1100"></a></div>
+		<div class="main cf">
+			<div class="index-main-top cf">
+				<div class="pin-pai-lan-mu fl">
+					<div class="pplm">
+						<div class="hottopic">
+							<div class="title-more cf">
+								<div class="hot-title fl">品牌栏目</div>
+							</div>
+							<div class="hottopic-list">
+								<ul>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ad257"><img src="images/index/2_03.jpg" width="257" height="96"></div>
+					<div class="ad257"><img src="images/index/2_06.jpg" width="257" height="171"></div>
+					<div class="ad257"><img src="images/index/2_08.jpg" width="257"height="97"></div>
+				</div>
+				<div class="hot-news-video-play fl">
+					<div class="hot-n-lou-week">
+				
+					
+						<div class="bszx-bskd bszx-bskd1">
+							<div class="b-b-hd b-b-hd1">
+								<ul class="cf fl">
+									<li>热点资讯</li>
+									<li>楼盘资讯</li>
+									<li>一周热点</li>
+								</ul>
+							</div>
+							<div class="b-b-bd b-b-bd1">
+								<div>
+									<ul class="hnlw-first">
+										<li class="mred"><a href="#">1111泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="yellow"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="red"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+									<ul class="hnlw-second">
+										<li class="yellow"><a href="#">2222泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+								</div>
+								<div style="display: none;">
+									<ul class="hnlw-first">
+										<li class="mred"><a href="#">3333泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="yellow"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="red"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+									<ul class="hnlw-second">
+										<li class="yellow"><a href="#">444泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+								</div>
+								<div style="display: none;">
+									<ul class="hnlw-first">
+										<li class="mred"><a href="#">555泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="yellow"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="red"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+									<ul class="hnlw-second">
+										<li class="yellow"><a href="#">666泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><script>jQuery(".bszx-bskd1").slide({mainCell:".b-b-bd1",titCell:".b-b-hd1 li"});</script>
+					</div>
+					<div class="video-boke">
+						
+						
+						
+						
+						
+					<div class="ranking ranking2">
+						<div class="ranking-title">
+							<ul class="cf">
+								<li>视频播客</li>
+								<li class="rt-hd rt-hd2 on">房产</li>
+								<li class="rt-hd rt-hd2">装饰</li>
+							</ul>
+						</div>
+						<div class="ranking-list">
+							<div class="ranking-list2 ranking-list22">
+								<div>
+									<div class="b-b-first pr cf">
+										<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+										<div class="detail fr">
+											<span class="video-blke-tit">珀碧桂园创新高，首次。。。。</span><br>珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次园创新高，首次<span class="video-blke-xx"><a href="#">[详细]</a></span>
+										</div>
+									</div>
+									<ul>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+								</div>
+								<div>
+									<div class="b-b-first pr cf">
+										<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+										<div class="detail fr">
+											<span class="video-blke-tit">珀碧桂园创新高，首次。。。。</span><br>珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次园创新高，首次<span class="video-blke-xx"><a href="#">[详细]</a></span>
+										</div>
+									</div>
+									<ul>
+										<li><a href="#">泰安最新房产2动态播报</a></li>
+										<li><a href="#">泰安最新房产2动态播报</a></li>
+										<li><a href="#">泰安最新房产2动态播报</a></li>
+										<li><a href="#">泰安最新房2产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+								</div>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							</div>
+						</div>
+					</div><script>jQuery(".ranking2").slide({mainCell:".ranking-list22",titCell:".ranking-title .rt-hd2"});</script>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+					</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+				<div class="lou-qu-xian-fang-chan-fen-xi fr">
+					<div class="column-2 shequ-huan shequ-huan5 pr">
+						
+						<div class="list-hd list-hd5 pa">
+							<ul>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+							</ul>
+						</div>
+						<div class="list-bd list-bd5 pr">
+							<ul>
+								<li style="display: none;"><a href="#"><img width="340" height="219" src="images/villa_index_125.jpg"></a><a href="#" class="shequ-a-bg pa"></a><a href="#" class="shequ-a-c pa">天房美郡国际城，抢房进行时</a></li>
+								<li style="display: none;"><a href="#"><img width="340" height="219" src="images/villa_index_125.jpg"></a><a href="#" class="shequ-a-bg pa"></a><a href="#" class="shequ-a-c pa">天房美郡国际城，抢房进行时</a></li>
+								<li style="display: list-item;"><a href="#"><img width="340" height="219" src="images/villa_index_125.jpg"></a><a href="#" class="shequ-a-bg pa"></a><a href="#" class="shequ-a-c pa">天房美郡国际城，抢房进行时</a></li>
+								<li style="display: none;"><a href="#"><img width="340" height="219" src="images/villa_index_125.jpg"></a><a href="#" class="shequ-a-bg pa"></a><a href="#" class="shequ-a-c pa">天房美郡国际城，抢房进行时</a></li>
+							</ul>
+						</div>
+					</div><script>jQuery(".shequ-huan5").slide({mainCell:".list-bd5 ul",titCell:".list-hd5 li",autoPlay:true});</script>
+					<div class="lshqqxt">
+					
+						
+						<div class="ranking ranking4">
+							<div class="ranking-title">
+								<ul class="cf">
+									<li>楼市行情曲线图</li>
+									<li class="rt-hd rt-hd4 on">周行情</li>
+									<li class="rt-hd rt-hd4">月行情</li>
+								</ul>
+							</div>
+							<div class="ranking-list">
+								<div class="ranking-list2 ranking-list24">
+									<div class="lshqqxtpic">
+										<img src="images/index/4_03.jpg" width="317" height="199">
+									</div>
+									<div class="lshqqxtpic">
+										<img src="images/index/4_03.jpg" width="317" height="199">
+									</div>
+								</div>
+								
+							</div>
+						</div><script>jQuery(".ranking4").slide({mainCell:".ranking-list24",titCell:".ranking-title .rt-hd4"});</script>		
+					</div>
+					<div class="fang-chan-sjfx">
+						<div class="hot-zhuanti">
+							<div class="hot-z-top">热点专题</div>
+							<div class="hot-z-list">
+								<ul>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="ad347">
+						<img src="images/index/5_15.jpg" width="347">
+					</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			</div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_69.jpg"></a></div>
+			<div class="gfzy">
+				<div class="gfzy-t cf">
+					<div class="gfzy-t-1 fl"><div class="gfzy-t-1-1">购房置业</div></div>
+					<div class="gfzy-t-2 fl"></div>
+					<div class="gfzy-t-3 fl">
+						<div class="gfzy-t-3-1"></div>
+						<div class="gfzy-t-3-2">
+							<div class="gfzy-t-3-2-c">
+								<a href="#">政策法规</a>|
+								<a href="#">置业顾问</a>|
+								<a href="#">楼市资讯</a>|
+								<a href="#">楼市调查</a>|
+								<a href="#">精品文章导读</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gfzy-c cf">
+					<div class="gfzy-col1 fl">
+					
+					
+						<div class="hot-zhuanti">
+							<div class="hot-z-top">新房</div>
+							<div class="hot-z-list">
+								<div class="zxkp">
+									<span>最新开盘</span>
+								</div>
+								<ul class="zxkp-ul">
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+								</ul>
+								<div class="zxkp zxkp2">
+									<span>免费推荐</span>
+								</div>
+								<ul>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+									<li><a href="#">泰安最新房产动态播报</a></li>
+								</ul>
+							</div>
+						</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					</div>
+					<div class="gfzy-col2 fl">
+					
+							
+							
+						<div class="bszx-bskd bszx-bskd6">
+							<div class="b-b-hd b-b-hd6">
+								<ul class="cf fl">
+									<li>楼盘资讯</li>
+									<li>别墅资讯</li>
+								</ul>
+							</div>
+							<div class="b-b-bd b-b-bd6">
+								<div>
+									<div class="b-b-first cf">
+										<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+										<div class="detail pr fr">
+											<span>珀碧桂园创新高，首次。。。。</span><br>珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次园创新高，首次珀碧桂园创新高，首次<span><a href="#">[详细]</a></span>
+										</div>
+									</div>
+									<ul>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="red"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+									
+								</div>
+								<div style="display: none;">
+									<div class="b-b-first cf">
+										<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+										<div class="detail pr fr">
+											<span>珀碧桂园创新高，首次。。。。</span><br>珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次园创新高，首次珀碧桂园创新高，首次<span><a href="#">[详细]</a></span>
+										</div>
+									</div>
+									<ul>
+										<li><a href="#">泰安最新房产动态播报2</a></li>
+										<li><a href="#">泰安最新房产动态2播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+										<li class="red"><a href="#">泰安最新房产动2态播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><script>jQuery(".bszx-bskd6").slide({mainCell:".b-b-bd6",titCell:".b-b-hd6 li"});</script>
+							
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="bszx-bskd bszx-bskd6">
+							<div class="b-b-hd b-b-hd6">
+								<ul class="sydc-ul cf fl">
+									<li class="sydc">商业地产</li>
+								</ul>
+							</div>
+							<div class="b-b-bd b-b-bd6">
+								<div>
+									<div class="b-b-first cf">
+										<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+										<div class="detail pr fr">
+											<span>珀碧桂园创新高，首次。。。。</span><br>珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次园创新高，首次珀碧桂园创新高，首次<span><a href="#">[详细]</a></span>
+										</div>
+									</div>
+									<ul>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li class="red"><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					</div>
+					<div class="gfzy-col3 fr">
+						<div class="dcrw">
+							
+							
+							
+							
+							<div class="column-1">
+								<div class="title">地产人物</div>
+								<div class="list list-h">
+									<div class="first first2 cf pr">
+										<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+										<div class="detail fr">
+											<span>珀碧桂园创新高。。</span><br>珀碧桂园创新高，首次珀碧桂园创新高，首次珀次珀碧首次<span><a href="#">[详细]</a></span>
+										</div>
+									</div>
+									<ul>
+										<li><a href="#">泰安最新房产动态播报2</a></li>
+										<li><a href="#">泰安最新房产动态2播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+										<li class="red"><a href="#">泰安最新房产动2态播报</a></li>
+										<li><a href="#">泰安最新房产动2态播报</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="ad345"><img src="images/index/6_19.jpg" width="344" height="112"></div>
+						<div class="ad345"><img src="images/index/6_23.jpg" width="344" height="112"></div>
+						<div class="ad345"><img src="images/index/6_25.jpg" width="344" height="112"></div>
+					</div>
+				</div>
+			</div>
+			<div class="e-fang-chan pr">
+				<div class="bszx-bskd efc">
+							<div class="b-b-hd efc-hd">
+								<ul class="cf fl">
+									<li class="">一口价</li>
+									<li class="">聚友惠</li>
+									<li class="">活动</li>
+								</ul>
+								<div class="e pa"><img src="images/index/7_27.jpg"></div>
+								<div class=" b-b-more fr"><a href="#">更多»</a></div>
+							</div>
+							<div class="b-b-bd efc-bd">
+								<div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a tbtj-a4  fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a tbtj-a4  fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+										<div class="tbtj-a tbtj-a4  fl">
+											<div class="pic pr">
+												<a href="#"><img width="244" height="165" src="images/villa_index_132.jpg"></a>
+												<a href="#" class="tbtj-p-bg pa"></a>
+												<a href="#" class="tbtj-p-t pa">华泽天下</a>
+											</div>
+											<div class="price"><a href="#">天鸿万象新天，天鸿万象新天，天万象新天，天鸿万象新天，<br><span>全款94折，按揭95折</span></a></div>
+											<div class="view"><span>121</span><i>关注</i><span>2</span><i>人已购</i><a href="#"><img src="images/index/7_32.jpg"></a></div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div><script>jQuery(".efc").slide({mainCell:".efc-bd",titCell:".efc-hd li"});</script>
+			
+			</div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_69.jpg"></a></div>
+			<div class="lrlp cf">
+				<div class="lph fl">
+					<div class="ranking lph-slide">
+						<div class="ranking-title lph-t">
+							<ul class="cf">
+								<li>楼盘点击排行</li>
+								<li class="rt-hd lph-hd">月排行</li>
+								<li class="rt-hd lph-hd">总排行</li>
+							</ul>
+						</div>
+						<div class="ranking-list">
+						<div class="name-view"><span class="l">项目名称</span><span class="r">浏览次数</span></div>
+							<div class="ranking-list2 lph-bd">
+								<ul>
+									<li class="a cf"><a href="#">天平湖一号New1</a><span>999999</span></li>
+									<li class="b cf"><a href="#">天平湖一号New2</a><span>999999</span></li>
+									<li class="c cf"><a href="#">天平湖一号New3</a><span>999999</span></li>
+									<li class="d cf"><a href="#">天平湖一号New4</a><span>999999</span></li>
+									<li class="e cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="f cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="g cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="h cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="i cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="j cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+								</ul>
+								<ul style="display: none;">
+									<li class="a cf"><a href="#">天平湖一号Newa</a><span>999999</span></li>
+									<li class="b cf"><a href="#">天平湖一号Newb</a><span>999999</span></li>
+									<li class="c cf"><a href="#">天平湖一号Newc</a><span>999999</span></li>
+									<li class="d cf"><a href="#">天平湖一号Newd</a><span>999999</span></li>
+									<li class="e cf"><a href="#">天平湖一号Newe</a><span>999999</span></li>
+									<li class="f cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="g cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="h cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="i cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+									<li class="j cf"><a href="#">天平湖一号New5</a><span>999999</span></li>
+								</ul>
+							</div>
+						</div>
+					</div><script>jQuery(".lph-slide").slide({mainCell:".lph-bd",titCell:".lph-hd"});</script>
+					<div class="ad258"><a href="#"><img src="images/index/11_03.jpg" width="258" height="86"></a></div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="lbj fr">
+				
+				
+				
+				
+				
+				<div class="column-1">
+					<div class="title">楼盘报价
+						<span><a href="#">更多»</a></span>
+						<div class="lbj-ss fr pr">
+							<div class="lbj-hd2">
+								<ul class="cf">
+									<form action="#">
+										<li class="lbj-hd2-1">区域</li>
+										<select class="lbj-sSH1 pa">
+											<option value="">区域1</option>
+											<option value="">区域2</option>
+											<option value="">区域3</option>
+										</select>
+										<li class="lbj-hd2-2">价格</li>
+										<select class="lbj-sSH2 pa">
+											<option value="">价格1</option>
+											<option value="">价格2</option>
+											<option value="">价格3</option>
+										</select>
+									</form>
+								</ul>
+							</div>
+						</div>
+						<script>
+							$(".lbj-sSH1").change(function(){
+								$(".lbj-hd2-1").text($(".lbj-sSH1").find("option:selected").text());
+							});
+							$(".lbj-sSH2").change(function(){
+								$(".lbj-hd2-2").text($(".lbj-sSH2").find("option:selected").text());
+							});
+							$(".lbj-sSH3").change(function(){
+								$(".lbj-hd2-3").text($(".lbj-sSH3").find("option:selected").text());
+							});
+						</script>
+					</div>
+					<div class="list cf">
+						<div class="lbj-1 fl">
+							<table>
+								<tr>
+									<th>楼盘名称</th>
+									<th>区域</th>
+									<th>价格</th>
+								</tr>
+								<tr>
+									<td>山东高速 花花花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+							</table>
+						</div>
+						<div class="lbj-2 fr">
+							<table>
+								<tr>
+									<th>楼盘名称</th>
+									<th>区域</th>
+									<th>价格</th>
+								</tr>
+								<tr>
+									<td>山东高速 花花花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+								<tr>
+									<td>山东高速 花园</td>
+									<td>市中区</td>
+									<td>8888</td>
+								</tr>
+							</table>
+						</div>
+						
+					</div>
+				</div>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+			</div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_69.jpg"></a></div>
+			<div class="dzjp cf">
+				<div class="fwdz fl">
+					<div class="hottopic">
+						<div class="title-more cf">
+							<div class="hot-title fl">房屋定制</div>
+						</div>
+						<div class="hottopic-link">
+							<div class="pic2">
+								<form action="#">
+									房屋定制<br>
+									<select>
+										<option value ="">房</option>
+										<option value ="">屋</option>
+										<option value="">1</option>
+										<option value="">2</option>
+									</select><br>
+									房屋定制<br>
+									<input type="text" name="" /><br>
+								
+									房屋定制
+									<div class="fwdz-dx">
+										<input type="radio" checked="checked" name="1" value="7" />房屋定制<br>
+										<input type="radio" name="1" value="8" />房屋定制<br>
+										<input type="radio" name="1" value="9" />房屋定制<br>
+									</div>
+								
+									房屋定制
+									<div class="fwdz-dx fwdz-dx2">
+										<input type="radio" checked="checked" name="2" value="a" />房屋定制<br>
+										<input type="radio" name="2" value="b" />房屋定制<br>
+										<input type="radio" name="2" value="c" />房屋定制
+									</div>
+									<div class="fwdz-submit">
+										<input type="submit" value="" />
+									</div>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jp fr">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="e-fang-chan pr">
+				<div class="bszx-bskd efc jp-s">
+							<div class="b-b-hd efc-hd jp-hd">
+								<ul class="cf fl">
+									<li>精品楼盘</li>
+									<li class="">商铺/写字楼</li>
+									<li class="">精品别墅</li>
+								</ul>
+								<div class=" b-b-more fr"><a href="#">更多»</a></div>
+							</div>
+							<div class="b-b-bd efc-bd">
+							<div class="cq">
+								<span><a href="#">城东</a></span><span><a href="#">城西</a></span><span><a href="#">城中</a></span><span><a href="#">西部高新区</a></span><span><a href="#">长城</a></span>
+							</div>
+							<div class="jp-bd">
+								<div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									
+								</div>
+								<div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									
+								</div>
+								<div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									<div class="cf">
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										<div class="tbtj-a fl">
+											<div class="pic pr">
+												<a href="#"><img width="185" height="124" src="images/villa_index_132.jpg"></a>
+												<a class="tbtj-p-bg pa" href="#"></a>
+												<a class="tbtj-p-t pa" href="#">华泽天下</a>
+											</div>
+										</div>
+										
+									</div>
+									
+								</div>
+							</div>
+								
+							</div>
+						</div><script>jQuery(".jp-s").slide({mainCell:".jp-bd",titCell:".jp-hd li"});</script>
+			
+			</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+			<div class="pptj">
+				<div class="hottopic">
+					<div class="title-more cf">
+						<div class="hot-title fl">品牌地产推荐</div>
+					</div>
+					<div class="hottopic-link pr pptj-s">
+						<div class="pic2 pptj-bd">
+							<ul class="cf">
+								<li><a href="#"><img width="245" src="images/news_detail_14.jpg"></a></li>
+								<li><a href="#"><img width="245" src="images/news_detail_17.jpg"></a></li>
+								<li><a href="#"><img width="245" src="images/news_detail_19.jpg"></a></li>
+								<li><a href="#"><img width="245" src="images/news_detail_14.jpg"></a></li>
+								<li><a href="#"><img width="245" src="images/news_detail_17.jpg"></a></li>
+								<li><a href="#"><img width="245" src="images/news_detail_19.jpg"></a></li>
+							</ul>
+						</div>
+						<div class="pptj-hd">
+							<a coass="p"></a><a coass="n"></a>
+						</div>
+					</div><script>jQuery(".pptj-s").slide({mainCell:".pptj-bd ul",titCell:"pptj-hd a",autoPlay:true,effect:"leftMarquee",vis:5,interTime:50,trigger:"click"});</script>
+				</div>
+			</div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+			<div class="ersf">
+				<div class="gfzy-t cf">
+					<div class="gfzy-t-1 fl"><div class="gfzy-t-1-1">二手房</div></div>
+					<div class="gfzy-t-2 fl"></div>
+					<div class="gfzy-t-3 fl">
+						<div class="gfzy-t-3-1"></div>
+						<div class="gfzy-t-3-2">
+							<div class="gfzy-t-3-2-c">
+								<a href="#">出售</a>|
+								<a href="#">出租</a>|
+								<a href="#">求购</a>|
+								<a href="#">求组</a>|
+								<a href="#">合租</a>|
+								<a href="#">商铺/写字楼</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="esf cf">
+				<div class="esf-col1 fl">
+						<div class="hottopic">
+					<div class="title-more cf">
+						<div class="hot-title fl">购房工具</div>
+					</div>
+					<div class="hottopic-link">
+						<ul class="cf">
+							<li><a href="#">利息计算器</a></li>
+							<li><a href="#">房贷利息计算器</a></li>
+							<li><a href="#">利息计算器</a></li>
+							<li><a href="#">房贷利息计算器</a></li>
+							<li><a href="#">利息计算器计算器计算</a></li>
+							<li><a href="#">房贷利息计算器</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="hottopic">
+					<div class="title-more cf">
+						<div class="hot-title fl">中介品牌联盟</div>
+					</div>
+					<div class="hottopic-link">
+						<div class="pic2">
+							<a href="#"><img width="245" src="images/news_detail_14.jpg"></a>
+							<a href="#"><img width="245" src="images/news_detail_17.jpg"></a>
+							<a href="#"><img width="245" src="images/news_detail_19.jpg"></a>
+						</div>
+					</div>
+				</div>
+				<div class="fbs">
+					<div class="hottopic">
+					<div class="title-more cf">
+						<div class="hot-title fl">房博士</div>
+					</div>
+					<div class="hottopic-link">
+						<div class="fbst">房博士帮办</div>
+						<div class="fbsn cf">
+							<div class="fbspic fl">
+								<img src="images/index/fbs_07.jpg" width="92" height="122">
+							</div>
+							<div class="fbsnam fr">
+								2015-02-02<br>
+								值班:谭百强<br><br>
+								<a href="#"><img src="images/index/fbs_10.jpg"></a>
+							</div>
+						</div>
+						<div class="fbst">房博士帮办</div>
+						<div class="newask">
+							· 怎样加强商品房管理????<br>
+							<span>答:商品房设计商品房设计商品房设计商品房设计</span>
+						</div>
+						<div class="newask">
+							· 怎样加强商品房管理????<br>
+							<span>答:商品房设计商品房设计商品房设计商品房设计</span>
+						</div>
+						<div class="ljdh">
+							<a href="#">房博士1<img src="images/index/fbs_18.jpg"></a><br>
+							<a href="#">房博士1<img src="images/index/fbs_18.jpg"></a><br>
+							<a href="#">房博士1<img src="images/index/fbs_18.jpg"></a>
+						</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				<div class="esf-col2 fl"><form action="#">
+					<div class="searcher">
+						<div class="sSInput">
+							<input type="text" placeholder="关键字" name="">
+						</div>
+						<div class="sSSubm">
+							<input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+						</div>
+						<a href="#"><img src="images/index/esf_03.jpg"></a>
+					</div>
+					<div class="seler">
+						<div class="searchSelect pr">
+									<div class="hd2">
+										<ul class="cf">
+											<form action="#">
+												<li class="selerli1 on">卖房</li>
+												<select class="seler1 pa">
+													<option value="">卖房</option>
+													<option value="">买房</option>
+												</select>
+												<li class="selerli2">物业类型</li>
+												<select class="seler2 pa">
+													<option value="">物业类型1</option>
+													<option value="">物业类型2</option>
+													<option value="">物业类型3</option>
+												</select>
+												<li class="selerli3">区域</li>
+												<select class="seler3 pa">
+													<option value="">区域1</option>
+													<option value="">区域2</option>
+													<option value="">区域3</option>
+												</select>
+												
+												
+												
+												<li class="selerli4">价格</li>
+												<select class="sSH4 seler4 pa">
+													<option value="">价格1</option>
+													<option value="">价格2</option>
+													<option value="">价格3</option>
+												</select>
+												<li class="selerli5">面积</li>
+												<select class="sSH5 seler5 pa">
+													<option value="">面积1</option>
+													<option value="">面积2</option>
+													<option value="">面积3</option>
+												</select>
+											</form>
+										</ul>
+									</div>
+								</div>
+								<script>
+									$(".seler1").change(function(){
+										$(".selerli1").text($(".seler1").find("option:selected").text());
+									});
+									$(".seler2").change(function(){
+										$(".selerli2").text($(".seler2").find("option:selected").text());
+									});
+									$(".seler3").change(function(){
+										$(".selerli3").text($(".seler3").find("option:selected").text());
+									});
+									$(".seler4").change(function(){
+										$(".selerli4").text($(".seler4").find("option:selected").text());
+									});
+									$(".seler5").change(function(){
+										$(".selerli5").text($(".seler5").find("option:selected").text());
+									});
+								</script>
+					</div></form>
+					<div class="grfy">
+						<div class="hot-zhuanti">
+							<div class="hot-z-top">个人词源<span class="grfym">更多»</span></div>
+							<div class="hot-z-list">
+								<table>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+								</table>									
+							</div>
+						</div>
+					</div>
+					<div class="grfy">
+						<div class="hot-zhuanti">
+							<div class="hot-z-top">中介词源<span class="grfym">更多»</span></div>
+							<div class="hot-z-list">
+								<table>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+									<tr>
+										<td><span class="s">[售]</span>凯旋新城</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">100万</td>
+									</tr>
+									<tr>
+										<td><span class="z">[租]</span>居易香桔市</td>
+										<td>一室一厅</td>
+										<td>96m<i class="sup">2</i></td>
+										<td>精装修</td>
+										<td class="grfyltd">1000元/月</td>
+									</tr>
+								</table>									
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="esf-col3 fr">
+					<div class="hot-zhuanti">
+						<div class="hot-z-top">热点专题</div>
+						<div class="hot-z-list">
+							<ul>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+							<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="hot-zhuanti">
+						<div class="hot-z-top">热点专题</div>
+						<div class="hot-z-list">
+							<ul>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+	
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="ad258"><img width="258" height="87" src="images/index/er_28.jpg"></div>
+					<div class="ad258"><img width="258" height="87" src="images/index/er_33.jpg"></div>
+				</div>
+			</div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+			<div class="zszx">
+				<div class="gfzy-t cf">
+					<div class="gfzy-t-1 fl"><div class="gfzy-t-1-1">装饰装修</div></div>
+					<div class="gfzy-t-2 fl"></div>
+					<div class="gfzy-t-3 fl">
+						<div class="gfzy-t-3-1"></div>
+						<div class="gfzy-t-3-2">
+							<div class="gfzy-t-3-2-c">
+								<a href="#">家装资讯</a>|
+								<a href="#">品牌装饰</a>|
+								<a href="#">品牌卖场</a>|
+								<a href="#">品牌建材</a>|
+								<a href="#">装修大学</a>|
+								<a href="#">装修大学</a>|
+								<a href="#">装修日记</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="zszxc cf">
+				<div class="zszxc1 fl">
+					<div class="hottopic">
+							<div class="title-more cf">
+								<div class="hot-title fl">家装宝典</div>
+								<div class="more fr"><a href="#">更多»</a></div>
+							</div>
+							<div class="hottopic-list">
+								<ul>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="hottopic">
+							<div class="title-more cf">
+								<div class="hot-title fl">装修公司</div>
+								<div class="more fr"><a href="#">更多»</a></div>
+							</div>
+							<div class="hottopic-list">
+								<ul>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+									<li><a href="#">泰城各大楼盘新春大拜年</a></li>
+						
+								</ul>
+							</div>
+						</div>
+				</div>
+				<div class="zszxc2 fl">
+					<div class="gfzy-col2 fl">
+					
+							
+							
+						<div class="bszx-bskd bszx-bskd6 z2">
+							<div class="b-b-hd b-b-hd6 z2hd">
+								<ul class="cf fl">
+									<li>装饰资讯</li>
+									<li>优惠活动</li>
+								</ul>
+								<div class=" b-b-more fr"><a href="#">更多»</a></div>
+							</div>
+							<div class="b-b-bd b-b-bd6 z2bd">
+								<div>
+									<ul>
+										<li><a href="#" class="yellow">泰安最新房产动态播报1111</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										
+									</ul>
+								</div>
+								<div>
+									<ul>
+										<li><a href="#" class="yellow">泰安最新房产动态播报2222</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div><script>jQuery(".z2").slide({mainCell:".z2bd",titCell:".z2hd li"});</script>
+							
+					
+					
+					
+					</div>
+				</div>
+				<div class="zszxc3 fr">
+					<div class="hot-zhuanti">
+						<div class="hot-z-top">热点专题</div>
+						<div class="hot-z-list">
+							<ul class="cf">
+								<li><a href="#"><img src="images/index/zx_36.jpg" width="158" height="106"><i></i><b>客厅装修效果图</b></a></li>
+								<li><a href="#"><img src="images/index/zx_36.jpg" width="158" height="106"><i></i><b>客厅装修效果图</b></a></li>
+								<li><a href="#"><img src="images/index/zx_36.jpg" width="158" height="106"><i></i><b>客厅装修效果图</b></a></li>
+								<li><a href="#"><img src="images/index/zx_36.jpg" width="158" height="106"><i></i><b>客厅装修效果图</b></a></li>
+								<li><a href="#"><img src="images/index/zx_36.jpg" width="158" height="106"><i></i><b>客厅装修效果图</b></a></li>
+								<li><a href="#"><img src="images/index/zx_36.jpg" width="158" height="106"><i></i><b>客厅装修效果图</b></a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="ad345"><a href="#"><img width="345" src="images/index/t_44.jpg" height="139"></a></div>
+				</div>
+			</div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+			<div class="sqlt">
+			<div class="gfzy-t cf">
+				<div class="gfzy-t-1 fl"><div class="gfzy-t-1-1">社区论坛</div></div>
+				<div class="gfzy-t-2 fl"></div>
+				<div class="gfzy-t-3 fl">
+					<div class="gfzy-t-3-1"></div>
+					<div class="gfzy-t-3-2">
+						<div class="gfzy-t-3-2-c">
+							<a href="#">地产圈</a>|
+							<a href="#">业主委员会</a>|
+							<a href="#">楼盘掠影</a>|
+							<a href="#">置业宝典</a>|
+							<a href="#">二手房论坛</a>|
+							<a href="#">家居论坛</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="sqltc cf">
+				<div class="sqltc1 fl">
+					<div class="hottopic">
+							<div class="title-more cf">
+								<div class="hot-title fl">娱乐地产</div>
+								<div class="more fr"><a href="#">更多»</a></div>
+							</div>
+							<div class="hottopic-list">
+								<div class="yldc">
+									<a href="#"><img src="images/index/yl_03.jpg" width="114" height="73"><span>鸟叔也来凑热门</span><br>各大楼盘新春大拜年拜年拜年</a>
+								</div>
+								<ul class="cf">
+									<li><a href="#"><img src="images/index/yl_03.jpg" width="114" height="73"><br>各大楼盘新春大拜年拜年拜年</a></li>
+									<li><a href="#"><img src="images/index/yl_03.jpg" width="114" height="73"><br>各大楼盘新春大拜年拜年拜年</a></li>
+									<li><a href="#"><img src="images/index/yl_03.jpg" width="114" height="73"><br>各大楼盘新春大拜年拜年拜年</a></li>
+									<li><a href="#"><img src="images/index/yl_03.jpg" width="114" height="73"><br>各大楼盘新春大拜年拜年拜年</a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<div class="sqltc2 fl">
+					<div class="hot-zhuanti">
+						<div class="hot-z-top">业主社区</div>
+						<div class="hot-z-list">
+							<ul>
+								<li class="y"><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+	
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sqltc3 fr">
+					<div class="scqy fr">
+					<div class="column-1">
+						<div class="title">市场前沿<span><a href="#">更多»</a></span></div>
+						<div class="list list-h">
+							<div class="first first2 cf pr">
+								<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+								<div class="detail fr">
+									珀碧桂园创<br>新高，首次珀碧桂
+								</div>
+							</div>
+							<div class="sqltc3zi pr">
+							首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂<a href="#">[详细]</a>
+							</div>
+							<ul>
+								<li><a href="#"><span>[泰安最新]</span>房产动态播报房产动态播报2</a></li>
+								<li><a href="#"><span>[泰安最新]</span>房产动态播报房产动态播报2</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="ad345"><a href="#"><img width="346" height="103" src="images/index/t_44.jpg"></a></div>
+				</div>
+			</div>
+		
+		
+		</div>
+	</div>
+	<div class="frindlink">
+		友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span>
+	</div>
+	<div class="footer">
+		Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有<br>
+		就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号<br>
+		京公网安备451546767646464号 网络文化经营许可证(2131)456号<br>
+		违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com.
+	</div>
+</div>
+
+
+</body>
+</html>

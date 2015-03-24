@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>地产圈</title>
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+<div class="ad1100 top-banner-b"><img src="images/index/1_02.jpg"></div>
+<!--=================顶部条start====================-->
+<div class="topbar-bg">
+	<div class="topbar cf">
+		<div class="loginBox pr fl">
+			<form action="">
+				<label class="logUsername pa">用户名：</label>
+				<input class="logInput1 pa" type="text" name="username">
+				<label class="logPassword pa">密码：</label>
+				<input class="logInput2 pa" type="text" name="password">
+				<input id="login" type="submit" value="登录">
+				<div class="reg pa"><a href="#">注册</a></div>
+			</form>
+		</div>
+		<div class="qq-c fr">
+			<div class="qq"><a href="#">客服QQ：21487985</a></div>
+			<div class="addFav"><a href="#">加入收藏</a></div>
+			<div class="c-us"><a href="#">联系我们</a></div>
+			<div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+		</div>
+	</div>
+</div>
+<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_69.jpg"></a></div>
+<!--=================顶部条end====================--> 
+<!--==================头部（logo到导航电话）start======================-->
+<div class="headerBox">
+	<div class="headerTop cf">
+		<div class="logo"><a href="#"><img src="images/villa_index_34.jpg" width="178"></a></div>
+		<div class="city pr">
+			<div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16"><br>
+				[切换城市]</div>
+			<!--<div class="chooseCity pa"><span><a href="#">济南</a></span><span><a href="#">青岛</a></span><span><a href="#">泰安</a></span></div>--> 
+		</div>
+		<div class="searchBox">
+			<div class="slideSearchBox pr">
+				<div class="hd">
+					<ul id="sSBMenu" class="cf">
+						<li class="ssbmli two"><a href="#">楼盘</a></li>
+						<li class="ssbmli three"><a href="#">二手房</a></li>
+						<li class="ssbmli four"><a href="#">家居建材</a></li>
+						<li class="ssbmli two"><a href="#">招标</a></li>
+						<li class="ssbmli two"><a href="#">文章</a></li>
+						<li class="ssbmli two"><a href="#">论坛</a></li>
+						<li class="ssbmli three"><a href="#">惠房卡</a></li>
+						<li class="ssbmli four"><a href="#">房屋定制</a></li>
+						<div class="chou-mapSearch pa cf">
+							<div class="chou fl"><a href="#">抽奖</a></div>
+							<div class="mapSearch fr"><a href="#">电子地图找房</a> </div>
+						</div>
+					</ul>
+					<script>jQuery("#sSBMenu").slide({trigger:"click",titCell:".ssbmli"});</script> 
+				</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<div class="searchSelect pr">
+								<div class="hd2">
+									<ul class="cf">
+										<form action="#">
+											<li class="hd2-1">区域</li>
+											<select class="sSH1 pa">
+												<option value ="">区域1</option>
+												<option value ="">区域2</option>
+												<option value="">区域3</option>
+											</select>
+											<li class="hd2-2">版块</li>
+											<select class="sSH2 pa">
+												<option value ="">版块1</option>
+												<option value ="">版块2</option>
+												<option value="">版块3</option>
+											</select>
+											<li class="hd2-3">物业类型</li>
+											<select class="sSH3 pa">
+												<option value ="">物业类型1</option>
+												<option value ="">物业类型2</option>
+												<option value="">物业类型3</option>
+											</select>
+											<div class="sSInput">
+												<input type="text" name="" placeholder="关键字">
+											</div>
+											<div class="sSSubm">
+												<input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+											</div>
+										</form>
+									</ul>
+								</div>
+								<div class="bd2">
+									<ul class="bd2-1">
+										<li>区域1</li>
+										<li>区域2</li>
+										<li>区域3</li>
+									</ul>
+									<ul>
+										<li>版块1</li>
+										<li>版块2</li>
+										<li>版块3</li>
+									</ul>
+									<ul>
+										<li>物业1</li>
+										<li>物业2</li>
+										<li>物业3</li>
+									</ul>
+								</div>
+							</div>
+							<script>
+									jQuery(".searchSelect").slide({trigger:"click",titCell:".hd2 li",mainCell:".bd2"});
+									$(".bd2-1").css("display","none");
+									$(".hd2-1").click(function(){
+										$(".bd2-1").css("display","block");
+									});
+									$(".sSH1").change(function(){
+										$(".hd2-1").text($(".sSH1").find("option:selected").text());
+									});
+									$(".sSH2").change(function(){
+										$(".hd2-2").text($(".sSH2").find("option:selected").text());
+									});
+									$(".sSH3").change(function(){
+										$(".hd2-3").text($(".sSH3").find("option:selected").text());
+									});
+								</script> 
+						</li>
+					</ul>
+					<div class="hotSearch"><span class="hS1"><a href="#">地铁沿线周边盘</a></span><span><a href="#">品牌楼盘小户型</a></span><span><a href="#">35平米高租售比两遍精品小户</a></span><span><a href="#">招商泰格公寓</a></span><span><a href="#">送面积盘</a></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+	<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_69.jpg"></a></div>
+	<div class="mainNav cf">
+		<div class="mNSubNav mNSN1 fl">
+			<div class="mNSNTitle fl"><a href="#">房产</a></div>
+			<div class="mNSN-a mNSNa1 fr">
+				<div><span><a href="#">资讯</a></span><span><a href="#">楼盘</a></span><span><a href="#">写字楼商铺</a></span><span><a href="#">二手房</a></span></div>
+				<div><span><a href="#">别墅</a></span><span><a href="#">电商</a></span><span><a href="#">地产圈</a></span><span><a href="#">专题</a></span><span><a href="#">活动</a></span></div>
+			</div>
+		</div>
+		<div class="mNSubNav mNSN2 fl">
+			<div class="mNSNTitle fl"><a href="#">装饰</a></div>
+			<div class="mNSN-a mNSNa2 fr">
+				<div><span><a href="#">资讯</a></span><span><a href="#">招标</a></span><span><a href="#">宝典</a></span><span><a href="#">装饰公司</a></span></div>
+				<div><span><a href="#">材料</a></span><span><a href="#">图库</a></span><span><a href="#">视频</a></span><span><a href="#">议和团</a></span></div>
+			</div>
+		</div>
+		<div class="mNSubNav mNSN3 fl">
+			<div class="mNSNTitle fl"><a href="#">社区 </a></div>
+			<div class="mNSN-a mNSNa3 fr">
+				<div><span><a href="#">房产论坛</a></span><span><a href="#">生活</a></span><span><a href="#">业主论坛</a></span></div>
+				<div><span><a href="#">家居论坛</a></span><span><a href="#">营销</a></span><span><a href="#">家居设计</a></span></div>
+			</div>
+		</div>
+		<div class="mNSubNav mNSN4 fr"><img src="images/villa_index_60.jpg" width="166" alt="电话：028-4556897"></div>
+	</div>
+</div>
+<!--==================头部（logo到导航电话）end======================--> 
+<!--===================头部以下到最后 start====================-->
+<div class="wrapper">
+	<div class="container">
+		<div class="ad1100"><a href="#"><img src="images/villa_index_66.jpg" width="1100"></a></div>
+		<div class="ad1100"><a href="#"><img src="images/villa_index_69.jpg" width="1100"></a></div>
+		<div class="main cf">
+			<div class="dsq-fc cf">
+				<div class="dsq-t-fc fl">
+					<div class="dsqt-fc-fc">
+						<div><div>房产</div></div>
+					</div>
+					<div class="dsq-huan-zi fl">
+						<div class="dsqhuan fl">
+							<div class="column-2 shequ-huan shequ-huan5 pr">
+							
+								<div class="list-hd list-hd5 pa">
+									<ul>
+										<li class="on"></li>
+										<li class=""></li>
+										<li class=""></li>
+										<li class=""></li>
+									</ul>
+								</div>
+								<div class="list-bd list-bd5 pr">
+									<ul>
+										<li style="display: list-item; opacity: 0.470016;"><a href="#"><img height="219" width="340" src="images/villa_index_125.jpg"></a><a class="shequ-a-bg pa" href="#"></a><a class="shequ-a-c pa" href="#">天房美郡国际城，抢房进行时</a></li>
+										<li style="display: none;"><a href="#"><img height="219" width="340" src="images/villa_index_125.jpg"></a><a class="shequ-a-bg pa" href="#"></a><a class="shequ-a-c pa" href="#">天房美郡国际城，抢房进行时</a></li>
+										<li style="display: none;"><a href="#"><img height="219" width="340" src="images/villa_index_125.jpg"></a><a class="shequ-a-bg pa" href="#"></a><a class="shequ-a-c pa" href="#">天房美郡国际城，抢房进行时</a></li>
+										<li style="display: none;"><a href="#"><img height="219" width="340" src="images/villa_index_125.jpg"></a><a class="shequ-a-bg pa" href="#"></a><a class="shequ-a-c pa" href="#">天房美郡国际城，抢房进行时</a></li>
+									</ul>
+								</div>
+							</div>
+						</div><script>jQuery(".dsqhuan").slide({mainCell:".list-bd5 ul",titCell:".list-hd5 li",autoPlay:true});</script>
+						<div class="dsqzi fr">
+							<div class="dsqzitop pr"><span>1111亿创新高，首次首次首次</span><br>1111亿创新高，首次首次首次1111亿创新高，首次首次首次1111亿创新高，首次首次首次1111亿创新高，首次首次首次<a href="">[详细]</a><span class="readed"><i>1588</i>人阅读</span></div>
+							<ul>
+								<li><a href="">解决中国房地产问题首先要重新分配。。。</a></li>
+								<li><a href="">解决中国房地产问题首先要重新分配。。。</a></li>
+								<li><a href="">解决中国房地产问题首先要重新分配。。。</a></li>
+								<li><a href="">解决中国房地产问题首先要重新分配。。。</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="yeneir fr">
+					<div class="t">
+						为内人物
+					</div>
+					<div class="pic cf">
+						<a href=""><img src="images/villa_index_103.jpg" width="151" height="97">任志强</a>
+					</div>
+					<ul>
+						<li><a href="">梅生:解决中国遍地产问题首先</a></li>
+						<li><a href="">梅生:解决中国遍地产问题首先</a></li>
+						<li><a href="">梅生:解决中国遍地产问题首先</a></li>
+						<li><a href="">梅生:解决中国遍地产问题首先</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="fcqsjfx">
+				<div class="t pr"><img src="../images/dcq/dcq_07.jpg" alt=""></div>
+				<div class="col cf">
+					<div class="col1 fl">
+						<div class="col1b">
+							<div class="chax pr">
+								<ul class="cf">
+									<li class="sheng">省</li>
+									<select name="" id="" class="shengsel pa">
+										<option value="">省1</option>
+										<option value="">省2</option>
+										<option value="">省3</option>
+									</select>
+									<li class="shi">市</li>
+									<select name="" id="" class="shisel pa">
+										<option value="">市1</option>
+										<option value="">市2</option>
+										<option value="">市3</option>
+									</select>
+									<li class="qu">区</li>
+									<select name="" id="" class="qusel pa">
+										<option value="">区1</option>
+										<option value="">区2</option>
+										<option value="">区3</option>
+									</select>
+									<li class="chabtn">查询</li>
+								</ul><script>
+										$(".shengsel").change(function(){
+											$(".sheng").text($(".shengsel").find("option:selected").text());
+										});
+										$(".shisel").change(function(){
+											$(".shi").text($(".shisel").find("option:selected").text());
+										});
+										$(".qusel").change(function(){
+											$(".qu").text($(".qusel").find("option:selected").text());
+										});</script>
+							</div>
+							<div class="lshqqxt">
+					
+						
+						<div class="ranking ranking4">
+							<div class="ranking-title">
+								<ul class="cf">
+									<li>楼市行情</li>
+									<li class="rt-hd rt-hd4 on">周行情</li>
+									<li class="rt-hd rt-hd4">月行情</li>
+								</ul>
+							</div>
+							<div class="ranking-list">
+								<div class="ranking-list2 ranking-list24">
+									<div class="lshqqxtpic">
+										<img width="317" height="199" src="images/index/4_03.jpg">
+									</div>
+									<div class="lshqqxtpic" style="display: none;">
+										<img width="317" height="199" src="images/index/4_03.jpg">
+									</div>
+								</div>
+								
+							</div>
+						</div><script>jQuery(".ranking4").slide({mainCell:".ranking-list24",titCell:".ranking-title .rt-hd4"});</script>		
+					</div>
+						</div>
+					</div>
+					<div class="col2 fl colinnlist">
+						<div class="col1b">
+							<div class="col2tit">每周分析<span><a href="">更多»</a></span></div>
+							<ul class="list">
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col3 fl colinnlist">
+						<div class="col1b">
+							<div class="col2tit">每月分析<span><a href="">更多»</a></span></div>
+							<ul class="list">
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fcqsjfx">
+				<div class="t pr"><img alt="" src="../images/dcq/dcq_07.jpg"></div>
+				<div class="col cf">
+					
+					<div class="col2 fl colinnlist ynjlynwendang">
+						<div class="col1b">
+							<div class="col2tit">每周分析<span><a href="">更多»</a></span></div>
+							<ul class="list">
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col2 yeneihd565 fl">
+						<div class="bszx-bskd bszx-bskd6">
+							<div class="b-b-hd b-b-hd6">
+								<ul class="sydc-ul cf fl">
+									<li class="sydc">业内活动</li>
+								</ul>
+							</div>
+							<div class="b-b-bd b-b-bd6">
+								<div>
+									<div class="b-b-first pr cf">
+										<div class="pic fl"><img width="151" height="97" src="images/villa_index_106.jpg"></div>
+										<div class="detail fr">
+											<span>珀碧桂园创新高，首次。。。。</span><br>珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次珀碧桂园创新高，首次园创新高，首次珀碧桂园创新高，首次<span><a href="#">[详细]</a></span>
+										</div>
+									</div>
+									<ul>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col3 yenelt265 fl colinnlist">
+						<div class="col1b">
+							<div class="col2tit">每月分析<span><a href="">更多»</a></span></div>
+							<ul class="list">
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fcqsjfx dsqsjfxzzyue">
+				<div class="t pr"><img alt="" src="../images/dcq/dcq_07.jpg"></div>
+				<div class="col cf">
+					<div class="col2 fl colinnlist">
+						<div class="col1b">
+							<div class="col2tit dsqsjfxtit2">每周分析<span><a href="">更多»</a></span></div>
+							<ul class="list">
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col2 fl colinnlist">
+						<div class="col1b">
+							<div class="col2tit dsqsjfxtit2">每周分析<span><a href="">更多»</a></span></div>
+							<ul class="list">
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col3 fl colinnlist" style="float:right;padding-right:0">
+						<div class="col1b"  style="padding-right:0">
+							<div class="col2tit dsqsjfxtit2">每月分析<span>更多»</span></div>
+							<ul class="list">
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+								<li><a href="">泰安楼盘交易总结(2015.2.01-2015.2.09)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div></div>
+				<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+				<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+				<div class="dcqdcpoke cf">
+					<div class="boke fl">
+						<div class="hot-act fl">
+							<div class="column-2">
+								<div class="title">热门活动<a href="#">更多»</a></div>
+								<div class="list l ist-h">
+									<ul class="cf">
+										<li><a href=""><img src="images/dcq/dcq_15.jpg" alt=""><br>某某某</a></li>
+										<li><a href=""><img src="images/dcq/dcq_15.jpg" alt=""><br>某某某</a></li>
+										<li><a href=""><img src="images/dcq/dcq_15.jpg" alt=""><br>某某某</a></li>
+										<li><a href=""><img src="images/dcq/dcq_15.jpg" alt=""><br>某某某</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="zpqz fr">
+						<div class="zszxc2 fl">
+					<div class="gfzy-col2 fl">
+					
+							
+							
+						<div class="bszx-bskd bszx-bskd6 z2">
+							<div class="b-b-hd b-b-hd6 z2hd">
+								<ul class="cf fl">
+									<li class="on">装饰资讯</li>
+									<li>优惠活动</li>
+								</ul>
+							</div>
+							<div class="b-b-bd b-b-bd6 z2bd">
+								<div>
+									<ul class="qzzpullu3">
+										<li><a href="#">泰安最新房产动态播报1111</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										
+									</ul>
+								</div>
+								<div style="display: none;">
+									<ul class="qzzpullu3">
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li><li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a><a href="" class="zhiwei">老总........</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										<li><a href="#">泰安最新房产动态播报</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div><script>jQuery(".z2").slide({mainCell:".z2bd",titCell:".z2hd li"});</script>
+							
+					
+					
+					
+					</div>
+				</div>
+					</div>
+				</div>
+			<div class="fcqsjfx dcqtdjy">
+				<div class="t pr"><img alt="" src="../images/dcq/dcq_07.jpg"></div>
+				<div class="col cf">
+					<table>
+						<tr>
+							<td class="flt">土地坐23423标</td>
+							<td class="flt">区域</td>
+							<td class="flt">面积</td>
+							<td class="flt">土地用途</td>
+							<td class="flt tdjyriqi">成效日期</td>
+						</tr>
+						<tr>
+							<td>三里新44444444区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地商业用地商业用地商业用地商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+						<tr>
+							<td>三里新区</td>
+							<td>市中</td>
+							<td>5555平方米</td>
+							<td>商业用地</td>
+							<td class="tdjyriqi">2015-03-03</td>
+						</tr>
+					</table>
+					
+					
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+	<div class="frindlink"> 友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span> </div>
+	<div class="footer"> Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有<br>
+		就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号<br>
+		京公网安备451546767646464号 网络文化经营许可证(2131)456号<br>
+		违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com. </div>
+</div>
+</body>
+</html>

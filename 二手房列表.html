@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>二手房列表</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+    <!--=================顶部条start====================-->
+    <div class="topbar-bg">
+        <div class="topbar cf">
+            <div class="loginBox pr fl">
+                <form action="">
+                    <label class="logUsername pa">用户名：</label>
+                    <input class="logInput1 pa" type="text" name="username">
+                    <label class="logPassword pa">密码：</label>
+                    <input class="logInput2 pa" type="text" name="password">
+                    <input id="login" type="submit" value="登录">
+                    <div class="reg pa"><a href="#">注册</a></div>
+                </form>
+            </div>
+            <div class="qq-c fr">
+                <div class="qq"><a href="#">客服QQ：21487985</a></div>
+                <div class="addFav"><a href="#">加入收藏</a></div>
+                <div class="c-us"><a href="#">联系我们</a></div>
+                <div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+            </div>
+        </div>
+    </div>
+    <!--=================顶部条end====================-->
+    <!--==================头部（logo到导航电话）start======================-->
+    <div class="headerBox">
+        <div class="headerTop cf">
+            <div class="logo">
+                <a href="#"><img src="images/villa_index_34.jpg" width="178"></a>
+            </div>
+            <div class="city pr">
+                <div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16">
+                    <br>[切换城市]</div>
+                <!--<div class="chooseCity pa"><span><a href="#">济南</a></span><span><a href="#">青岛</a></span><span><a href="#">泰安</a></span></div>-->
+            </div>
+            <div class="searchBox">
+                <div class="slideSearchBox pr">
+                    <div class="hd">
+                        <ul id="sSBMenu" class="cf">
+                            <li class="ssbmli two"><a href="#">楼盘</a></li>
+                            <li class="ssbmli three"><a href="#">二手房</a></li>
+                            <li class="ssbmli four"><a href="#">家居建材</a></li>
+                            <li class="ssbmli two"><a href="#">招标</a></li>
+                            <li class="ssbmli two"><a href="#">文章</a></li>
+                            <li class="ssbmli two"><a href="#">论坛</a></li>
+                            <li class="ssbmli three"><a href="#">惠房卡</a></li>
+                            <li class="ssbmli four"><a href="#">房屋定制</a></li>
+                            <div class="chou-mapSearch pa cf">
+                                <div class="chou fl"><a href="#">抽奖</a></div>
+                                <div class="mapSearch fr"><a href="#">电子地图找房</a> </div>
+                            </div>
+                        </ul>
+                        <script>
+                        jQuery("#sSBMenu").slide({
+                            trigger: "click",
+                            titCell: ".ssbmli"
+                        });
+                        </script>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li>
+                                <div class="searchSelect pr">
+                                    <div class="hd2">
+                                        <ul class="cf">
+                                            <form action="#">
+                                                <li class="hd2-1">区域</li>
+                                                <select class="sSH1 pa">
+                                                    <option value="">区域1</option>
+                                                    <option value="">区域2</option>
+                                                    <option value="">区域3</option>
+                                                </select>
+                                                <li class="hd2-2">版块</li>
+                                                <select class="sSH2 pa">
+                                                    <option value="">版块1</option>
+                                                    <option value="">版块2</option>
+                                                    <option value="">版块3</option>
+                                                </select>
+                                                <li class="hd2-3">物业类型</li>
+                                                <select class="sSH3 pa">
+                                                    <option value="">物业类型1</option>
+                                                    <option value="">物业类型2</option>
+                                                    <option value="">物业类型3</option>
+                                                </select>
+                                                <div class="sSInput">
+                                                    <input type="text" name="" placeholder="关键字">
+                                                </div>
+                                                <div class="sSSubm">
+                                                    <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+                                                </div>
+                                            </form>
+                                        </ul>
+                                    </div>
+                                    <div class="bd2">
+                                        <ul class="bd2-1">
+                                            <li>区域1</li>
+                                            <li>区域2</li>
+                                            <li>区域3</li>
+                                        </ul>
+                                        <ul>
+                                            <li>版块1</li>
+                                            <li>版块2</li>
+                                            <li>版块3</li>
+                                        </ul>
+                                        <ul>
+                                            <li>物业1</li>
+                                            <li>物业2</li>
+                                            <li>物业3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                jQuery(".searchSelect").slide({
+                                    trigger: "click",
+                                    titCell: ".hd2 li",
+                                    mainCell: ".bd2"
+                                });
+                                $(".bd2-1").css("display", "none");
+                                $(".hd2-1").click(function() {
+                                    $(".bd2-1").css("display", "block");
+                                });
+                                $(".sSH1").change(function() {
+                                    $(".hd2-1").text($(".sSH1").find("option:selected").text());
+                                });
+                                $(".sSH2").change(function() {
+                                    $(".hd2-2").text($(".sSH2").find("option:selected").text());
+                                });
+                                $(".sSH3").change(function() {
+                                    $(".hd2-3").text($(".sSH3").find("option:selected").text());
+                                });
+                                </script>
+                            </li>
+                        </ul>
+                        <div class="hotSearch"><span class="hS1"><a href="#">地铁沿线周边盘</a></span><span><a href="#">品牌楼盘小户型</a></span><span><a href="#">35平米高租售比两遍精品小户</a></span><span><a href="#">招商泰格公寓</a></span><span><a href="#">送面积盘</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainNav cf">
+            <div class="mNSubNav mNSN1 fl">
+                <div class="mNSNTitle fl"><a href="#">房产</a></div>
+                <div class="mNSN-a mNSNa1 fr">
+                    <div><span><a href="#">资讯</a></span><span><a href="#">楼盘</a></span><span><a href="#">写字楼商铺</a></span><span><a href="#">二手房</a></span></div>
+                    <div><span><a href="#">别墅</a></span><span><a href="#">电商</a></span><span><a href="#">地产圈</a></span><span><a href="#">专题</a></span><span><a href="#">活动</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN2 fl">
+                <div class="mNSNTitle fl"><a href="#">装饰</a></div>
+                <div class="mNSN-a mNSNa2 fr">
+                    <div><span><a href="#">资讯</a></span><span><a href="#">招标</a></span><span><a href="#">宝典</a></span><span><a href="#">装饰公司</a></span></div>
+                    <div><span><a href="#">材料</a></span><span><a href="#">图库</a></span><span><a href="#">视频</a></span><span><a href="#">议和团</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN3 fl">
+                <div class="mNSNTitle fl"><a href="#">社区 </a></div>
+                <div class="mNSN-a mNSNa3 fr">
+                    <div><span><a href="#">房产论坛</a></span><span><a href="#">生活</a></span><span><a href="#">业主论坛</a></span></div>
+                    <div><span><a href="#">家居论坛</a></span><span><a href="#">营销</a></span><span><a href="#">家居设计</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN4 fr"><img src="images/villa_index_60.jpg" width="166" alt="电话：028-4556897"></div>
+        </div>
+    </div>
+    <!--==================头部（logo到导航电话）end======================-->
+    <!--===================头部以下到最后 start====================-->
+    <div class="wrapper">
+        <div class="container">
+            <div class="ad1100">
+                <a href="#"><img src="images/news_detail_03.jpg" width="1100"></a>
+            </div>
+            <div class="ad1100">
+                <a href="#"><img src="images/villa_index_91.jpg" width="1100"></a>
+            </div>
+            <div class="main cf">
+                <div class="esfaquyucmapsearch">
+                    <div class="esfqycmc-hd cf">
+                        <a href="" class="l on">按区域查询</a>
+                        <a href="" class="r">地图找房</a>
+                    </div>
+                    <div class="esfqycmc-bd">
+                        <div class="esfSearchFabu">
+                            <form>
+                                <input class="inp" type="text"><input class="inpbtn" type="submit" value=" "><a href="" class="esfFabuBtn"><img src="images/2li/2li_10.jpg" height="34" width="150" alt=""></a>
+                            </form>
+                        </div>
+                        <div class="quYuShouJiaMJHXQT">
+                            <div class="quYu"><strong>区域:</strong><i>全部</i>
+                                <span><a href="">历下</a></span>
+                                <span><a href="">市中</a></span>
+                                <span><a href="">天桥</a></span>
+                                <span><a href="">槐荫</a></span>
+                                <span><a href="">高新</a></span>
+                                <span><a href="">长清</a></span>
+                                <span><a href="">平阴</a></span>
+                                <span><a href="">章丘</a></span>
+                                <span><a href="">济阳</a></span>
+                                <span><a href="">商河</a></span>
+                                <span><a href="">其他</a></span>
+                            </div>
+                            <div class="shouJia"><strong>售价:</strong><i>不限</i>
+                                <span><a href="">30万以下</a></span>
+                                <span><a href="">30-40万</a></span>
+                                <span><a href="">40-50万</a></span>
+                                <span><a href="">50-70万</a></span>
+                                <span><a href="">70-90万</a></span>
+                                <span><a href="">90-120万</a></span>
+                                <span><a href="">120-150万</a></span>
+                                <span><a href="">150-200万</a></span>
+                                <span><a href="">200万以上以上</a></span>
+                                <input type="text">—<input type="text">万
+                            </div>
+                            <div class="mianJi"><strong>面积:</strong><i>不限</i>
+                                <span><a href="">50m<i class="sup">2</i></a></span>
+                                <span><a href="">50-70m<i class="sup">2</i></a></span>
+                                <span><a href="">70-90m<i class="sup">2</i></a></span>
+                                <span><a href="">90-110m<i class="sup">2</i></a></span>
+                                <span><a href="">110-130m<i class="sup">2</i></a></span>
+                                <span><a href="">130-150m<i class="sup">2</i></a></span>
+                                <span><a href="">150-200m<i class="sup">2</i></a></span>
+                                <span><a href="">200-300m<i class="sup">2</i></a></span>
+                                <span><a href="">300m<i class="sup">2</i>以上</a></span><input type="text">—<input type="text">
+                            </div>
+                            <div class="huXing"><strong>户型:</strong><i>不限</i>
+                                <span><a href="">一室</a></span>
+                                <span><a href="">二室</a></span>
+                                <span><a href="">三室</a></span>
+                                <span><a href="">四室</a></span>
+                                <span><a href="">五室</a></span>
+                                <span><a href="">五室以上</a></span>
+                            </div>
+                            <div class="qiTa"><strong>其他:</strong><i>不限</i>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">住宅类别</option>
+                                        <option value="">住宅类别1</option>
+                                        <option value="">住宅类别2</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">房龄</option>
+                                        <option value="">房龄1</option>
+                                        <option value="">房龄2</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">朝向</option>
+                                        <option value="">朝向1</option>
+                                        <option value="">朝向2</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">楼层</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">建筑类别</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">房屋结构</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">装修</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="esfFangYuanList">
+                    <div class="main-left fl">
+                        <div class="esfGeRenZhongJieChoose pr cf">
+                            <a href="">全部房源</a>
+                            <a class="on" href="">个人</a>
+                            <a href="">中介</a>
+                            <span><span>1/100</span><a  class="prev" href=""></a><a class="next" href=""></a></span>
+                        </div>
+                        <div class="esfsfmzm">
+                            <div class="esfsfmzminp fl"><input type="text"></div><a href=""><img src="images/2li/2li_14.jpg" height="29" width="39" alt=""></a>
+                            <div class="esfsfmzmsel fr">
+                                <select name="" id="">
+                                    <option value="">发布时间</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">默认排序</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">总价</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">面积</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="esfSearchList">
+                            <li class="cf">
+                                <div class="pic fl pr"><img src="images/2li/2li_24.jpg" height="117" width="186" alt=""><div class="pa">11<img src="images/2li/2li_33.jpg" height="15" width="23" alt=""></div></div>
+                                
+                                    <div class="titleDetail fl">
+                                        <div class="title"><a href="">山大南路 舜怡佳园 历东小区 121平三室 免税学苑 双气</a></div>
+                                        <div class="zl">花园小区<img src="images/2li/2li_03_03.jpg" height="18" width="11" alt="">花园路-花园路11号</div>
+                                        <div class="stxy">
+                                            <span>2室1厅</span>|
+                                            <span>6/6层</span>|
+                                            <span>南北向</span>|
+                                            <span>建筑年代:1999</span>
+                                        </div>
+                                        <div class="fd">刘昊<span>6秒前更新</span><i>[个人房源]</i></div>
+                                    </div>
+                                    <div class="mianJi fl"><b>147</b>m<i class="sup">2</i></div>
+                                    <div class="jiaGe fl"><span class="j">120</span><i class="w">万</i><br><span class="jg">7000元/m<i class="sup">2</i></span></div>
+                                
+                            </li>
+                            <li class="cf">
+                                <div class="pic fl pr"><img src="images/2li/2li_24.jpg" height="117" width="186" alt=""><div class="pa">11<img src="images/2li/2li_33.jpg" alt=""></div></div>
+                                
+                                    <div class="titleDetail fl">
+                                        <div class="title"><a href="">山大南路 舜怡佳园 历东小区 121平三室 免税学苑 双气</a></div>
+                                        <div class="zl">花园小区<img src="images/2li/2li_03_03.jpg" height="18" width="11" alt="">花园路-花园路11号</div>
+                                        <div class="stxy">
+                                            <span>2室1厅</span>|
+                                            <span>6/6层</span>|
+                                            <span>南北向</span>|
+                                            <span>建筑年代:1999</span>
+                                        </div>
+                                        <div class="fd">刘昊<span>6秒前更新</span><i>[个人房源]</i></div>
+                                    </div>
+                                    <div class="mianJi fl"><b>147</b>m<i class="sup">2</i></div>
+                                    <div class="jiaGe fl"><span class="j">120</span><i class="w">万</i><br><span class="jg">7000元/m<i class="sup">2</i></span></div>
+                                
+                            </li>
+                            <li class="cf">
+                                <div class="pic fl pr"><img src="images/2li/2li_24.jpg" height="117" width="186" alt=""><div class="pa">11<img src="images/2li/2li_33.jpg" alt=""></div></div>
+                                
+                                    <div class="titleDetail fl">
+                                        <div class="title"><a href="">山大南路 舜怡佳园 历东小区 121平三室 免税学苑 双气</a></div>
+                                        <div class="zl">花园小区<img src="images/2li/2li_03_03.jpg" height="18" width="11" alt="">花园路-花园路11号</div>
+                                        <div class="stxy">
+                                            <span>2室1厅</span>|
+                                            <span>6/6层</span>|
+                                            <span>南北向</span>|
+                                            <span>建筑年代:1999</span>
+                                        </div>
+                                        <div class="fd">刘昊<span>6秒前更新</span><i>[个人房源]</i></div>
+                                    </div>
+                                    <div class="mianJi fl"><b>147</b>m<i class="sup">2</i></div>
+                                    <div class="jiaGe fl"><span class="j">120</span><i class="w">万</i><br><span class="jg">7000元/m<i class="sup">2</i></span></div>
+                                
+                            </li>
+                        </ul>
+                        <div class="new-li-ye">
+                            <a href="#">首页</a>
+                            <a href="#">上一页</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">下一页</a>
+                            <a href="#">尾页</a>
+
+                        </div>
+                    </div>
+                    <div class="main-right fr">
+                        <div class="hottopic esfTJJJR">
+                            <div class="title-more cf">
+                                <div class="hot-title fl">推荐经纪人</div>
+                                <div class="more fr"><a href="#">更多»</a></div>
+                            </div>
+                            <div class="hottopic-list">
+                                    <div class="cf">
+                                            <div class="pic fl"><img src="images/2li/2li_17.jpg" height="122" width="92" alt=""></div>
+                                            <div class="esfTJJJRfr fr">
+                                                <span class="title">谭百强</span><br>
+                                                <span class="tel"><img src="images/2li/2li_21.jpg" height="22" width="12" alt="">18888888888</span><br>
+                                                <span>二手房专家,拥有多年房产经验.</span><br><span class="zxl"><a href="">在线留言</a></span>
+                                            </div>
+                                    </div>
+                                     <div class="cf">
+                                            <div class="pic fl"><img src="images/2li/2li_17.jpg" height="122" width="92" alt=""></div>
+                                            <div class="esfTJJJRfr fr">
+                                                <span class="title">谭百强</span><br>
+                                                <span class="tel"><img src="images/2li/2li_21.jpg" height="22" width="12" alt="">18888888888</span><br>
+                                                <span>二手房专家,拥有多年房产经验.</span><br><span class="zxl"><a href="">在线留言</a></span>
+                                            </div>
+                                    </div>
+                                     <div class="cf">
+                                            <div class="pic fl"><img src="images/2li/2li_17.jpg" height="122" width="92" alt=""></div>
+                                            <div class="esfTJJJRfr fr">
+                                                <span class="title">谭百强</span><br>
+                                                <span class="tel"><img src="images/2li/2li_21.jpg" height="22" width="12" alt="">18888888888</span><br>
+                                                <span>二手房专家,拥有多年房产经验.</span><br><span class="zxl"><a href="">在线留言</a></span>
+                                            </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="ad258"><a href=""><img src="images/2li/2li_30.jpg" height="93" width="258" alt=""></a></div>
+                        <div class="ad258"><a href=""><img src="images/2li/2li_30.jpg" height="93" width="258" alt=""></a></div>
+                        <div class="hottopic">
+                            <div class="title-more cf">
+                                <div class="hot-title fl">二手房知识</div>
+                                <div class="more fr"><a href="#">更多»</a></div>
+                            </div>
+                            <div class="hottopic-list">
+                                
+                                <ul>
+                                    <li><a href="#">泰城各大楼盘新春大拜年</a></li>
+                                    <li><a href="#">泰城各大楼盘新春大拜年</a></li>
+                                    <li><a href="#">泰城各大楼盘新春大拜年</a></li>
+                                    <li><a href="#">泰城各大楼盘新春大拜年</a></li>
+                                    <li><a href="#">泰城各大楼盘新春大拜年</a></li>
+                                    <li><a href="#">泰城各大楼盘新春大拜年</a></li>
+                                    <li><a href="#">泰城各大楼盘新春大拜年</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hottopic">
+                            <div class="title-more cf">
+                                <div class="hot-title fl">推荐房源</div>
+                                <div class="more fr"><a href="#">更多»</a></div>
+                            </div>
+                            <div class="hottopic-list tjfyBottomSpace">
+                                <div class="tjfybox">
+                                    <div class="tjfy">
+                                        <img src="images/2li/2li_24.jpg" height="143" width="227" alt="">
+                                        <div class="tjfytit">册大南路 历东小区 历东小区</div>
+                                        <div class="tjfyMJ cf">
+                                            <span class="fl">147m
+                                                <i class="sup">2</i>
+                                            </span>
+                                            <span class="fr">
+                                                <b>185</b>万
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tjfybox">
+                                    <div class="tjfy">
+                                        <img src="images/2li/2li_24.jpg" height="143" width="227" alt="">
+                                        <div class="tjfytit">册大南路 历东小区 历东小区</div>
+                                        <div class="tjfyMJ cf">
+                                            <span class="fl">147m
+                                                <i class="sup">2</i>
+                                            </span>
+                                            <span class="fr">
+                                                <b>185</b>万
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tjfybox">
+                                    <div class="tjfy">
+                                        <img src="images/2li/2li_24.jpg" height="143" width="227" alt="">
+                                        <div class="tjfytit">册大南路 历东小区 历东小区</div>
+                                        <div class="tjfyMJ cf">
+                                            <span class="fl">147m
+                                                <i class="sup">2</i>
+                                            </span>
+                                            <span class="fr">
+                                                <b>185</b>万
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad258"><a href=""><img width="258" height="93" alt="" src="images/2li/2li_30.jpg"></a></div>
+                        <div class="ad258"><a href=""><img width="258" height="93" alt="" src="images/2li/2li_30.jpg"></a></div>
+                        <div class="ad258"><a href=""><img width="258" height="93" alt="" src="images/2li/2li_30.jpg"></a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frindlink">
+            友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span>
+        </div>
+        <div class="footer">
+            Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有
+            <br> 就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号
+            <br> 京公网安备451546767646464号 网络文化经营许可证(2131)456号
+            <br> 违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com.
+        </div>
+    </div>
+</body>
+
+</html>

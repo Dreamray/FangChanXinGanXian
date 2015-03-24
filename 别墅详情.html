@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>别墅详情</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<!--<script>
+	$(document).ready(function(){
+		$(".cityClick").click(function (){
+			$(".chooseCity").fadeIn(300);
+		});
+		$(".chooseCity").click(function (){
+			$(this).fadeOut(300);
+		});
+	});
+</script>-->
+</head>
+
+<body>
+<!--=================顶部条start====================-->
+	<div class="topbar-bg">
+		<div class="topbar cf">
+			<div class="loginBox pr fl">
+				<form action="">
+					<label class="logUsername pa">用户名：</label><input class="logInput1 pa" type="text" name="username"><label class="logPassword pa">密码：</label><input class="logInput2 pa" type="text" name="password"><input id="login" type="submit" value="登录"><div class="reg pa"><a href="#">注册</a></div>
+				</form>
+			</div>
+			<div class="qq-c fr">
+				<div class="qq"><a href="#">客服QQ：21487985</a></div>
+				<div class="addFav"><a href="#">加入收藏</a></div>
+				<div class="c-us"><a href="#">联系我们</a></div>
+				<div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+			</div>
+		</div>
+	</div>
+<!--=================顶部条end====================-->
+<!--==================头部（logo到导航电话）start======================-->
+	<div class="headerBox">
+		<div class="headerTop cf">
+			<div class="logo"><a href="#"><img src="images/villa_index_34.jpg" width="178"></a></div>
+			<div class="city pr">
+				<div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16"><br>[切换城市]</div>
+				<!--<div class="chooseCity pa"><span><a href="#">济南</a></span><span><a href="#">青岛</a></span><span><a href="#">泰安</a></span></div>-->
+			</div>
+			<div class="searchBox">
+				<div class="slideSearchBox pr">
+					<div class="hd">
+						<ul id="sSBMenu" class="cf">
+							<li class="ssbmli two"><a href="#">楼盘</a></li>
+							<li class="ssbmli three"><a href="#">二手房</a></li>
+							<li class="ssbmli four"><a href="#">家居建材</a></li>
+							<li class="ssbmli two"><a href="#">招标</a></li>
+							<li class="ssbmli two"><a href="#">文章</a></li>
+							<li class="ssbmli two"><a href="#">论坛</a></li>
+							<li class="ssbmli three"><a href="#">惠房卡</a></li>
+							<li class="ssbmli four"><a href="#">房屋定制</a></li>
+							<div class="chou-mapSearch pa cf">
+								<div class="chou fl"><a href="#">抽奖</a></div>
+								<div class="mapSearch fr"><a href="#">电子地图找房</a>	</div>
+							</div>
+						</ul><script>jQuery("#sSBMenu").slide({trigger:"click",titCell:".ssbmli"});</script>
+					</div>
+					<div class="bd">
+						<ul>
+							<li>
+								<div class="searchSelect pr">
+									<div class="hd2">
+										<ul class="cf">
+											<form action="#">
+												<li class="hd2-1">区域</li>
+												<select class="sSH1 pa">
+													<option value ="">区域1</option>
+													<option value ="">区域2</option>
+													<option value="">区域3</option>
+												</select>
+												<li class="hd2-2">版块</li>
+												<select class="sSH2 pa">
+													<option value ="">版块1</option>
+													<option value ="">版块2</option>
+													<option value="">版块3</option>
+												</select>
+												<li class="hd2-3">物业类型</li>
+												<select class="sSH3 pa">
+													<option value ="">物业类型1</option>
+													<option value ="">物业类型2</option>
+													<option value="">物业类型3</option>
+												</select>
+												<div class="sSInput">
+													<input type="text" name="" placeholder="关键字">
+												</div>
+												<div class="sSSubm">
+													<input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+												</div>
+											</form>
+										</ul>
+									</div>
+									<div class="bd2">
+										<ul class="bd2-1">
+											<li>区域1</li>
+											<li>区域2</li>
+											<li>区域3</li>
+										</ul>
+										<ul>
+											<li>版块1</li>
+											<li>版块2</li>
+											<li>版块3</li>
+										</ul>
+										<ul>
+											<li>物业1</li>
+											<li>物业2</li>
+											<li>物业3</li>
+										</ul>
+									</div>
+								</div>
+								<script>
+									jQuery(".searchSelect").slide({trigger:"click",titCell:".hd2 li",mainCell:".bd2"});
+									$(".bd2-1").css("display","none");
+									$(".hd2-1").click(function(){
+										$(".bd2-1").css("display","block");
+									});
+									$(".sSH1").change(function(){
+										$(".hd2-1").text($(".sSH1").find("option:selected").text());
+									});
+									$(".sSH2").change(function(){
+										$(".hd2-2").text($(".sSH2").find("option:selected").text());
+									});
+									$(".sSH3").change(function(){
+										$(".hd2-3").text($(".sSH3").find("option:selected").text());
+									});
+								</script>
+							</li>
+						</ul>
+						<div class="hotSearch"><span class="hS1"><a href="#">地铁沿线周边盘</a></span><span><a href="#">品牌楼盘小户型</a></span><span><a href="#">35平米高租售比两遍精品小户</a></span><span><a href="#">招商泰格公寓</a></span><span><a href="#">送面积盘</a></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mainNav cf">
+			<div class="mNSubNav mNSN1 fl">
+				<div class="mNSNTitle fl"><a href="#">房产</a></div>
+				<div class="mNSN-a mNSNa1 fr">
+					<div><span><a href="#">资讯</a></span><span><a href="#">楼盘</a></span><span><a href="#">写字楼商铺</a></span><span><a href="#">二手房</a></span></div>
+					<div><span><a href="#">别墅</a></span><span><a href="#">电商</a></span><span><a href="#">地产圈</a></span><span><a href="#">专题</a></span><span><a href="#">活动</a></span></div>
+				</div>
+			</div>
+			
+			<div class="mNSubNav mNSN2 fl">
+				<div class="mNSNTitle fl"><a href="#">装饰</a></div>
+				<div class="mNSN-a mNSNa2 fr">
+					<div><span><a href="#">资讯</a></span><span><a href="#">招标</a></span><span><a href="#">宝典</a></span><span><a href="#">装饰公司</a></span></div>
+					<div><span><a href="#">材料</a></span><span><a href="#">图库</a></span><span><a href="#">视频</a></span><span><a href="#">议和团</a></span></div>
+				</div>
+			</div>
+			
+			<div class="mNSubNav mNSN3 fl">
+				<div class="mNSNTitle fl"><a href="#">社区 </a></div>
+				<div class="mNSN-a mNSNa3 fr">
+					<div><span><a href="#">房产论坛</a></span><span><a href="#">生活</a></span><span><a href="#">业主论坛</a></span></div>
+					<div><span><a href="#">家居论坛</a></span><span><a href="#">营销</a></span><span><a href="#">家居设计</a></span></div>
+				</div>
+			</div>
+			<div class="mNSubNav mNSN4 fr"><img src="images/villa_index_60.jpg" width="166" alt="电话：028-4556897"></div>
+		</div>
+	</div>
+<!--==================头部（logo到导航电话）end======================-->
+
+<!--===================头部以下到最后 start====================-->
+<div class="wrapper">
+	<div class="container">
+		<div class="main cf">
+			<div class="bstt">
+				绿地隆悦公馆
+			</div>	
+			<div class="bsbasic cf">
+				<div class="bsb pr fl">
+					<div class="bsbbd">
+						<ul>
+							<li><a href="#"><img src="images/bsxq/1_06.jpg" width="442" height="299"></a></li>
+							<li><a href="#"><img src="images/bsxq/1_06.jpg" width="442" height="299"></a></li>
+							<li><a href="#"><img src="images/bsxq/1_06.jpg" width="442" height="299"></a></li>
+							<li><a href="#"><img src="images/bsxq/1_06.jpg" width="442" height="299"></a></li>
+							<li><a href="#"><img src="images/bsxq/1_06.jpg" width="442" height="299"></a></li>
+						</ul>
+					</div>
+					<div class="bsbhd">
+						<ul>
+							<li><img src="images/bsxq/1_06.jpg" width="80" height="53"><i></i><b>效果图</b><span><img src="images/bsxq/3_15.jpg"></span></li>
+							<li><img src="images/bsxq/1_06.jpg" width="80" height="53"><i></i><b>交通图</b><span><img src="images/bsxq/3_15.jpg"></span></li>
+							<li><img src="images/bsxq/1_06.jpg" width="80" height="53"><i></i><b>实景图</b><span><img src="images/bsxq/3_15.jpg"></span></li>
+							<li><img src="images/bsxq/1_06.jpg" width="80" height="53"><i></i><b>外景图</b><span><img src="images/bsxq/3_15.jpg"></span></li>
+							<li><img src="images/bsxq/1_06.jpg" width="80" height="53"><i></i><b>样板间</b><span><img src="images/bsxq/3_15.jpg"></span></li>
+						</ul>
+					</div>
+					<a class="next"><img src="images/bsxq/2_20.jpg"></a>
+					<a class="prev"><img src="images/bsxq/2_17.jpg"></a>
+				</div><script>jQuery(".bsb").slide({mainCell:".bsbbd ul",titCell:".bsbhd li"});</script>
+				<div class="bsbainfo fr">
+					<div class="bsbit pr">
+						别墅基本信息<img src="images/bsxq/4_03.jpg">
+					</div>
+					<table>
+						<tr>
+							<td class="t">物业类别：</td>
+							<td>别墅</td>
+							<td class="t">物业管理费：</td>
+							<td>2元/m<i class="sup">2</i></td>
+						</tr>
+						<tr>
+							<td class="t">总建筑面积：</td>
+							<td>约9999m<i class="sup">2</i></td>
+							<td class="t">开发商：</td>
+							<td>泰安有限公司</td>
+						</tr>
+						<tr>
+							<td class="t">开盘时间</td>
+							<td>选定</td>
+							<td class="t">入住时间：</td>
+							<td>1999-11-11</td>
+						</tr>
+						<tr>
+							<td class="t">绿化率：</td>
+							<td>30</td>
+							<td class="t">容积率：</td>
+							<td>50</td>
+						</tr>
+						<tr>
+							<td class="t">楼盘价格：</td>
+							<td>11111元/m<i class="sup">2</i></td>
+							<td class="t"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="t">项目地址：</td>
+							<td colspan="3">泰安市什么路多少米</td>
+						</tr>
+						<tr>
+							<td class="t">售楼部地址：</td>
+							<td colspan="3">泰安市什么路多少米</td>
+.						</tr>
+					</table>
+					<div class="tell cf">
+						<div class="tl fl">
+							<img src="images/bsxq/5_22.jpg">
+						</div>
+						<div class="yh fr">
+							优惠信息：<br>全款97折，按揭99折
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="detail-i cf">
+				<div class="dein fl">
+					<div class="detit">
+						详细信息
+					</div>
+					<div class="dec">
+						<p class="t">海尔桃花园</p>
+						<p>海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园海尔桃花</p>
+						<p>海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园海尔桃花</p>
+						<p>海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园海尔桃花园，海尔桃花园海尔桃花园海尔桃花园海尔桃花园海尔桃花</p>
+					</div>
+				</div>
+				<div class="wantlook fr">
+				<div class="dein wl fl">
+					<div class="detit">
+						我要看房
+					</div>
+					<div class="dec wld">
+						<form action="#">
+							姓名：<input name="" type="text"><br>
+							电话：<input name="" type="text"><br>
+							<img src="images/bsxq/6_03.jpg">
+						</form>
+						<div class="renshu">
+							报名人数：<i>8888</i>人<span>访问人数：<i>8888</i>人
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+			<div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+			<div class="detail-i xgzx cf">
+				<div class="dein fl">
+					<div class="detit">
+						绿地隆悦公馆相关资讯<span><a href="#">更多»</a></span>
+					</div>
+					<div class="dec">
+						<div class="xgzxf cf pr">
+							<div class="xgzxfl fl">
+								<img src="images/villa_index_106.jpg" width="151" height="97">
+							</div>
+							<div class="xgzxfr fr">
+								<div class="xgzxfrt">绿地隆悦公馆相关资讯绿地隆悦公</div>
+								绿地隆悦公馆相关资讯绿地隆悦公绿地隆悦公馆相关资讯绿地隆悦公绿地绿地隆悦公绿地隆悦公馆相关资讯绿地隆悦公绿地隆悦公馆相关资讯绿地隆悦公<i>2015-11-11</i>
+							</div>
+							
+						</div>
+						<div class="xgzxfrt">绿地隆悦公馆相关资讯绿地隆悦公</div>
+						<ul class="xgzxul">
+							<li><a href="#">绿地隆悦公馆相关资讯绿地隆悦公</a></li>
+							<li><a href="#">绿地隆悦公馆相关资讯绿地隆悦公</a></li>
+							<li><a href="#">绿地隆悦公馆相关资讯绿地隆悦公</a></li>
+							<li><a href="#">绿地隆悦公馆相关资讯绿地隆悦公</a></li>
+							<li><a href="#">绿地隆悦公馆相关资讯绿地隆悦公</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="wantlook fr">
+				<div class="dein wl fl">
+					<div class="detit">
+						楼盘问答<span><a href="#">更多»</a></span>
+					</div>
+					<div class="dec wld">
+						<div class="wenda">
+							<table>
+								<tr>
+									<td class="wen">问：</td>
+									<td>问为什么为什么问为为什么问为什问为什么为什么</td>
+								</tr>
+								<tr>
+									<td class="da">答：</td>
+									<td>问为什么为什么为什么为什么</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<td class="wen">问：</td>
+									<td>问为什么为什么问为为什么问为什问为什么为什么</td>
+								</tr>
+								<tr>
+									<td class="da">答：</td>
+									<td>问为什么为什么为什么为什么</td>
+								</tr>
+							</table>
+						</div>
+						<input type="text" name="" placeholder="关于此楼盘的问题请在这提出"><br>
+						<img src="images/bsxq/7_07.jpg">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="detail-i cf xgzx lp-pic">
+				<div class="dein dns pr">
+					<div class="detit">
+						楼盘相册<span class="lp-a"><a href="#">户型图(1)</a>|<a href="#">交通图(1)</a>|<a href="#">外景图 (1)</a>|<a href="#">实景图(1)</a>| <a href="#">效果图(1)</a>| <a href="#">样板间(1)</a>| <a href="#">项目现场(1)</a>| <a href="#">配套图(1)</a></span><span><a href="#">更多»</a></span>
+					</div>
+					<div class="dec">
+						<ul class="cf">
+							<li><a href="#"><img src="images/bsxq/8_11.jpg" width="201" height="135"><br>万简鸟瞰图图图图</a></li>
+							<li><a href="#"><img src="images/bsxq/8_11.jpg" width="201" height="135"><br>万简鸟瞰图图图图</a></li>
+							<li><a href="#"><img src="images/bsxq/8_11.jpg" width="201" height="135"><br>万简鸟瞰图图图图</a></li>
+							<li><a href="#"><img src="images/bsxq/8_11.jpg" width="201" height="135"><br>万简鸟瞰图图图图</a></li>
+							<li><a href="#"><img src="images/bsxq/8_11.jpg" width="201" height="135"><br>万简鸟瞰图图图图</a></li>
+							<li><a href="#"><img src="images/bsxq/8_11.jpg" width="201" height="135"><br>万简鸟瞰图图图图</a></li>
+							<li><a href="#"><img src="images/bsxq/8_11.jpg" width="201" height="135"><br>万简鸟瞰图图图图</a></li>
+						</ul>
+					</div>
+					<div class="lpbd">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a class="next"><img src="images/bsxq/2_20.jpg"></a>
+						<a class="prev"><img src="images/bsxq/2_17.jpg"></a>
+					</div>
+				</div><script>jQuery(".dns").slide({titCell:".lpbd ul",mainCell:".dec ul",autoPage:true,effect:"left",autoPlay:true,vis:5});</script>
+				
+			</div>
+			<div class="price-zb cf">
+			<div class="jghqqqq fl">
+					
+						
+						<div class="ranking ranking4 jghq ssqqaaqaqaq pr">
+							<div class="ranking-title">
+								<ul class="cf">
+									<li>价格行情</li>
+									<li class="jqhqsel">
+										物业类型
+									</li>
+									<select class="jghqect pa">
+										<option value="">物业类型1</option>
+										<option value="">物业类型2</option>
+										<option value="">物业类型3</option>
+									</select>
+									<li class="rt-hd rt-hd4 jqhql">半年</li>
+									<li class="rt-hd rt-hd4">一年</li>
+								</ul>
+							</div>
+							<div class="ranking-list">
+								<div class="ranking-list2 ranking-list24">
+									<div class="lshqqxtpic">
+										<img src="images/bsxq/9_03.jpg" width="766" height="368">
+									</div>
+									<div class="lshqqxtpic">
+										<img src="images/bsxq/9_03.jpg" width="766" height="368">
+										
+									</div>
+									
+								</div>
+								<div class="tbxj">
+											<span>万科 公园：</span>2月均价23600元/m<i class="sup">2</i>，比1月<img src="images/bsxq/a_07.jpg"><span class="ldb">6.8%</span><br><span>价格描述：</span>同比下降
+									</div>
+							</div>
+						</div><script>jQuery(".jghq").slide({mainCell:".ranking-list24",titCell:".ranking-title .rt-hd4"});
+						$(".jghqect").change(function(){
+							$(".jqhqsel").text($(".jghqect").find("option:selected").text());
+						});
+						</script>		
+					</div>
+					<div class="zbesf fr">
+						<div class="dein wl fl">
+							<div class="detit">
+								周边二手房<span><a href="#">更多»</a></span>
+							</div>
+							<div class="dec wld">
+								
+									<table class="abest1">
+										<tr>
+											<td class="a">楼盘名称</td>
+											<td class="b">区域</td>
+											<td class="c">价格</td>
+										</tr>
+									
+								
+								
+									<tr>
+										<td>山东调整绿城</td>
+										<td>市中</td>
+										<td>价格</td>
+									</tr>
+									<tr>
+											<td class="a">楼盘名称</td>
+											<td class="b">区域</td>
+											<td class="c">价格</td>
+										</tr>
+									
+								
+								
+									<tr>
+										<td>山东调整绿城</td>
+										<td>市中</td>
+										<td>价格</td>
+									</tr>
+									<tr>
+											<td class="a">楼盘名称</td>
+											<td class="b">区域</td>
+											<td class="c">价格</td>
+										</tr>
+									
+								
+								
+									<tr>
+										<td>山东调整绿城</td>
+										<td>市中</td>
+										<td>价格</td>
+									</tr>
+									<tr>
+											<td class="a">楼盘名称</td>
+											<td class="b">区域</td>
+											<td class="c">价格</td>
+										</tr>
+									
+								
+								
+									
+								</table>
+							</div>
+						</div>
+						<div class="ad347">
+						<img src="images/bsxq/b_06.jpg" width="278" height="89">
+					</div>
+					<div class="ad347">
+						<img src="images/bsxq/b_06.jpg" width="278" height="89">
+					</div>
+					</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="detail-i cf">
+				<div class="dein fl">
+					<div class="detit dtsf pr">
+						楼盘地图<span><a href="#"><img src="images/bsxq/d_18.jpg"></a><a href="#"><img src="images/bsxq/c_15.jpg"></a></span>
+					</div>
+					<div class="dec dituz">
+						<img src="images/bsxq/f_23.jpg" width="805" height="332">
+					</div>
+				</div>
+				<div class="wantlook fr">
+				<div class="dein wl fl">
+					<div class="detit">
+						项目配套
+					</div>
+					<div class="dec wld xmpt">
+						<span>恒隆广场商圈</span><br>
+						位于济南最核心地段、建筑面积超过17万平米的济位于济南最核心地段、建筑面积超过17万平米的济位于济南最核心地段、建筑面积段、建筑面积超过17万平米的济位于济南最核心地段、建筑面积超过17万平米的济南<br><span>知名学府</span><br>平米的济位于济南最核心地段、建筑面积超过17万平米的济位于济南最核心地段、建筑面积超过17万平米的
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="detail-i cf xgzx lp-pic nkndxqdl">
+				<div class="dein dns pr">
+					<div class="detit">
+						您可能感兴趣的楼盘<span><a href="#">更多»</a></span>
+					</div>
+					<div class="dec">
+						<ul class="cf" style="width: 1568px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+							<li style="float: left; width: 203px;"><a href="#"><img width="201" height="135" src="images/bsxq/8_11.jpg"><br>万简鸟瞰图图图图<br><span>10000元/平方米<br>什么路与什么路交汇处即是</span></a></li>
+							<li style="float: left; width: 203px;"><a href="#"><img width="201" height="135" src="images/bsxq/8_11.jpg"><br>万简鸟瞰图图图图<br><span>10000元/平方米<br>什么路与什么路交汇处即是</span></a></li>
+							<li style="float: left; width: 203px;"><a href="#"><img width="201" height="135" src="images/bsxq/8_11.jpg"><br>万简鸟瞰图图图图<br><span>10000元/平方米<br>什么路与什么路交汇处即是</span></a></li>
+							<li style="float: left; width: 203px;"><a href="#"><img width="201" height="135" src="images/bsxq/8_11.jpg"><br>万简鸟瞰图图图图<br><span>10000元/平方米<br>什么路与什么路交汇处即是</span></a></li>
+							<li style="float: left; width: 203px;"><a href="#"><img width="201" height="135" src="images/bsxq/8_11.jpg"><br>万简鸟瞰图图图图<br><span>10000元/平方米<br>什么路与什么路交汇处即是</span></a></li>
+							
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	<div class="frindlink">
+		友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span>
+	</div>
+	<div class="footer">
+		Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有<br>
+		就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号<br>
+		京公网安备451546767646464号 网络文化经营许可证(2131)456号<br>
+		违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com.
+	</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
