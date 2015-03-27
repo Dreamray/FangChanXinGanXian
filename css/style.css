@@ -2609,3 +2609,158 @@ padding:5px;
 	width: 113px;
 	padding-right: 8px;
 }
+.zsprod{
+	height: 40px;
+	border-top:solid 1px #b0b0b0;
+	background:#e7e7e7;
+	margin-bottom:5px;
+	padding-left:6px;
+}
+.zsprod a{
+	padding:0 8px;
+	line-height: 3.3;
+	color: #595858;
+}
+.zsbnbd li img{
+	border:solid 1px #dcdcdc;
+}
+.zsbnhd{
+	right:20px;
+	bottom:20px;
+}
+.zsbnhd li{
+	float: left;
+	cursor:pointer;
+	border-radius:100%;
+	background: #C8C9C6;
+	width:10px;
+	height:10px;
+	margin:0 2px;
+	position:relative;
+}
+.zsbnhd li:hover{
+	background: #FF8B00;
+}
+.zsbnhd li.on{
+	background: #FF8B00;
+}
+.zsbnbd li a i{
+	position:absolute;
+	width:738px;
+	height:47px;
+	left:1px;
+	bottom:2px;
+	background:rgba(0,0,0,.4);
+}
+.zsbnbd li a span{
+	position:absolute;left:15px;
+	bottom:19px;
+	color:#fff;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+.zscxhdyh{
+	width:346px;
+	border-style:solid;
+	border-color:#4384ab #dcdcdc #dcdcdc;
+	border-width:1px;
+}
+.zscyhd{
+	background:#76b7de;
+	height: 35px;
+	padding-left:15px;
+	
+}
+.zscyhd span{
+	color:#fff;
+	font-size: 14px;
+	cursor:pointer;
+	padding:7px 5px 15px;
+	line-height: 2.6;
+	border-radius:8px 8px 0 0;
+}
+.zscyhd span:hover{
+	font-weight: bold;
+	color: #4384AA;
+	background:#fff;
+}
+.zscyhd span.on{
+	font-weight: bold;
+	color: #4384AA;
+	background:#fff;
+}
+.zscyhd1{
+	
+}
+.zscybd{
+	padding:11px;
+}
+.zscybd1{
+	margin-bottom:8px;
+}
+.zscybd1d{
+	width:160px;
+	line-height: 1.5;
+}
+.zscybd1dt{
+	font-size: 14px;
+	font-weight: bold;
+	padding-top:2px;
+}
+.zscybd1dc{
+	color: #70706D;
+	padding-top:6px;
+}
+.zscybd1i a{
+	
+	color: #4383AD;
+}
+.zscybd1i{
+	position:absolute;
+	right:12px;
+	bottom:5px;
+}
+.zscyhd3ul{
+	line-height: 2.48;
+	list-style: square inside;
+}
+.zscybd3{
+	padding-top:11px;
+}
+.zscyhd3ul a{
+	color: #000;
+}
+.zscyhd3ul .zscybd3r a{
+	color: #C40200;
+}
+.zsbannerhdcxyht{
+	margin-top:8px;
+}
+.zssp{
+	width: 346px;
+}
+.zssp .zscybd1dt{
+	color: #70716E;
+}
+.zsrdsp{
+}
+.zsrdsp li{
+	background:url(../images/zs/2_03.jpg) left center no-repeat;
+	padding-left:30px;
+}
+.zsrdsp span{
+	font-weight: bold;
+}
+.zsrdsp span:hover{
+	font-weight: bold;
+	color: #fff;
+	background:none;
+}
+.zszszl{
+	width:468px;
+	margin:0 12px;
+}
+.zszszl .zscxhdyh{
+	width:100%;
+}
