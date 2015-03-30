@@ -2884,3 +2884,94 @@ color:#fff;
 .zsjjppjjcp table .f{
 	width: 50%;
 }
+.jjppjjcp .zscxhdyh{
+	width: 256px;
+}
+.tjgs{
+	width: 827px;
+}
+.tjgs .column-1 .list ul{
+	list-style:none;
+	width: 855px;
+	line-height: 1.3;
+}
+.tjgs li{
+	float: left;
+	text-align: center;
+	padding:0 6px 11px 0;
+}
+.tjgs .column-1 .list-h{
+	height:215px;
+}
+.tjgs .column-1{
+	margin-bottom:11px;
+}
+.tjgs .jiaJuZhuangXiuPinPaiS{
+	border:0 none;
+}
+.jiaJuZhuangXiuPinPaiS .title{
+	background:none;
+}
+.jiaJuZhuangXiuPinPaiS table{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.jiaJuZhuangXiuPinPaiS table .t td{
+	background:#eeeeee;
+	color: #8A8A8A;
+	font-weight: bold;
+	font-size: 14px;
+	padding:11px 0 11px 18px;
+}
+.jiaJuZhuangXiuPinPaiS table .c td{
+	color: #898989;
+	padding:15px 0 5px 35px;
+	background:url(../images/zs/1_18.jpg) 19px 16px no-repeat;
+}
+.tjgs .jiaJuZhuangXiuPinPaiS .list-h{
+	padding: 0;
+}
+.zsxxzs img{
+	border:solid 1px #dcdcdc;
+}
+.jingYingSheJiShi{
+	border:solid 1px #dcdcdc;
+}
+.jingYingSheJiShi .t{
+	color:#fff;
+	height:35px;
+	background:#76b7de;
+	line-height: 2.5;
+	padding-left:20px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.jingYingSheJiShi .p{
+	padding:11px 25px;
+}
+.jingYingSheJiShi .p ul{
+	width:1200px;
+}
+.jingYingSheJiShi .p li{
+	float: left;
+	margin-right:13px;
+	position: relative;
+}
+.jingYingSheJiShi .p li img{
+	border:solid 1px #dcdcdc;
+	
+}
+.jingYingSheJiShi .p li a i{
+	position: absolute;
+	width: 136px;
+	height: 29px;
+	background:rgba(0,0,0,.5);
+	left:0;
+	bottom:2px;
+}
+.jingYingSheJiShi .p li a b{
+	position: absolute;
+	left:8px;
+	bottom:10px;
+	color:#fff;
+}
