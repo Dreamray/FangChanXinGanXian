@@ -2975,3 +2975,98 @@ color:#fff;
 	bottom:10px;
 	color:#fff;
 }
+.jiaJuMaiChang{
+	width: 256px;
+}
+.jiaJuMaiChang .zscxhdyh{
+	width: 100%;
+	margin-bottom:11px;
+}
+.jJMCDiv i{
+	position: absolute;
+	width: 228px; height: 33px;
+	background:rgba(0,0,0,.5);
+	left:1px;
+	bottom:2px;
+}
+.jJMCDiv b{
+	position: absolute;
+	left:11px;
+	bottom:12px;
+	color:#fff;
+}
+.jJMCDiv img{
+	border:solid 1px #dcdcdc;
+}
+.jiaJuMaiChang .zscybd{
+	padding: 11px 0 0 13px;
+}
+.diBanCiZhuan .p{
+	width:425px;
+}
+.diBanCiZhuan .pp{
+	margin-right:11px;
+}
+.diBanCiZhuan .pp i{
+	width:196px;
+	height: 33px;
+	background:rgba(0,0,0,.5);
+	position: absolute;
+	left:1px;bottom:2px;
+}
+.diBanCiZhuan .pp img{
+	border:solid 1px #dcdcdc;
+}
+.diBanCiZhuan .pp b{
+	position: absolute;
+	left:11px;
+	bottom:12px;
+	color:#fff;
+
+}
+.diBanCiZhuan2Row{
+	margin-left:15px;
+	width: 407px;
+}
+.diBanCiZhuan .t{
+	height: 36px;
+	background: #eee;
+	line-height: 2.5;
+	padding-left: 11px;
+	margin-bottom: 11px;
+	font-size: 14px;
+	color: #4485ab;
+	font-weight: bold;
+}
+.diBanCiZhuan ul{
+	line-height: 1.9;
+	list-style: square inside;
+	padding: 8px 0 8px 8px;
+}
+.diBanCiZhuan ul a{
+	color: #000;
+	font-size: 14px;
+}
+.diBanCiZhuan{
+	margin-bottom:11px;
+}
+.jJMCDivJia{
+	font-family: 微软雅黑;
+	padding-right:14px;
+}
+.jJMCDivJia span{
+	color: #bf0002;
+	font-size: 14px;
+}
+.jJMCDivJia span b{
+	font-size: 18px;
+}
+.jJMCDivJia i{
+	color: #72726f;
+	text-decoration: line-through;
+	float: right;
+	line-height: 1.9;
+}
+.jJMCDivJia{
+	margin:8px 0 15px;
+}
