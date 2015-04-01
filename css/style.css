@@ -2859,6 +2859,15 @@ color:#fff;
 	height: 41px;
 	margin-top:30px;
 }
+.zszsqytitle span{
+	position:absolute;
+	left:75px;
+	bottom:15px;
+	z-index: 2;
+	color:#fff;
+	font-size: 18px;
+	font-family: 微软雅黑;
+}
 .zszsqytitle img{
 	position:absolute;
 	left:0;
@@ -3069,4 +3078,68 @@ color:#fff;
 }
 .jJMCDivJia{
 	margin:8px 0 15px;
+}
+.zsLMCol1,.zsLMCol2{
+	width: 258px;
+}
+.zsLMCol2{
+	width: 552px;
+}
+.zslmc1ltdt{
+	border:solid 1px #dcdcdc;
+	margin-bottom:11px;
+}
+.zslmc1ltdt .t{
+	border-bottom:solid 1px #4384ab;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4385A8;
+	height: 33px;
+	line-height: 2.4;
+	text-indent: 1em;
+}
+.zslmc1ltdt .t span{
+	float: right;
+	padding:0 8px 0 0;
+}
+.zslmc1ltdt .t span a{
+	color: #898989;
+	font-size: 12px;
+	font-weight: normal;
+	
+}
+.zslmc1ltdt .c{
+	border-top:solid 1px #76b7de;
+	padding:13px;
+}
+.zslmc1ltdt .c ul{
+	line-height: 2;
+	list-style:square inside;
+}
+.zslmc1ltdt .c li{
+	white-space: nowrap;
+	overflow:hidden;
+}
+.zslmc1ltdt .c li a{
+	color: #000;
+}
+.zsLastMain{
+	margin-top:15px;
+}
+.zslmc1ltdt .f{
+	margin-bottom:5px;
+	width: 240px;
+}
+.zslmc1ltdt .c .f .z{
+	margin-left:8px;
+	width:117px;
+	line-height: 1.5;
+}
+.zslmc1ltdt .c .f .z .tt{
+	font-weight: bold;
+	color: #4384AA;
+	font-size: 14px;
+}
+.zslmc1ltdt .c .f .z .zz{
+	color: #72726F;
 }
