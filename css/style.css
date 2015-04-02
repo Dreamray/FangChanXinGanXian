@@ -3079,11 +3079,15 @@ color:#fff;
 .jJMCDivJia{
 	margin:8px 0 15px;
 }
-.zsLMCol1,.zsLMCol2{
+.zsLMCol1,.zsLMCol3{
 	width: 258px;
 }
 .zsLMCol2{
 	width: 552px;
+	margin-left:11px;
+}
+.zsLMCol2 .zslmc1ltdt{
+	border:0 none;
 }
 .zslmc1ltdt{
 	border:solid 1px #dcdcdc;
@@ -3142,4 +3146,127 @@ color:#fff;
 }
 .zslmc1ltdt .c .f .z .zz{
 	color: #72726F;
+}
+.zsLMCol2A .banner-big .bb-bd li{
+	width: 364px;
+	height: 233px;
+}
+.zsLMCol2A .banner-big a.bb-bd-t-d-bg,.zsLMCol2A .banner-big{
+	height: 28px;
+	width:100%;
+}
+.zsLMCol2A .banner-big a.bb-bd-t-d{
+	bottom:2px;
+}
+.zsLMCol2ALunBobd i{
+	height:28px;
+	width: 364px;
+	position:absolute;
+	bottom:1px;
+	left:1px;
+	background:rgba(0,0,0,.5);
+}
+.zsLMCol2ALunBobd b{
+	position: absolute;
+	bottom:9px;
+	left:11px;
+	color:#fff;
+}
+.zsLMCol2ALunBobd img{
+	border:solid 1px #dcdcdc;
+}
+.zsLMCol2ALunBohd{
+	position:absolute;
+	bottom:11px;
+	right:11px;
+}
+.zsLMCol2ALunBohd li{
+	float: left;
+	margin:0 1px;
+	width:6px;
+	height:6px;
+	border-radius:100%;
+	background:#c8c9c6;
+}
+.zsLMCol2ALunBohd li.on{
+	background:#fc8a00;
+}
+.zsLMCol2ALunBoRa i{
+	position: absolute;
+	height: 26px;
+	width: 175px;
+	bottom:2px;
+	left:1px;
+	background:rgba(0,0,0,.5);
+}
+.zsLMCol2ALunBoRa b{
+	position: absolute;
+	bottom:9px;
+	left:8px;
+	color: #fff;
+}
+.zsLMCol2ALunBoRa img{
+	border:solid 1px #dcdcdc;
+}
+.zsLMCol2ALunBoRa{
+	margin-bottom:10px;
+}
+.jsgzdzxwt .c ul{
+	list-style:none;
+
+}
+.jsgzdzxwt li{
+	padding-left:26px;
+}
+.jsgzdzxwt .z1{
+	background:url(../images/zs/4_03.jpg) left center no-repeat;
+}
+.jsgzdzxwt .z2{
+	background:url(../images/zs/4_06.jpg) left center no-repeat;
+}
+.jsgzdzxwt .z3{
+	background:url(../images/zs/4_08.jpg) left center no-repeat;
+}
+.jsgzdzxwt .z4{
+	background:url(../images/zs/4_10.jpg) left center no-repeat;
+}
+.jsgzdzxwt .z5{
+	background:url(../images/zs/4_12.jpg) left center no-repeat;
+}
+.zsjxzxzb span{
+	color: #898989;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 2.8;
+}
+.zsjxzxzb span i{
+	color: #B20102;
+	font-weight: bold;
+	font-size: 11px;
+}
+.zsjxzxzb table{
+	width: 100%;
+	border-bottom:dotted 1px #dcdcdc;
+}
+.zsjxzxzb .c td{
+	padding:8px 0;
+}
+.zsjxzxzb .t{
+	border-bottom:dotted 1px #dcdcdc;
+}
+.zsjxzxzb .c{
+	padding:0 13px;
+}
+.zsjxzxzb .c .t{
+	text-indent: 0;
+}
+.zsjxzxzb .c .tai{
+	text-align: right;
+}
+.zsFaBuZhaoBiao{
+	padding:11px 0;
+	text-align: center;
+}
+.jsgzdzxwt .c ul{
+	line-height: 2.75;
 }
