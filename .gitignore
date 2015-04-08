@@ -5,3 +5,5 @@ Thumbs.db
 ehthumbs.db
 *.bak
 *.gitignore.bak
+*.rar
+*.zip

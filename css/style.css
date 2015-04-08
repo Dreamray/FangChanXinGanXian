@@ -3348,3 +3348,62 @@ color:#fff;
 .xsGDFT .list-bd{
 	border:0 none;
 }
+.xsTJSP{
+	width:825px;
+}
+.xsTJSP .tbtj-t-bg{
+	background:url(../images/xs/1_03.jpg) center 2px no-repeat;
+
+}
+.xsTJSP .tbtj-list{
+	padding:2px 0 5px 9px;
+}
+.xsTJSP .tbtj-a{
+	margin:8px 5px ;
+	width:190px;
+	height:200px;
+}
+.xsTJSP .tbtj-a .pic .tbtj-p-bg{
+	width:184px;
+}
+.xsTJSPBox .ranking-hotzt{
+	margin-top:16px;
+}
+.xsJPXZL .ranking-title li{
+	padding:0 10px 0 8px;
+}
+.xsJPXZL .ranking-title .rt-hd{
+	padding:0;
+}
+.xstgdt .hottopic .title-more{
+	border:0 none;
+
+}
+.xstgdt .hottopic-list, .hottopic-link{
+	border:0 none;
+}
+.xstgdt .hottopic{
+	margin:0;
+}
+.xstgdt .r{
+	color: #c40200;
+}
+.xstgdt .r a{
+	color: #c40200;
+}
+.zzML{
+	width: 258px;
+	margin-right:11px;
+}
+.zzMR{
+	width: 829px;
+}
+.zzML .r,.zzML .r a{
+	color: #fe0200;
+}
+.zzML .pic img{
+	border:solid 1px #dcdcdc;
+}
+.zzmrl{
+	width: 553px;
+}
