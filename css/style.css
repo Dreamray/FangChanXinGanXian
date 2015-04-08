@@ -298,7 +298,7 @@
     right: 15px;}
 .gfzy-col2 .bszx-bskd .b-b-hd li.sydc{width:451px;text-align:left;padding-left:15px;cursor:auto;}
 .gfzy-col2 .bszx-bskd .b-b-hd ul.sydc-ul{width:451px;}
-.bszx-bskd .b-b-hd li:hover{border-color:#dcdcdc;color:#4782aa;background:url("../images/villa_index_98.jpg") repeat-x scroll center 2px rgba(0, 0, 0, 0)}
+/*.bszx-bskd .b-b-hd li:hover{border-color:#dcdcdc;color:#4782aa;background:url("../images/villa_index_98.jpg") repeat-x scroll center 2px rgba(0, 0, 0, 0)}*/
 .dcrw .column-1 .list .detail{padding-left:11px;}
 .gfzy-col3{width:345px;}
 .dcrw .detail a{bottom:0px;
@@ -3269,4 +3269,82 @@ color:#fff;
 }
 .jsgzdzxwt .c ul{
 	line-height: 2.75;
+}
+.xsCJDTBox .gdft .pic span{
+	width:88px;
+	padding:0;
+}
+.xsCJDTBox .hot-z-list{
+	height: 366px;
+}
+.xsCJDTBox .gdft{
+	margin:0;
+}
+.xsZHT{
+	margin-top:18px;
+}
+.dsqsjfxzzyue .col1b0408{
+	padding-right:14px;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX{
+	list-style: none;
+	text-indent: 0;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX>li .detail{
+	width: 166px;
+	line-height: 1.8;
+	color: #70716c;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX>li .d04081653{
+	width: 180px;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX>li{
+	padding:9px;
+	white-space:normal;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX .b-b-first .detail span{
+	color: #c50100;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX .b-b-first .detail span a{
+	color: #4384aa;
+	font-weight: normal;
+	font-size: 12px;
+	position: absolute;
+	bottom:10px;
+	right:8px;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX .b-b-first{
+	border-bottom:dotted 1px #dcdcdc;
+	padding-bottom:5px;
+}
+.xsZHTGWZXBox ul.xsZHTGWZX>li ul li a{
+	color: #4584aa;
+	font-size: 12px;
+}
+.bszx-bskd .b-b-hd li.z04081704{
+	background:none;
+	border:0 none;
+	cursor:auto;
+}
+.bszx-bskd .b-b-hd li.z04081704:hover{
+	color:#4384ac;
+}
+.xsGDFT .list-bd li{
+	height:auto;
+	border:0 none;
+}
+.xsGDFT .detail{
+	width:270px;
+	line-height: 2;
+}
+.xsGDFT .detail span{
+	color:#000;
+}
+.xsGDFT .list-bd ul{
+	line-height: 1.8;
+	padding:5px 0 8px 8px;
+	list-style: square inside;
+}
+.xsGDFT .list-bd{
+	border:0 none;
 }
