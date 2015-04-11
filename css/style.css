@@ -3523,3 +3523,166 @@ color:#fff;
 .zzJJCG .ul2a2 ul{
 	line-height: 2.24;
 }
+.ztPPGSTJ .hottopic ul{
+	list-style:none;
+}
+.ztPPGSTJ{
+	width:258px;
+	height: 448px;
+}
+.ztPPGSTJ li{
+	line-height: 1;
+	padding-bottom:4px;
+}
+.ztCTZX li a i{
+	width: 826px;
+	height: 104px;
+}
+.ztCTZX li a span{
+	width: 650px;
+	line-height: 1.8;
+	font-weight: normal;
+	font-size: 12px;
+}
+.ztCTZX li a span b{
+	font-family: 微软雅黑;
+	font-size:22px;
+	font-weight: bold;
+}
+.ztzxtk .cq{
+	margin:8px 0 0 13px;
+	width:1077px;
+}
+.ztzxtkC{
+	border-style:solid;
+	border-width:0 1px 1px;
+	border-color:#dcdcdc;padding-top:1px;
+}
+.ztzxtkC .col1,.ztzxtkC .col2,.ztzxtkC .col3{
+	margin-left:13px;
+}
+.ztzxtkC .col1>div,.ztzxtkC .col3>div{
+	margin-bottom:8px;
+}
+.ztzxtkC .col1 i,.ztzxtkC .col2 i,.ztzxtkC .col3 i{
+	width:256px;
+	height: 35px;
+	position:absolute;
+	left:1px;
+	bottom:1px;
+	background:rgba(0,0,0,.5);
+}
+.ztzxtkC .col2 i{
+	width:528px;
+}
+.ztzxtkC .col1 b,.ztzxtkC .col2 b,.ztzxtkC .col3 b{
+	position: absolute;
+	left:11px;
+	bottom:13px;
+	color:#fff;
+}
+.ztzxtkC img{
+	border:solid 1px #dcdcdc;
+}
+.ztzxtkC .img{
+	padding-top:11px;
+}
+.ztCPTTK{
+	/*margin-top:11px;
+	border-style:none solid solid;
+	border-width:1px;
+	border-color:#dcdcdc;*/
+	padding-top:11px;
+}
+.ztCPTTK .col1{
+	width: 242px;
+	padding-left:13px;
+}
+.ztCPTTK .col1 .t{
+	width: 240px;
+	height: 33px;
+	background:url("../images/villa_index_98.jpg") repeat-x scroll center 2px;
+	border:solid 1px #dcdcdc;
+	margin:9px 0;
+	text-indent: 1em;
+	font-weight: bold;
+	font-size: 14px;
+	color: #4483aa;
+	line-height: 2.3;
+}
+.ztCPTTK .col1 .tt{
+	line-height: 2;
+	padding:2px 0;
+	border-top:dotted 1px #dcdcdc;
+}
+.ztCPTTK .col1 .tt span{
+	color:#4184aa;
+}
+.ztCPTTK .col1 .tt a{
+	color: #000;
+	padding:0 4px;
+}
+.ztCPTTK .col2{
+	width: 554px;
+	padding:9px 0 0 15px;
+}
+.ztCPTTK .col2 ul{
+	width:570px;
+}
+.ztCPTTK .col2 li{
+	float:left;
+	position: relative;
+	margin:0 5px 11px 0;
+}
+.ztCPTTK .col2 li img{
+	border:solid 1px #dcdcdc;
+}
+.ztCPTTK .col2 li i,.ztCPTTK .col3 li i{
+	position: absolute;
+	height: 30px;
+	width: 179px;
+	background:rgba(0,0,0,.5);
+	bottom:1px;
+	left:1px;
+}
+.ztCPTTK .col2 li b,.ztCPTTK .col3 li b{
+	position: absolute;
+	left:11px;
+	bottom:11px;
+	color:#fff;
+}
+.ztCPTTKc{
+	border-style:none solid solid;
+	border-width:1px;
+	border-color:#dcdcdc;
+}
+.ztCPTTK .col3{
+	width: 246px;
+	padding:9px 0 0 15px;
+}
+.ztCPTTK .col3 li img{
+	border:solid 1px #dcdcdc;
+}
+.ztCPTTK .col3 li{
+	position:relative;
+}
+.ztCPTTK .col3 li i{
+	width:244px;
+}
+.ztCPTTK .col3 .l{
+	line-height: 1.9;
+	padding-top:5px;
+	list-style:square inside;
+}
+.ztCPTTK .col3 .l li a{
+	color:#000;
+}
+.ztWYSJ .col2 li i{
+	width: 159px;
+}
+.ztWYSJ .col2 ul,.ztWYSJ .col2{
+	width: 100%;
+}
+.ztWYSJ .col2 li{
+	margin:5px 20px 15px 0;
+}
