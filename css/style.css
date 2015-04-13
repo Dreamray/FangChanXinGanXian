@@ -3686,3 +3686,43 @@ color:#fff;
 .ztWYSJ .col2 li{
 	margin:5px 20px 15px 0;
 }
+.zvSPSY{
+	height: 50px;
+	background:url(../images/zv/1_05.jpg) center repeat-x;
+	font-size: 14px;
+	padding:0 0 0 80px;
+	line-height: 3.5;
+	margin-top:15px;
+}
+.zvSPSYl{
+	width:59px;
+	height: 64px;
+	left:0;
+	top:-5px;
+	background:url(../images/zv/1_03.jpg) center 1px no-repeat;
+	
+}
+.zvSPSY span{
+	color: #4383ad;
+	font-weight: bold;
+	font-size: 14px;
+}
+.zvSPSY a{
+	color: #878787;
+	padding:0 0 0 42px;
+}
+.zvSPSYr{
+	width: 22px;
+	height: 50px;
+	right:0;
+	top:0px;
+	background:url(../images/zv/2_06.jpg) center no-repeat;
+}
+.zvJRRRD{
+	margin-top: 15px;
+}
+.zvJRRRD .c1{
+	width:406px;
+	height:312px;
+	margin:0 20px 0 5px;
+}
