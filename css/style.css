@@ -3922,3 +3922,149 @@ background:url("../images/zv/5_07.jpg") no-repeat scroll 2px center;
 .i05141728 td a{
 	color:#000;
 }
+/*.a15427 .t .w{
+	width:611px
+}*/
+.a15427 .t .img img{
+	border:0 none;
+}
+.exleft{
+	width: 828px;
+}
+.exleft h1{
+	font-family: 微软雅黑;
+	font-size: 24px;
+	font-weight: normal;
+	padding-top: 30px;
+}
+.exh1timeview{
+	color:#b5b5b5;
+	padding:20px 0 10px;
+	border-bottom:solid 1px #e5e5e5;
+	margin-bottom: 26px;
+}
+.exh1timeview span{
+	padding-left: 30px;
+
+}
+.exh1timeview span i{
+	padding:0 5px;
+	color:#4384ab;
+}
+.exhuan .bsbhd li{
+	margin:7px 6px 0 0;
+}
+.exdetail{
+	width: 455px;
+	margin-top: -11px;
+}
+.exxx{
+	line-height: 2;
+}
+.exxx span{
+	color:#898989;
+	padding-right:15px;
+}
+.exxx b{
+	color: #eb0000;
+	font-size: 24px;
+}
+.exxx a{
+	color: #7ea5bd;
+}
+/*.exxx table{
+	width: 100%;
+}*/
+.w1541431{
+	padding-right:40px;
+}
+.extellx{
+	width: 464px; height: 61px;
+	background:#f7f7f7;
+	padding-left:15px;
+	color:#4284a7;
+	font-size: 22px;
+	font-family: 微软雅黑;
+	line-height: 2.6;
+	margin:10px 0;
+}
+.extellx img{
+	vertical-align: middle;
+	padding-right:15px;
+}
+.extellx span{
+	font-size: 19px;
+}
+.exjbsc a{
+	color: #8a8a8a;
+}
+.exjbsc img{
+	vertical-align:middle;
+	padding-right:5px;
+}
+.exmzz{
+	margin-top:20px;
+}
+.exhuandet{
+	padding-bottom:20px;
+	border-bottom:dotted 1px #dcdcdc;
+}
+.exmzzzp{
+	line-height: 2;
+}
+.exmzzzp b{
+	font-weight: bold;
+}
+.exmzzzp p{
+	margin-bottom:18px;
+}
+.exfwtp{
+	border-bottom:solid 2px #e5e5e5;
+	margin-bottom:20px;
+}
+.exfwtpt{
+	border-bottom:solid 1px #4384ab;
+	width: 77px;
+	margin-bottom:-2px;
+}
+.exfwtpt2{
+	border-bottom:solid 1px #76b7de;
+	color: #4384aa;
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: .7em;
+	line-height: 3;
+}
+.exdtarea img{
+	border:solid 1px #dcdcdc;
+}
+.extb{
+	width: 230px;
+}
+.extb>a{
+	color: #4583ad;
+	font-size: 14px;
+	background:#f7f7f7;
+	padding:3px 50px 3px 9px;
+	display: block;
+	border:solid 1px #dcdcdc;
+}
+.extbtb{
+	width: 250px;
+}
+.extbtb li{
+	float: left;
+	margin:18px 17px 0 11px;
+	text-align: center;
+}
+.extbtb li a{
+	color: #8a8a8a;
+}
+.exdizi img{
+	vertical-align:middle;
+	padding-right:5px;
+}
+.exdizi{
+	color:#888888;
+	font-size: 14px;
+}
