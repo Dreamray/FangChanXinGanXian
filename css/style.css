@@ -3979,7 +3979,7 @@ background:url("../images/zv/5_07.jpg") no-repeat scroll 2px center;
 	padding-right:40px;
 }
 .extellx{
-	width: 464px; height: 61px;
+	height: 61px;
 	background:#f7f7f7;
 	padding-left:15px;
 	color:#4284a7;
@@ -4067,4 +4067,138 @@ background:url("../images/zv/5_07.jpg") no-repeat scroll 2px center;
 .exdizi{
 	color:#888888;
 	font-size: 14px;
+}
+.exdizi input{
+	width: 206px; height: 23px;
+	padding-left:5px;
+	margin-right:33px;
+	border:solid 1px #e5e5e5;
+}
+.exdizi a{
+	padding:4px 8px;
+	background:#e5e5e5;
+	border:solid 1px #aaaaaa;
+	font-size: 12px;
+	color: #898989;
+	margin-right:9px;
+}
+.exlmess{
+	width: 826px;
+	margin-top:15px;
+}
+.exlmess .related-title i{
+	float: right;
+	padding-right:11px;
+}
+.exlmess .related-title i a{
+	color: #898989;
+}
+.exlmess .related-list li a{
+	color: #000;
+	font-size: 12px;
+}
+.exlmess .related-list{
+	line-height: 1.8;
+	padding:8px 0 25px 18px;
+}
+.exlytt{
+	border-top:dotted 1px #e5e5e5;
+}
+.exlytt img{
+	margin-top:-5px;
+}
+.exlyform{
+	padding:30px;
+	font-size: 14px;
+}
+.exlyform input{
+	width: 174px; height: 33px;
+	
+}
+.exlyform textarea{
+	width: 479px; height: 149px;
+}
+.exlyform input,.exlyform textarea{
+	vertical-align:middle;
+	margin-right:11px;
+	margin-bottom:15px;
+	border:solid 1px #dcdcdc;
+}
+.exlyform span{
+	padding-bottom:11px;
+}
+.exlyform b{
+	color: #898989;
+	font-size: 12px;
+}
+.exlyform b i{
+	color:red;
+}
+.extbq{
+	background:#f7f7f7;
+	padding:11px;
+	margin-bottom:11px;
+	border:solid 1px #e4e4e4;
+}
+.extbqpic img{
+	border:solid 1px #e4e4e4;
+}
+.exright{
+	width: 258px;
+	padding-top:40px;
+}
+.extbqzi{
+	width: 117px;
+	line-height: 2.8;
+}
+.extbqzi>span{
+	font-size: 14px;
+	color: #4384aa;
+	font-weight: bold;
+}
+.extbqzi>img{
+	margin-right:5px;
+}
+.extbqzi>b{
+	color:#71716e;
+}
+.extbqzi>i a{
+	color: #4384aa;
+}
+.exfdcgss{
+	color: #8a8a8a;
+	line-height: 2.2;
+	padding:2px 0 7px;
+	border-bottom:dotted 1px #e4e4e4;
+}
+.exfdcgss img{
+	margin-right:5px;
+}
+.exgjjwad{
+	padding:11px 0;
+border-bottom:dotted 1px #e4e4e4;
+}
+.exgjjwad i a{
+	color: #898989;
+	float: right;
+	
+}
+.exjsdipaqy{
+	padding-top:7px;
+}
+.exjsdipaqy .z{
+	width: 105px;
+	color: #898989;
+	line-height: 2;
+}
+.exjsdipaqy .z span{
+ color: #4283aa;
+}
+.exjsdipaqy .z b{
+	color: #ec0200;
+	font-size: 18px;
+	padding-right:5px;
+}
+.exjsdiplayths{
+	padding-top:15px;
 }
