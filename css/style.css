@@ -4264,3 +4264,78 @@ border-bottom:dotted 1px #e4e4e4;
 	font-weight: bold;
 	line-height: 2.3;
 }
+.zttrdt{
+	width: 100%;
+	font-size: 14px;
+	line-height: 2.3;
+	text-indent: 1em;
+	margin:35px 0 0 0;
+}
+.zttrdt span{
+	z-index:999;
+	position: relative;
+	color: #fff;
+	font-weight: bold;
+
+}
+.zttrdt small{
+	float: right;
+	padding-right:11px;
+	font-size: 12px;
+	color: #898989;
+	padding-top:3px;
+}
+.zttrdtc{
+	border-style:none solid solid;
+	border-width:1px;
+	border-color:#dcdcdc;
+	width:1100px;
+}
+.zttrdtc .imgbox{
+	border:0 none;
+}
+.zttrdtc .img{
+	padding-left:6px;
+}
+.zttrdtc .img li{
+	padding:0 3px;
+}
+.zttrdtc .img li i{
+	left:5px;
+	bottom:2px;
+	width:208px;
+}
+.zttrdtc .img li b{
+	bottom:14px;
+}
+.zttjjhdl{
+	width: 542px;
+	border:solid 1px #d5d5d5;
+}
+.zttjjhd{
+	margin-top: 11px;
+}
+.zttjjhdl ul{
+	padding:11px 11px 11px 20px;
+	font-size: 4px;
+	list-style:square outside;
+	text-indent: 2em;
+	line-height: 2;
+}
+.zttjjhdl ul li a{
+	font-size: 14px;
+	color: #000;
+
+}
+.zttjjhdl ul li span{
+	font-size: 14px;
+	color: #70716e;
+	float: right;
+}
+.zttpplm{
+	margin-top:11px;
+	border:solid 1px #d5d5d5;
+}
+.zttpplm .zttjjhdl{
+	border:0 none;
+}
