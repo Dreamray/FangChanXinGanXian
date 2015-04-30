@@ -4295,7 +4295,7 @@ border-bottom:dotted 1px #e4e4e4;
 	border:0 none;
 }
 .zttrdtc .img{
-	padding-left:6px;
+	padding-left:7px;
 }
 .zttrdtc .img li{
 	padding:0 3px;
@@ -4338,4 +4338,98 @@ border-bottom:dotted 1px #e4e4e4;
 }
 .zttpplm .zttjjhdl{
 	border:0 none;
+}
+.zzbfbzb2{
+	height: 34px;
+	width: 970px;
+	background:url(../images/zz/2_06.jpg) repeat-x center 2px;
+	border:solid 1px #d5d5d5;
+}
+.zzbfbzb2 a{
+	display:inline-block;
+	height:34px;
+	width:107px;
+	background:url(../images/zz/3_08.jpg) no-repeat right 2px;
+	color: #4483ab;
+	font-size: 14px;
+	float: left;
+	text-align: center;
+	line-height: 2.3;
+}
+.zzbfbzb2 a:hover{
+	text-decoration: none;
+	background:url(../images/zz/1_03.jpg) no-repeat center;
+	color: #fff;
+}
+.zzbfbzb{
+	padding:11px 0;
+}
+.zzbfbzb img{
+	float: right;
+	margin-top:2px;
+}
+.zzblist{
+	border-style:solid solid none;
+	border-width:1px;
+	border-color:#e5e5e5;
+	width: 826px;
+	margin-bottom:30px;
+}
+.zzbonelist{
+	border-style:none none solid;
+	border-width:1px;
+	border-color:#e5e5e5;
+	padding:24px;
+}
+.zzbonelist img{
+	margin-top:11px;
+}
+.zzbonelistlt{
+color: #4285ab;
+font-size: 18px;
+padding-bottom:18px;
+font-family: 微软雅黑;
+}
+.zzbonelistld{
+	color: #898989;
+}
+.zzbonelist1{
+	padding-bottom:18px;
+	border-bottom:dotted 1px #e4e4e4;
+}
+.zzbonelist2{
+	line-height: 2;
+	padding:11px 0;
+}
+.zzbonelist3{
+	background:#eeeeee;
+	padding:8px;
+}
+.zzbonelist3l{
+	border-right:dotted 1px #c0c0c0;
+	padding:20px 0 23px 8px;
+	color: #4383ad;
+	font-size: 18px;
+	font-family: 微软雅黑;
+	width: 500px;
+}
+.zzbonelist3l span{
+	font-size: 26px;
+	font-style:italic;
+
+}
+.zzbonelist3r{
+	width:230px;
+	color: #898989;
+	line-height: 1.8;
+	padding-top:9px;
+}
+.zzbtab2b{
+	margin: 15px 0 6px;
+}
+.zzbtab2b td{
+	vertical-align:top;
+}
+.zbbppgsttt{
+	padding:15px 0 8px 15px;
 }
