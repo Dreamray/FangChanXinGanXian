@@ -4433,3 +4433,136 @@ font-family: 微软雅黑;
 .zbbppgsttt{
 	padding:15px 0 8px 15px;
 }
+.actl{
+	width: 258px;
+}
+.actr{
+	width:829px;
+}
+.lph-t ul li.actrank{
+	padding-right:5px;
+}
+.ranking .actqj .z{
+	padding-left:70px;
+}
+.ranking .actqj .r{
+	 padding:0;
+	 float:right;
+}
+.actqj2{
+	line-height: 2.5;
+}
+.actqj2 table b{
+	color: #70716e;
+}
+.actlpdsph .rt-hd{
+	color: #fff;
+}
+.actlpdsph .on{
+	color: #4484aa;
+}
+.actnewst{
+	margin-bottom:11px;
+}
+.actnewsttl{
+	height: 34px;
+	background:url(../images/hd/2_03.jpg) repeat-x center 2px;
+	width:168px;
+	border:solid 1px #d5d5d5;
+	color: #4184a9;
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 1em;
+	line-height: 2.3;
+}
+.actnewsttr{
+	height: 35px;
+	background:#76b7de;
+	border-top:solid 1px #4384ab;
+	width: 659px;
+}
+.actnewsttl img{
+	position:absolute;
+	top:11px;
+	right:-1px;
+
+}
+.dsqhuan .column-2 .s150430{
+	top:185px;
+}
+.actnewsttc{
+	border-style:none solid solid;
+	border-width:1px;
+	border-color:#dcdcdc;
+	padding:18px;
+}
+.actnewsttcl{
+	width: 406px;
+	font-size: 14px;
+}
+.actnewsttcl1{
+	color: #db0000;
+	font-weight: bold;
+	line-height: 1.7;
+}
+.actnewsttcl2{
+	text-indent: 2em;
+	line-height: 2;
+	padding:11px 0;
+}
+.actnewsttcl2 a{
+	position: absolute;
+	right:0;
+	bottom:8px;
+	color: #4084ac;
+}
+.actnewsttcl3{
+	font-size: 12px;
+	color: #707070;
+}
+.actnewsttcl3 img{
+	vertical-align: middle;
+	margin-right:30px;
+}
+.acthrig .list-bd{
+	border:0 none;
+	height:auto;
+}
+.acthrig .list-bd li{
+	height: 238px;
+	width: 371px;
+}
+.acthrig .list-bd li a.shequ-a-bg{
+	width: 371px;
+}
+.acthrig .list-bd ul.bssqjhul{
+	padding:0;
+}
+.acthrig .list-hd{
+	bottom:11px;
+	right:5px;
+}
+.acthottcl1{
+	color: #000;
+}
+.acthottcl1 span{
+	color: #4485ab;
+}
+.actnewsttc36{
+	padding:20px 0;
+	border-bottom:dotted 1px #e5e5e5;
+}
+.actnewsttc39{
+	padding-top:0;
+}
+.acthuax .zcjdt{
+	border-bottom:solid 1px #4384ab;
+}
+.acthuax ul{
+	border-top:solid 1px #76b7de;
+	padding:20px 0 20px 27px;
+}
+/*.acthuax ul li{
+	width: 185px;
+	height: 123px;
+}*/
