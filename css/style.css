@@ -4562,7 +4562,40 @@ font-family: 微软雅黑;
 	border-top:solid 1px #76b7de;
 	padding:20px 0 20px 27px;
 }
-/*.acthuax ul li{
-	width: 185px;
-	height: 123px;
-}*/
+
+.yhhottj{
+	margin:0 0 10px;
+}
+.hotloupan li .intro .yhtp{
+	color: #d30814;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 微软雅黑;
+}
+.hotloupan li .intro .yhtyj{
+	padding-left:70px;
+	text-decoration: line-through;
+}
+.hotloupan li .yhtbm img{
+	padding-left: 25px;
+}
+.hotloupan li .yhtjh{
+	padding: 0;
+}
+.yhthl li{
+	height:auto;
+}
+.yhtzxdt{
+	width:258px;
+}
+.yhtzxdt .hot-z-list{
+	height: 260px;
+	line-height: 2.4;
+}
+.yiwd10w .zi .yhttao{
+	font-size: 14px;
+}
+.hotloupan li .yhtxint{
+	padding-top:0;
+	border-bottom:dotted 1px #dadada;
+}

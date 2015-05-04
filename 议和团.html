@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>议和团</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+    <!--=================顶部条start====================-->
+    <div class="topbar-bg">
+        <div class="topbar cf">
+            <div class="loginBox pr fl">
+                <form action="">
+                    <label class="logUsername pa">用户名：</label>
+                    <input class="logInput1 pa" type="text" name="username">
+                    <label class="logPassword pa">密码：</label>
+                    <input class="logInput2 pa" type="text" name="password">
+                    <input id="login" type="submit" value="登录">
+                    <div class="reg pa"><a href="#">注册</a></div>
+                </form>
+            </div>
+            <div class="qq-c fr">
+                <div class="qq"><a href="#">客服QQ：21487985</a></div>
+                <div class="addFav"><a href="#">加入收藏</a></div>
+                <div class="c-us"><a href="#">联系我们</a></div>
+                <div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+            </div>
+        </div>
+    </div>
+    <!--=================顶部条end====================-->
+    <!--==================头部（logo到导航电话）start======================-->
+    <div class="headerBox">
+        <div class="headerTop cf">
+            <div class="logo">
+                <a href="#"><img src="images/villa_index_34.jpg" width="178"></a>
+            </div>
+            <div class="city pr">
+                <div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16">
+                    <br> [切换城市]
+                </div>
+                <!--<div class="chooseCity pa"><span><a href="#">济南</a></span><span><a href="#">青岛</a></span><span><a href="#">泰安</a></span></div>-->
+            </div>
+            <div class="searchBox">
+                <div class="slideSearchBox pr">
+                    <div class="hd">
+                        <ul id="sSBMenu" class="cf">
+                            <li class="ssbmli two"><a href="#">楼盘</a></li>
+                            <li class="ssbmli three"><a href="#">二手房</a></li>
+                            <li class="ssbmli four"><a href="#">家居建材</a></li>
+                            <li class="ssbmli two"><a href="#">招标</a></li>
+                            <li class="ssbmli two"><a href="#">文章</a></li>
+                            <li class="ssbmli two"><a href="#">论坛</a></li>
+                            <li class="ssbmli three"><a href="#">惠房卡</a></li>
+                            <li class="ssbmli four"><a href="#">房屋定制</a></li>
+                            <div class="chou-mapSearch pa cf">
+                                <div class="chou fl"><a href="#">抽奖</a></div>
+                                <div class="mapSearch fr"><a href="#">电子地图找房</a> </div>
+                            </div>
+                        </ul>
+                        <script>
+                        jQuery("#sSBMenu").slide({
+                            trigger: "click",
+                            titCell: ".ssbmli"
+                        });
+                        </script>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li>
+                                <div class="searchSelect pr">
+                                    <div class="hd2">
+                                        <ul class="cf">
+                                            <form action="#">
+                                                <li class="hd2-1">区域</li>
+                                                <select class="sSH1 pa">
+                                                    <option value="">区域1</option>
+                                                    <option value="">区域2</option>
+                                                    <option value="">区域3</option>
+                                                </select>
+                                                <li class="hd2-2">版块</li>
+                                                <select class="sSH2 pa">
+                                                    <option value="">版块1</option>
+                                                    <option value="">版块2</option>
+                                                    <option value="">版块3</option>
+                                                </select>
+                                                <li class="hd2-3">物业类型</li>
+                                                <select class="sSH3 pa">
+                                                    <option value="">物业类型1</option>
+                                                    <option value="">物业类型2</option>
+                                                    <option value="">物业类型3</option>
+                                                </select>
+                                                <div class="sSInput">
+                                                    <input type="text" name="" placeholder="关键字">
+                                                </div>
+                                                <div class="sSSubm">
+                                                    <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+                                                </div>
+                                            </form>
+                                        </ul>
+                                    </div>
+                                    <div class="bd2">
+                                        <ul class="bd2-1">
+                                            <li>区域1</li>
+                                            <li>区域2</li>
+                                            <li>区域3</li>
+                                        </ul>
+                                        <ul>
+                                            <li>版块1</li>
+                                            <li>版块2</li>
+                                            <li>版块3</li>
+                                        </ul>
+                                        <ul>
+                                            <li>物业1</li>
+                                            <li>物业2</li>
+                                            <li>物业3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                jQuery(".searchSelect").slide({
+                                    trigger: "click",
+                                    titCell: ".hd2 li",
+                                    mainCell: ".bd2"
+                                });
+                                $(".bd2-1").css("display", "none");
+                                $(".hd2-1").click(function() {
+                                    $(".bd2-1").css("display", "block");
+                                });
+                                $(".sSH1").change(function() {
+                                    $(".hd2-1").text($(".sSH1").find("option:selected").text());
+                                });
+                                $(".sSH2").change(function() {
+                                    $(".hd2-2").text($(".sSH2").find("option:selected").text());
+                                });
+                                $(".sSH3").change(function() {
+                                    $(".hd2-3").text($(".sSH3").find("option:selected").text());
+                                });
+                                </script>
+                            </li>
+                        </ul>
+                        <div class="hotSearch"><span class="hS1"><a href="#">地铁沿线周边盘</a></span><span><a href="#">品牌楼盘小户型</a></span><span><a href="#">35平米高租售比两遍精品小户</a></span><span><a href="#">招商泰格公寓</a></span><span><a href="#">送面积盘</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainNav cf">
+            <div class="mNSubNav mNSN1 fl">
+                <div class="mNSNTitle fl"><a href="#">房产</a></div>
+                <div class="mNSN-a mNSNa1 fr">
+                    <div><span><a href="#">资讯</a></span><span><a href="#">楼盘</a></span><span><a href="#">写字楼商铺</a></span><span><a href="#">二手房</a></span></div>
+                    <div><span><a href="#">别墅</a></span><span><a href="#">电商</a></span><span><a href="#">地产圈</a></span><span><a href="#">专题</a></span><span><a href="#">活动</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN2 fl">
+                <div class="mNSNTitle fl"><a href="#">装饰</a></div>
+                <div class="mNSN-a mNSNa2 fr">
+                    <div><span><a href="#">资讯</a></span><span><a href="#">招标</a></span><span><a href="#">宝典</a></span><span><a href="#">装饰公司</a></span></div>
+                    <div><span><a href="#">材料</a></span><span><a href="#">图库</a></span><span><a href="#">视频</a></span><span><a href="#">议和团</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN3 fl">
+                <div class="mNSNTitle fl"><a href="#">社区 </a></div>
+                <div class="mNSN-a mNSNa3 fr">
+                    <div><span><a href="#">房产论坛</a></span><span><a href="#">生活</a></span><span><a href="#">业主论坛</a></span></div>
+                    <div><span><a href="#">家居论坛</a></span><span><a href="#">营销</a></span><span><a href="#">家居设计</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN4 fr"><img src="images/villa_index_60.jpg" width="166" alt="电话：028-4556897"></div>
+        </div>
+    </div>
+    <!--==================头部（logo到导航电话）end======================-->
+    <!--===================头部以下到最后 start====================-->
+    <div class="wrapper">
+        <div class="container">
+            <div class="zsprod">
+                <span><a href="">地板瓷砖</a></span>
+                <span><a href="">热水器</a></span>
+                <span><a href="">家电空调</a></span>
+                <span><a href="">油漆涂料</a></span>
+                <span><a href="">厨具橱柜</a></span>
+                <span><a href="">门窗</a></span>
+                <span><a href="">家具家私</a></span>
+                <span><a href="">吊顶</a></span>
+                <span><a href="">卫浴洁具</a></span>
+                <span><a href="">家居家饰</a></span>
+                <span><a href="">装饰五金</a></span>
+                <span><a href="">窗帘布艺</a></span>
+                <span><a href="">采暖设备</a></span>
+                <span><a href="">照明灯具</a></span>
+                <span><a href="">纯水设备</a></span>
+                <span><a href="">木材板材</a></span>
+                <span><a href="">胶粘剂</a></span>
+            </div>
+            <div class="main cf">
+                <div class="ad1100" style="padding-bottom:40px;">
+                    <a href="#"><img src="images/yh/1_03.jpg" width="1100"></a>
+                </div>
+                <div class="hotloulogin cf">
+                    <div class="hotloupan yhthl fl">
+                        <div class="dshotloutitle zttrdt yhhottj pr">
+                            <img src="images/ztt/1_03.jpg">
+                            <span>热门材料推荐</span>
+                            <small>更多»</small>
+                        </div>
+                        <ul class="cf">
+                            <li>
+                                <div>
+                                    <div class="pic pr">
+                                        <a href=""><img src="images/ds/ds2_21.jpg" alt="" width="245" height="165"><i></i><b>华泽天下</b><img class="hot" src="images/ds/ds_17.png"></a>
+                                    </div>
+                                    <div class="intro">
+                                        惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span>
+                                    </div>
+                                    <div class="juhui yhtjh"></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img src="images/ds/ds2_27.jpg" height="23" width="62" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="pic pr">
+                                        <a href=""><img src="images/ds/ds2_21.jpg" alt="" width="245" height="165"><i></i><b>华泽天下</b><img class="hot" src="images/ds/ds_17.png"></a>
+                                    </div>
+                                    <div class="intro">
+                                        惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span>
+                                    </div>
+                                    <div class="juhui yhtjh"></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img src="images/ds/ds2_27.jpg" height="23" width="62" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="pic pr">
+                                        <a href=""><img src="images/ds/ds2_21.jpg" alt="" width="245" height="165"><i></i><b>华泽天下</b><img class="hot" src="images/ds/ds_17.png"></a>
+                                    </div>
+                                    <div class="intro">
+                                        惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span>
+                                    </div>
+                                    <div class="juhui yhtjh"></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img src="images/ds/ds2_27.jpg" height="23" width="62" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logingjzc yhtzxdt fr">
+                        
+					<div class="hot-zhuanti">
+						<div class="hot-z-top">资讯动态</div>
+						<div class="hot-z-list">
+							<ul>
+								<li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                <li><a href="#">泰安最新房产动态播报</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad1100"><a href="#"><img width="1100" src="images/villa_index_66.jpg"></a></div>
+                <div class="zzjxdtg">
+                    <div class="zzjxdtgtit">正在进行的议和团<img src="images/ds/ds2_34.jpg" height="36" width="20" alt=""></div>
+                </div>
+                <div class="zzjxdtg-c cf">
+                    <div class="cf">
+                        <div class="pic fl"><img src="images/ds/ds2_38.jpg" height="292" width="434"></div>
+                        <div class="lvditg fl">
+                            <div class="tit">绿地新里得公馆 购房离债款 98折綛弄为90-123平米优婚 房房房.</div>
+                            <ul>
+                                <li><a href="">2014年12月泰安楼盘交易总结</a></li>
+                                <li><a href="">2014年12月泰安楼盘交易总结</a></li>
+                                <li><a href="">2014年12月泰安楼盘交易总结</a></li>
+                            </ul>
+                            <div class="syxsgzcj">
+                                <img src="images/ds/ds2_41.jpg" height="16" width="17" alt="">还剩:23天4小时 <span>32550</span>人关注<span>325</span>人参加
+                            </div>
+                            <div class="yiwd10w pr">
+                                <span class="zi">￥100 <i class="yhttao">/套</i></span>
+                                <a href=""><img src="images/ds/ds2_48.jpg" alt=""></a><img class="jian pa" src="images/ds/ds2_45.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="djdrm fr">
+                            <div class="tit">大家都在报名</div>
+                            <table>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                                <tr>
+                                    <td>186****6547</td>
+                                    <td>成功报名</td>
+                                    <td>东线</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="hotloupan hl03200223 yhthl fl">
+                        <ul class="cf ul03200220">
+                            <li>
+                                <div>
+                                    <div class="pic pic03200217 pr">
+                                        <a href=""><img width="245" height="165" alt="" src="images/ds/ds2_21.jpg"><i></i><b>华泽天下</b><img src="images/ds/ds_17.png" class="hot"></a>
+                                    </div>
+                                    <div class="intro">
+                                        距离活动结束<span class="r">0</span>月<span class="r">0</span>天<span class="r">4</span>小时
+                                    </div>
+                                    <div class="intro yhtxint">惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img width="62" height="23" alt="" src="images/index/7_32.jpg"></a>
+                                    </div>
+                                </div>
+                            </li>
+                      		<li>
+                                <div>
+                                    <div class="pic pic03200217 pr">
+                                        <a href=""><img width="245" height="165" alt="" src="images/ds/ds2_21.jpg"><i></i><b>华泽天下</b><img src="images/ds/ds_17.png" class="hot"></a>
+                                    </div>
+                                    <div class="intro">
+                                        距离活动结束<span class="r">0</span>月<span class="r">0</span>天<span class="r">4</span>小时
+                                    </div>
+                                    <div class="intro yhtxint">惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img width="62" height="23" alt="" src="images/index/7_32.jpg"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="pic pic03200217 pr">
+                                        <a href=""><img width="245" height="165" alt="" src="images/ds/ds2_21.jpg"><i></i><b>华泽天下</b><img src="images/ds/ds_17.png" class="hot"></a>
+                                    </div>
+                                    <div class="intro">
+                                        距离活动结束<span class="r">0</span>月<span class="r">0</span>天<span class="r">4</span>小时
+                                    </div>
+                                    <div class="intro yhtxint">惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img width="62" height="23" alt="" src="images/index/7_32.jpg"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="pic pic03200217 pr">
+                                        <a href=""><img width="245" height="165" alt="" src="images/ds/ds2_21.jpg"><i></i><b>华泽天下</b><img src="images/ds/ds_17.png" class="hot"></a>
+                                    </div>
+                                    <div class="intro">
+                                        距离活动结束<span class="r">0</span>月<span class="r">0</span>天<span class="r">4</span>小时
+                                    </div>
+                                    <div class="intro yhtxint">惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img width="62" height="23" alt="" src="images/index/7_32.jpg"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="pic pic03200217 pr">
+                                        <a href=""><img width="245" height="165" alt="" src="images/ds/ds2_21.jpg"><i></i><b>华泽天下</b><img src="images/ds/ds_17.png" class="hot"></a>
+                                    </div>
+                                    <div class="intro">
+                                        距离活动结束<span class="r">0</span>月<span class="r">0</span>天<span class="r">4</span>小时
+                                    </div>
+                                    <div class="intro yhtxint">惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img width="62" height="23" alt="" src="images/index/7_32.jpg"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="pic pic03200217 pr">
+                                        <a href=""><img width="245" height="165" alt="" src="images/ds/ds2_21.jpg"><i></i><b>华泽天下</b><img src="images/ds/ds_17.png" class="hot"></a>
+                                    </div>
+                                    <div class="intro">
+                                        距离活动结束<span class="r">0</span>月<span class="r">0</span>天<span class="r">4</span>小时
+                                    </div>
+                                    <div class="intro yhtxint">惊爆价: <span class="yhtp">￥100</span><span class="yhtyj">原价:200元</span></div>
+                                    <div class="baoming yhtbm">
+                                        <span>1025</span>人关注 <span>10</span>人已团购
+                                        <a href=""><img width="62" height="23" alt="" src="images/index/7_32.jpg"></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="frindlink"> 友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span> </div>
+        <div class="footer"> Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有
+            <br> 就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号
+            <br> 京公网安备451546767646464号 网络文化经营许可证(2131)456号
+            <br> 违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com. </div>
+    </div>
+</body>
+
+</html>
