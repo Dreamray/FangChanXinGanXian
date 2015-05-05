@@ -4281,9 +4281,11 @@ border-bottom:dotted 1px #e4e4e4;
 .zttrdt small{
 	float: right;
 	padding-right:11px;
+	padding-top:3px;
+}
+.zttrdt small a{
 	font-size: 12px;
 	color: #898989;
-	padding-top:3px;
 }
 .zttrdtc{
 	border-style:none solid solid;
@@ -4598,4 +4600,7 @@ font-family: 微软雅黑;
 .hotloupan li .yhtxint{
 	padding-top:0;
 	border-bottom:dotted 1px #dadada;
+}
+.zgfirst{
+	background:#f1f1f1;
 }
