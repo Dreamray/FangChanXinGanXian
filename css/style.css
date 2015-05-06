@@ -4603,4 +4603,121 @@ font-family: 微软雅黑;
 }
 .zgfirst{
 	background:#f1f1f1;
+	margin-top:11px;
+	border-style:solid solid none;
+	border-width:1px;
+	border-color:#e5e5e5;
+	background:#f1f1f1;
+	padding-bottom:1px;
+}
+.zgfb1 img{
+	border:solid 1px #e5e5e5;
+}
+.zgfbox{
+	padding:15px;
+}
+.zgfb2{
+	width: 405px;
+	padding:0 15px;
+}
+.zgfb2t{
+	color: #4483a9;
+	font-size: 18px;
+	font-family: 微软雅黑;
+	padding:8px 0 9px;
+}
+.zgfb2 table{
+	color: #898989;
+	line-height: 2;
+	
+}
+.zgfb2 table td{
+	vertical-align:top;
+}
+.zgfb2tel{
+	padding:11px 0 0 40px;
+	font-size: 22px;
+	background:url(../images/zg/1_28.jpg) no-repeat left 8px;
+}
+.zgfb3 li{
+	color: #898989;
+	line-height: 2;
+	text-align: right;
+}
+.zgfb3blue{
+	background:url(../images/zg/1_06.jpg) no-repeat 25px 4px;
+}
+.zgfb3gray{
+	background:url(../images/zg/1_09.jpg) no-repeat 25px 4px;
+}
+.zgfb3b{
+	line-height: 3;
+	padding:11px 0;
+}
+.zgfb3view{
+	text-align: right;
+	color: #898989;
+}
+.zgfb3view span{
+	color: #ff7f00;
+}
+.zgzkhd{
+	border-style:solid none;
+	border-width:1px;
+	border-color:#d5d5d5;
+	height: 34px;
+	background:url(../images/zg/3_03.jpg) repeat-x center 2px #fff;
+	padding-left:16px;
+}
+.zgzkhd a{
+	background:url(../images/zg/3_06.jpg) no-repeat right 3px;
+	line-height: 2.5;
+	color: #4584ab;
+	font-size: 14px;
+	width: 107px;
+	height: 35px;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-top:-1px;
+	cursor:pointer;
+}
+.zgzkhd a:hover,.zgzkhd a.on{
+	background-image:none;
+	background:#76b7de;
+	color: #fff;
+	text-decoration: none;
+	border-top:solid 1px #4384ab;
+}
+.zgzkbd{
+	margin:0 15px 50px;
+	border-style:none solid solid solid;
+	border-width:1px;
+	border-color:#e5e5e5;
+	background:#fff;
+	padding:15px;
+}
+.zgzkintrot{
+	color: #4284ad;
+	font-size: 18px;
+	font-family: 微软雅黑;
+	padding-bottom:15px;
+	border-bottom:dotted 1px #e6e6e6;
+}
+
+.zgzkintroc p{
+	text-indent: 2em;
+	margin:11px 0;
+	line-height: 2;
+}
+.zgzkbdbox{
+	border-bottom:solid 1px #e5e5e5;
+}
+.zgzhankaibtn{
+	color: #4283a9;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right:15px;
+	line-height: 2.5;
+	cursor:pointer;
 }
