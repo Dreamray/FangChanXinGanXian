@@ -4721,3 +4721,60 @@ font-family: 微软雅黑;
 	line-height: 2.5;
 	cursor:pointer;
 }
+.zgsecond{
+	background:none;
+}
+.zgsecond .zgzkbdbox{
+	display:none;
+}
+.zszxalsxul .s150506{
+	line-height: 1.97;
+}
+.s1505062{
+	line-height: 2.12;
+}
+.s1505064{
+	line-height: 2.15;
+}
+.s1505065{
+	margin-left:16px;
+}
+.s1505066{
+	margin-top:7px;
+}
+.zscyhd .zgnzxzbm{
+	
+	float: right;
+	line-height: 2.7;
+}
+.zscyhd .zgnzxzbm a{
+	font-weight: normal;
+	font-size: 12px;
+	color: #fff;
+	padding-right:9px;
+}
+.zgjysjgbox li{
+	margin:13px 13px 8px;
+	line-height: 2;
+}
+.zgjysjgbox li span{
+	color: #4584aa;
+	font-size: 14px;
+	font-weight: bold;
+}
+.zgjysjszi{
+	padding-left:11px;
+}
+.zgzsdybox{
+	padding:8px 11px;
+}
+.zgzsdybox ul{
+	line-height: 2;
+}
+.zgzsdybox ul li{
+	padding-left:20px;
+	background:url(../images/zg/1_33.jpg) no-repeat 4px 7px;
+}
+.zgzsdybox ul li a{
+	color: #000;
+}
