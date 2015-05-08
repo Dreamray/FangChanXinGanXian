@@ -7638,7 +7638,7 @@ html {
 	height:auto;
 }
 .hd2xhxbsertboxu{
-	margin-right:22px;
+	margin:-39px 0 0 500px;
 }
 .hd2xhxbsertboxu li{
 	float:left;
@@ -7649,9 +7649,9 @@ html {
 	display: block;
 	height: 31px;
 	width:96px;
-	border:solid 1px #fff;
+	border:solid 1px transparent;
 	color: #70716e;
-	line-height: 1.6;
+	line-height: 1.7;
 	font-size: 14px;
 
 }
@@ -7666,4 +7666,29 @@ html {
 .hd2xhxbsertboxu li a:hover{
 	background:url(../images/bd/5_03.jpg) repeat-x center;
 	color: #fff;
+}
+.hd2qjty{
+    width: 445px;
+}
+.bd2xwcintro2{
+    width:249px;
+    
+}
+.bd2xwcintrott2{
+    line-height: 1.8;
+}
+.bd2xwcintrot2{
+    color: #71716c;
+}
+.hd2qjty2ul{
+    padding-top:5px;
+}
+.hd2ul2{
+    width: 330px;
+}
+.zgzsdybox2{
+    padding-top:0;
+}
+.bd2xwcpintro2{
+    margin-bottom:12px;
 }
