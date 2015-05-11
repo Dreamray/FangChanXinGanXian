@@ -331,7 +331,45 @@ html {
     font-family: "\5fae\8f6f\96c5\9ed1";
     padding-right: 10px;
 }
-
+#listCityBox511{
+    background-color: #ffffff;
+    border: 1px solid #e0dddd;
+    box-shadow: 1px 1px 2px #cccccc;
+    color: #666666;
+    left: 33px;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    width: 380px;
+    z-index: 9;
+    cursor: auto;
+}
+#listCityBox511 b{
+    font-weight: bold;
+}
+#listCityBox511 li {
+  display: inline;
+  height: 20px;
+  line-height: 20px;
+  margin: 2px 0;
+  
+  text-align: left;
+}
+#listCityBox511 li a{
+    color: #666;
+    padding: 0 5px;
+}
+#listCityBox511 li a:hover {
+  color: red;
+  font-weight: 300;
+  text-decoration: none;
+  background:#f2f2f2;
+}
+.listCityBTop{
+    height: 50px;
+    
+    margin-top:-50px;
+}
 .headerTop .searchBox {
     border: solid 1px #b5b5b5;
     margin-left: 24px;
