@@ -97,19 +97,27 @@
             <div class="sqsearch fl">
                 <form action="">
                     <div class="sqsinpsel pr fl">
-                        <input type="text">
+                        <input type="text"><div class="sqsinsetext pa">帖子</div>
                         <select name="" id="" class="sqsinpselsel">
                             <option value="" selected="selected">帖子</option>
                             <option value="">文章</option>
                         </select>
-                        <div class="sqsinsetext pa">帖子</div>
+                        
                     </div><script>$(".sqsinpselsel").change(function() {
                                     $(".sqsinsetext").text($(".sqsinpselsel").find("option:selected").text());
                                 });</script>
-                    <div class="sqsinpbtn fr">
+                    <div class="sqsinpbtn pr fr">搜索
                         <input type="submit" value="搜索">
                     </div>
                 </form>
+            </div>
+            <div class="sqhotsearch fl">
+                热搜: <a href="">置业会</a>
+                <a href="">踩楼活动</a>
+                <a href="">家居</a>
+            </div>
+            <div class="sqsertodvie fr">
+                今日有<span>87946</span>位网友访问
             </div>
         </div><script>
                 $(".sqcityClick").click(function(){

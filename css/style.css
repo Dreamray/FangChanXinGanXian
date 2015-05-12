@@ -7920,9 +7920,20 @@ html {
 }
 .sqsinpbtn{
     background:#76b7de;
+    width: 77px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.7;
+    text-indent: 30px;
+    background:url(../images/sq/1_59.jpg) no-repeat 7px 5px #76b7de;
 }
 .sqsinpbtn input{
-    opacity: .5;
+    opacity: 0;
+    width: 77px;
+    height: 25px;
+    position: absolute;
+    left:0;
+    top:0;
 }
 .sqsinpsel input{
     padding:1px 4px;
@@ -7935,11 +7946,34 @@ html {
 }
 .sqsinpsel select{
     height: 25px;
-    opacity: 0.5;
+    opacity: 0;
 }
 .sqsinsetext{
-    right:20px;
-    top:6px;
+    right:0px;
+    top:0px;
     color: #bbb;
-    background:url(../images/sq/1_12.jpg) no-repeat center 11px;
+    background:url(../images/sq/1_12.jpg) no-repeat 30px 9px;
+    height: 25px;
+    width: 47px;
+    padding:7px 0 0 0px;
+}
+.sqhotsearch{
+    padding-left:20px;
+    line-height: 3.7;
+    
+
+}
+.sqhotsearch a{
+    color: #888;
+    padding:0 4px;
+}
+.sqsertodvie{
+    padding-right:15px;
+    line-height: 3;
+}
+.sqsertodvie span{
+    color: #e70100;
+    font-weight: bold;
+    padding:0 15px;
+    font-size: 14px;
 }
