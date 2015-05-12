@@ -7797,3 +7797,149 @@ html {
 .s1505091540{
     height: 440px;
 }
+.topWideBannerBox{
+    width:100%;
+    height: 483px;
+    overflow:hidden;
+}
+.topWideBanner{
+    left:50%;
+    margin-left:-960px;
+}
+.sqNavBox{
+    width:100%;
+    border-top:solid 1px #4384ab;
+    background:#76b7de;
+}
+.sqNavBox ul{
+    margin:0 auto;
+    line-height: 3;
+    width:1100px;
+}
+.sqNavBox ul li{
+    float: left;
+}
+.sqNavBox ul li a{
+    display:block;
+    color: #fff;
+    height: 43px;
+    width: 145px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.sqNavBox ul li a:hover{
+    font-weight: bold;
+    background: #4384ab;
+}
+.sqheaderbox{
+    padding-top:0;
+}
+.sqMainNav{
+    
+    padding-top: 15px;
+    
+}
+.sqmnl,.sqmnr{
+    background:url(../images/sq/2_03.jpg) repeat-x center 2px;
+    border-radius: 3px;
+    height: 54px;
+    border:solid 1px #d5d5d5;
+    
+}
+.sqmnlfcc{
+    color: #8a8a8a;
+    line-height: 1.9;
+    padding-top:4px;
+}
+.sqmnlfcc a{
+    color: #8a8a8a;
+    padding:0 9px;
+}
+.sqmnlfcc a:hover{
+    text-decoration: none;
+    color: #4185a7;
+}
+.sqmnl{
+    width:603px;
+}
+.sqmnr{
+    width: 481px;
+}
+.sqmnlfcbtn{
+    width: 75px;
+    height: 39px;
+    background:url(../images/sq/1_05.jpg) no-repeat center;
+    color: #fff;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    margin:7px 22px;
+}
+.sqSwiCityBox{
+    background:#f2f2f2;
+    border:solid 1px #e5e5e5;
+    line-height: 3.2;
+    height: 44px;
+    margin-top:15px;
+    
+}
+.sqcityClick{
+    color: #4583ad;
+    padding:0 33px 0 20px;
+    cursor:pointer;
+}
+.sqcityClick img{
+    margin:0 11px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.sqcityClick span{
+    color: #898989;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sqcityClick #listCityBox511{
+    left:20px;
+    top:44px;
+    line-height: 2;
+    cursor:auto;
+}
+.sqsearch{
+    padding-top:8px;
+    line-height: 1;
+}
+.sqsinpsel{
+    background:#fff;
+}
+.sqsinpsel,.sqsinpbtn{
+    height: 25px;
+    border:solid 2px #76b7de;
+}
+.sqsinpbtn{
+    background:#76b7de;
+}
+.sqsinpbtn input{
+    opacity: .5;
+}
+.sqsinpsel input{
+    padding:1px 4px;
+    width: 240px;
+    height: 23px;
+}
+.sqsinpsel input,.sqsinpsel select{
+    border:0 none;
+    color: #bbb;
+}
+.sqsinpsel select{
+    height: 25px;
+    opacity: 0.5;
+}
+.sqsinsetext{
+    right:20px;
+    top:6px;
+    color: #bbb;
+    background:url(../images/sq/1_12.jpg) no-repeat center 11px;
+}
