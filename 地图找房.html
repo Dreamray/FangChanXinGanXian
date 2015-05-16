@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>地图找房</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+    <!--=================顶部条start====================-->
+    <div class="topbar-bg">
+        <div class="topbar cf">
+            <div class="loginBox pr fl">
+                <form action="">
+                    <label class="logUsername pa">用户名：</label>
+                    <input class="logInput1 pa" type="text" name="username">
+                    <label class="logPassword pa">密码：</label>
+                    <input class="logInput2 pa" type="text" name="password">
+                    <input id="login" type="submit" value="登录">
+                    <div class="reg pa"><a href="#">注册</a></div>
+                </form>
+            </div>
+            <div class="qq-c fr">
+                <div class="qq"><a href="#">客服QQ：21487985</a></div>
+                <div class="addFav"><a href="#">加入收藏</a></div>
+                <div class="c-us"><a href="#">联系我们</a></div>
+                <div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+            </div>
+        </div>
+    </div>
+    <!--=================顶部条end====================-->
+    <!--==================头部（logo到导航电话）start======================-->
+    <div class="headerBox mapHBox">
+        <div class="headerTop cf">
+            <div class="logo">
+                <a href="#"><img src="images/villa_index_34.jpg" width="178"></a>
+            </div>
+            <div class="city pr">
+                <div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16">
+                    <br>[切换城市]</div>
+            </div>
+            <div class="mapts">
+            	<div class="mapt">电子地图找房</div>
+            	<div class="mapskua cf">
+            		<form action="">
+                        <div class="sqsinpsel mapdtzfinp pr fl">
+                            <input type="text" placeholder="请输入关键字(楼盘名或地段名)">
+                        </div>
+                        <div class="sqsinpbtn pr fr">搜索
+                            <input type="submit" value="搜索">
+                        </div>
+                    </form>
+            	</div>
+            </div>
+            <div class="mapswitoli">
+            	<a href="">切换到楼盘列表</a>
+            </div>
+        </div>
+    </div>
+    <!--==================头部（logo到导航电话）end======================-->
+    <!--===================头部以下到最后 start====================-->
+    <div class="mapwrapper cf">
+
+<table width="100%">
+<tr>
+	<td width="100%">
+    	<div class="mapbox pr fl">
+    		<div class="mapboxt cf">
+    			<div class="mapdtzfbtnb fl">
+    				<div class="mapdtzfbtn">地图找房</div>
+    			</div>
+    			<div class="maplkcz fr">
+    				<a href=""><img src="images/map/1_07.jpg" height="14" width="18" alt="">拉框操作</a>
+    				<a href=""><img src="images/map/1_10.jpg" alt="">测距</a>
+    				<a href=""><img src="images/map/1_12.jpg" alt="">驾车</a>
+    				<a href=""><img src="images/map/1_14.jpg" alt="">周边</a>
+    			</div>
+    		</div>
+    		<div class="maparea">
+    			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>这里放百度地图代码<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    		</div>
+    		<div class="maprsrezhed pa"></div>
+    	</div>
+	</td>
+
+	<td>
+    	<div class="mapright fr">
+    		
+    		<script>
+	    		$(".maprsrezhed").click(function(){
+                    //$(".maprsrezhed").removeClass("maprsrezhed2");
+	    			$(".mapright").toggle(100,
+                        function(){
+                            $(".maprsrezhed").toggleClass("maprsrezhed2");
+                        }
+
+                    );
+	    		})
+    		</script>
+    		<div class="maprseres">
+    			<div class="maprsrez">搜索结果:</div>
+    			<div class="maprsrezb">
+    				<span>新房</span>
+    				<i>找到11个楼盘</i>
+    				<b><a href=""><<上翻</a><a href="">下翻>></a></b>
+    			</div>
+    		</div>
+
+			<div class="maprseres">
+    			<div class="maprsrez maprsreqpo">快速定位:</div>
+    			<div class="maprsrezb pr">
+    				
+    				<i class="maprsrefz pa">区域不限</i>
+    				<select class="maprsrefzsel" id="" name="">
+                        <option selected="selected" value="">区域不限</option>
+                        <option value="">区域限</option>
+                    </select>
+    			</div><script>
+                    $(".maprsrefzsel").change(function() {
+                        $(".maprsrefz").text($(".maprsrefzsel").find("option:selected").text());
+                    });
+                    </script>
+    		</div>
+
+
+
+			<div class="maprseres">
+    			<div class="maprsrez maprsreqpo pr">物业类型: <span class="maprsrezbwytt pa">不限</span></div>
+    			<div class="maprsrezb maprsrezbwy s155152311 cf">
+    				
+    				<i class=""><a href="">别墅</a></i>
+    				<i class=""><a href="">写字楼</a></i>
+    				<i class=""><a href="">商铺</a></i>
+    				<i class=""><a href="">住宅</a></i>
+    				
+    			</div>
+    		</div>
+
+			<div class="maprseres">
+    			<div class="maprsrez maprsreqpo pr">价格: <span class="maprsrezbwytt pa">不限</span></div>
+    			<div class="maprsrezb maprsrezbwy s155152311 cf">
+    				
+    				<i class=""><a href="">3千以下</a></i>
+    				<i class=""><a href="">3千-4千</a></i>
+    				<i class=""><a href="">4千-5千</a></i>
+    				<i class=""><a href="">5千-6千</a></i>
+    				<i class=""><a href="">6千-8千</a></i>
+    				<i class=""><a href="">8千-1万</a></i>
+    				<i class=""><a href="">1万以上</a></i>
+   				
+    			</div>
+    			<div class="maprsrezb maprsrezbwy">
+    				
+    				
+    				<i class=""><a href="">单价(元/m <strong class="sup">2</strong>)</a></i>
+    				
+    			</div>
+    		</div>
+			<div class="maprseres maprseres155">
+    			<div class="maprsrez maprsreqpo pr">楼盘状态: </div>
+    			<div class="maprsrezb maprsrezbwy maprsrelpzt">
+    				<i><input type="radio" value="a" name="l" checked="checked">在售</i>
+
+					<i><input type="radio" value="b" name="l">待售</i>
+
+					<i><input type="radio" value="c" name="l">售完 </i>
+					<i><input type="radio" value="d" name="l">待租 </i>
+    				
+    				
+    			</div>
+    		</div>
+
+
+
+			<div class="">
+                                <img width="293" height="110" alt="" src="images/villa_index_122.jpg">
+                                
+            </div>
+    	</div>
+	</td>
+</tr>
+</table>
+
+    </div>
+    <div class="wrapper">
+        <div class="frindlink">
+            友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span>
+        </div>
+        <div class="footer">
+            Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有
+            <br> 就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号
+            <br> 京公网安备451546767646464号 网络文化经营许可证(2131)456号
+            <br> 违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com.
+        </div>
+    </div>
+</body>
+
+</html>
