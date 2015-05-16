@@ -8421,3 +8421,79 @@ html {
 .mapboxt {
     min-width:773px;
 }
+.fdwenjuan li{
+    padding:11px 0;
+    line-height: 2.6;
+}
+.fdwenjuan li input{
+    vertical-align: middle;
+    margin-right:8px;
+}
+.fdwenjuan li label ,.fdwenjuan li select,.fdwenjuan li textarea{
+    margin-left:30px;
+}
+.fdwenjuan li select{
+    width:200px;
+}
+.fdwenjuan{
+    border-bottom:dotted 1px #dcdcdc;
+}
+.fdwjsubm{
+    padding:15px 0 5px 30px;
+}
+.zpqtxzpxx{
+    color: #4483ab;
+    border-bottom:solid 2px #77b6df;
+    line-height: 3.5;
+    margin-top: 15px;
+
+}
+.zpqtxzpxx span{
+    color: #4483ab;
+    padding-left:20px;
+}
+.zpformw1{
+    width: 100px;
+}
+.zptxzpxxtab{
+    padding:40px 0 0 20px;
+    color: #71706e;
+}
+.zptxzpxxtab td{
+    padding:10px;
+}
+.zptxzpxxtab td i{
+    color: #71706e;
+}
+.zptxzpxxtab td input,.zptxzpxxtab td select{
+    height:20px;
+    margin-right:11px;
+    vertical-align: middle;
+    /*border:solid 1px #dcdcdc;*/
+    color: #71706e;
+}
+.zptxzpxxtab td span{
+    color: #71706e;
+    padding:1px 20px 3px;
+    margin-right:9px;
+    border:solid 1px #abadb3;
+}
+.zptxzpxxtab td .zptjflbtnn{
+    padding:0px 11px 4px;
+    margin:0 0 0 -1px;
+    height: 20px;
+
+}
+.zptxzpxxtab td .zptjflbtnn input{
+    height: 24px;
+    margin:0;
+    opacity: 0;
+    display: inline-block;
+    left:0;
+    top:-3px;
+    position: absolute;
+    width: 75px;
+}
+.zptxzpxxtab td .zpbczinp{
+    margin:0;
+}
