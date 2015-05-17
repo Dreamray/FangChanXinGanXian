@@ -8497,3 +8497,91 @@ html {
 .zptxzpxxtab td .zpbczinp{
     margin:0;
 }
+.hyML{
+    width: 260px;
+}
+.hymlgrzx{
+    border-style:solid;
+    border-width:1px;
+    border-color:#4483ab #dcdcdc #dcdcdc;
+}
+.hymlgrzxt{
+    height: 37px;
+    background: url(../images/hy/1_04.jpg) repeat-x center bottom #77b6df;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #fff;
+    text-indent: .7em;
+    line-height: 1.7;
+}
+.hymlgrzxc{
+    padding:10px;
+}
+.hymlgrzxcp{
+    padding:15px 20px;
+    border-bottom:dotted 1px #e5e5e5;
+}
+.hymlgrzxcu{
+    padding:9px 0 150px 19px;
+    line-height: 2;
+}
+.hymlgrzxcu a{
+    color: #898989;
+    text-decoration: none;
+    background:url(../images/hy/1_10.jpg) no-repeat left center;
+    padding-left:22px;
+}
+.hymlgrzxcu a:hover{
+    color: #4483ab;
+}
+.hyMR{
+    width: 825px;
+}
+.hymrfl{
+    border-bottom:solid 2px #77b6df;
+}
+.hymrfl a{
+    display: block;
+    width: 95px; height: 34px;
+    line-height: 2.3;
+    text-align: center;
+    border-style:solid;
+    border-width:1px;
+    border-color:#dcdcdc #dcdcdc #77b6df;
+    color: #71706e;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+    margin-bottom: -1px;
+    margin-right: -1px;
+}
+.hymrfl a:hover,.hymrfl a.on{
+    border-width:2px;
+    border-color:#77b6df #77b6df #fff;
+    width: 93px;height: 33px;
+    margin-bottom: -2px;
+}
+.hymrtab{
+    padding:20px;
+}
+.hymrtab td{
+    line-height: 4;
+    color: #595757;
+    padding-right:50px;
+}
+.hymrtab td input,.hymrtab td select{
+    height: 22px;
+
+}
+.hymrtab td select{
+    width: 100px;
+}
+.hymrtab td select.hymryue{
+    width: 61px;
+}
+.hymrtab td input.hymrinsubbtn{
+    width: 115px; height: 36px;
+    background:url(../images/hy/1_14.jpg) no-repeat center;
+    border:0 none;
+    margin-top:20px;
+}
