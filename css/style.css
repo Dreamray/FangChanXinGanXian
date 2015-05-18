@@ -8585,3 +8585,31 @@ html {
     border:0 none;
     margin-top:20px;
 }
+.esfNews .kad{
+    padding:28px 23px 0;
+}
+.kaagfb1 img{
+    border:none;
+}
+.kazgfb2{
+    padding: 0 65px 0 30px;
+    width: 358px;
+}
+.kazgb2t{
+    border-bottom:dotted 1px #dcdcdc;
+    font-family: 宋体;
+    font-weight: bold;
+    font-size: 14px;
+}
+.kachufat{
+    line-height: 2.3;
+}
+.kazgfb3view{
+    color: #4483ab;
+    font-size: 16px;
+    background:url(../images/ka/1_09.jpg) no-repeat left center;
+}
+.kasanbox{
+    padding-bottom:11px;
+    border-bottom:solid 1px #dcdcdc;
+}
