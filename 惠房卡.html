@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>惠房卡</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+    <!--=================顶部条start====================-->
+    <div class="topbar-bg">
+        <div class="topbar cf">
+            <div class="loginBox pr fl">
+                <form action="">
+                    <label class="logUsername pa">用户名：</label>
+                    <input class="logInput1 pa" type="text" name="username">
+                    <label class="logPassword pa">密码：</label>
+                    <input class="logInput2 pa" type="text" name="password">
+                    <input id="login" type="submit" value="登录">
+                    <div class="reg pa"><a href="#">注册</a></div>
+                </form>
+            </div>
+            <div class="qq-c fr">
+                <div class="qq"><a href="#">客服QQ：21487985</a></div>
+                <div class="addFav"><a href="#">加入收藏</a></div>
+                <div class="c-us"><a href="#">联系我们</a></div>
+                <div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+            </div>
+        </div>
+    </div>
+    <!--=================顶部条end====================-->
+    <!--==================头部（logo到导航电话）start======================-->
+    <div class="headerBox">
+        <div class="headerTop cf">
+            <div class="logo">
+                <a href="#"><img src="images/villa_index_34.jpg" width="178"></a>
+            </div>
+            <div class="city pr">
+                <div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16">
+                    <br>[切换城市]</div>
+                <!--<div class="chooseCity pa"><span><a href="#">济南</a></span><span><a href="#">青岛</a></span><span><a href="#">泰安</a></span></div>-->
+            </div>
+            <div class="searchBox">
+                <div class="slideSearchBox pr">
+                    <div class="hd">
+                        <ul id="sSBMenu" class="cf">
+                            <li class="ssbmli two"><a href="#">楼盘</a></li>
+                            <li class="ssbmli three"><a href="#">二手房</a></li>
+                            <li class="ssbmli four"><a href="#">家居建材</a></li>
+                            <li class="ssbmli two"><a href="#">招标</a></li>
+                            <li class="ssbmli two"><a href="#">文章</a></li>
+                            <li class="ssbmli two"><a href="#">论坛</a></li>
+                            <li class="ssbmli three"><a href="#">惠房卡</a></li>
+                            <li class="ssbmli four"><a href="#">房屋定制</a></li>
+                            <div class="chou-mapSearch pa cf">
+                                <div class="chou fl"><a href="#">抽奖</a></div>
+                                <div class="mapSearch fr"><a href="#">电子地图找房</a> </div>
+                            </div>
+                        </ul>
+                        <script>
+                        jQuery("#sSBMenu").slide({
+                            trigger: "click",
+                            titCell: ".ssbmli"
+                        });
+                        </script>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li>
+                                <div class="searchSelect pr">
+                                    <div class="hd2">
+                                        <ul class="cf">
+                                            <form action="#">
+                                                <li class="hd2-1">区域</li>
+                                                <select class="sSH1 pa">
+                                                    <option value="">区域1</option>
+                                                    <option value="">区域2</option>
+                                                    <option value="">区域3</option>
+                                                </select>
+                                                <li class="hd2-2">版块</li>
+                                                <select class="sSH2 pa">
+                                                    <option value="">版块1</option>
+                                                    <option value="">版块2</option>
+                                                    <option value="">版块3</option>
+                                                </select>
+                                                <li class="hd2-3">物业类型</li>
+                                                <select class="sSH3 pa">
+                                                    <option value="">物业类型1</option>
+                                                    <option value="">物业类型2</option>
+                                                    <option value="">物业类型3</option>
+                                                </select>
+                                                <div class="sSInput">
+                                                    <input type="text" name="" placeholder="关键字">
+                                                </div>
+                                                <div class="sSSubm">
+                                                    <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+                                                </div>
+                                            </form>
+                                        </ul>
+                                    </div>
+                                    <div class="bd2">
+                                        <ul class="bd2-1">
+                                            <li>区域1</li>
+                                            <li>区域2</li>
+                                            <li>区域3</li>
+                                        </ul>
+                                        <ul>
+                                            <li>版块1</li>
+                                            <li>版块2</li>
+                                            <li>版块3</li>
+                                        </ul>
+                                        <ul>
+                                            <li>物业1</li>
+                                            <li>物业2</li>
+                                            <li>物业3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                jQuery(".searchSelect").slide({
+                                    trigger: "click",
+                                    titCell: ".hd2 li",
+                                    mainCell: ".bd2"
+                                });
+                                $(".bd2-1").css("display", "none");
+                                $(".hd2-1").click(function() {
+                                    $(".bd2-1").css("display", "block");
+                                });
+                                $(".sSH1").change(function() {
+                                    $(".hd2-1").text($(".sSH1").find("option:selected").text());
+                                });
+                                $(".sSH2").change(function() {
+                                    $(".hd2-2").text($(".sSH2").find("option:selected").text());
+                                });
+                                $(".sSH3").change(function() {
+                                    $(".hd2-3").text($(".sSH3").find("option:selected").text());
+                                });
+                                </script>
+                            </li>
+                        </ul>
+                        <div class="hotSearch"><span class="hS1"><a href="#">地铁沿线周边盘</a></span><span><a href="#">品牌楼盘小户型</a></span><span><a href="#">35平米高租售比两遍精品小户</a></span><span><a href="#">招商泰格公寓</a></span><span><a href="#">送面积盘</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainNav cf">
+            <div class="mNSubNav mNSN1 fl">
+                <div class="mNSNTitle fl"><a href="#">房产</a></div>
+                <div class="mNSN-a mNSNa1 fr">
+                    <div><span><a href="#">资讯</a></span><span><a href="#">楼盘</a></span><span><a href="#">写字楼商铺</a></span><span><a href="#">二手房</a></span></div>
+                    <div><span><a href="#">别墅</a></span><span><a href="#">电商</a></span><span><a href="#">地产圈</a></span><span><a href="#">专题</a></span><span><a href="#">活动</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN2 fl">
+                <div class="mNSNTitle fl"><a href="#">装饰</a></div>
+                <div class="mNSN-a mNSNa2 fr">
+                    <div><span><a href="#">资讯</a></span><span><a href="#">招标</a></span><span><a href="#">宝典</a></span><span><a href="#">装饰公司</a></span></div>
+                    <div><span><a href="#">材料</a></span><span><a href="#">图库</a></span><span><a href="#">视频</a></span><span><a href="#">议和团</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN3 fl">
+                <div class="mNSNTitle fl"><a href="#">社区 </a></div>
+                <div class="mNSN-a mNSNa3 fr">
+                    <div><span><a href="#">房产论坛</a></span><span><a href="#">生活</a></span><span><a href="#">业主论坛</a></span></div>
+                    <div><span><a href="#">家居论坛</a></span><span><a href="#">营销</a></span><span><a href="#">家居设计</a></span></div>
+                </div>
+            </div>
+            <div class="mNSubNav mNSN4 fr"><img src="images/villa_index_60.jpg" width="166" alt="电话：028-4556897"></div>
+        </div>
+    </div>
+    <!--==================头部（logo到导航电话）end======================-->
+    <!--===================头部以下到最后 start====================-->
+    <div class="wrapper">
+        <div class="container">
+            <div class="ad1100">
+                <a href="#"><img src="images/news_detail_03.jpg" width="1100"></a>
+            </div>
+            <div class="ad1100">
+                <a href="#"><img src="images/villa_index_91.jpg" width="1100"></a>
+            </div>
+            <div class="main cf">
+                <div class="esfFangYuanList cf">
+                    <div class="main-left esfMainL fl">
+                        <div class="esfaquyucmapsearch">
+                            <div class="esfqycmc-hd esfsz cf">
+                                <a href="" class="l on">新房</a>
+                                <a href="" class="r">二手房</a>
+                                
+                                
+                            </div>
+                            <div class="esfqycmc-bd h230">
+                                <div class="esfSearchFabu">
+                                    <form>
+                                        <input class="inp" type="text">
+                                        <input class="inpbtn" type="submit" value=" ">
+                                        <a href=""><img src="images/esf/e_03.jpg" height="29" width="101" alt=""></a>
+                                    </form>
+                                </div>
+                                <div class="quYuShouJiaMJHXQT">
+                                    <div class="quYu"><strong>区域:</strong><i>全部</i>
+                                        <span><a href="">历下</a></span>
+                                        <span><a href="">市中</a></span>
+                                        <span><a href="">天桥</a></span>
+                                        <span><a href="">槐荫</a></span>
+                                        <span><a href="">高新</a></span>
+                                        <span><a href="">长清</a></span>
+                                        <span><a href="">平阴</a></span>
+                                        <span><a href="">章丘</a></span>
+                                        <span><a href="">济阳</a></span>
+                                        <span><a href="">商河</a></span>
+                                        <span><a href="">其他</a></span>
+                                    </div>
+                                    <div class="shouJia"><strong>售价:</strong><i>不限</i>
+                                        <span><a href="">30万以下</a></span>
+                                        <span><a href="">30-40万</a></span>
+                                        <span><a href="">40-50万</a></span>
+                                        <span><a href="">50-70万</a></span>
+                                        <span><a href="">70-90万</a></span>
+                                        <span><a href="">90-120万</a></span>
+                                        <span><a href="">120-150万</a></span>
+                                        <span><a href="">150-200万</a></span>
+                                        <span><a href="">200万以上以上</a></span>
+                                    </div>
+                                    <div class="mianJi"><strong>面积:</strong><i>不限</i>
+                                        <span><a href="">50m<i class="sup">2</i></a></span>
+                                        <span><a href="">50-70m<i class="sup">2</i></a></span>
+                                        <span><a href="">70-90m<i class="sup">2</i></a></span>
+                                        <span><a href="">90-110m<i class="sup">2</i></a></span>
+                                        <span><a href="">110-130m<i class="sup">2</i></a></span>
+                                        <span><a href="">130-150m<i class="sup">2</i></a></span>
+                                        <span><a href="">150-200m<i class="sup">2</i></a></span>
+                                        <span><a href="">200-300m<i class="sup">2</i></a></span>
+                                        <span><a href="">300m<i class="sup">2</i>以上</a></span>
+                                    </div>
+                                    <div class="huXing"><strong>户型:</strong><i>不限</i>
+                                        <span><a href="">一室</a></span>
+                                        <span><a href="">二室</a></span>
+                                        <span><a href="">三室</a></span>
+                                        <span><a href="">四室</a></span>
+                                        <span><a href="">五室</a></span>
+                                        <span><a href="">五室以上</a></span>
+                                    </div>
+                                    <div class="qiTa"><strong>其他:</strong><i>不限</i>
+                                        <span>
+                                            <select name="" id="">
+                                                <option value="">住宅类别</option>
+                                                <option value="">住宅类别1</option>
+                                                <option value="">住宅类别2</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="" id="">
+                                                <option value="">房龄</option>
+                                                <option value="">房龄1</option>
+                                                <option value="">房龄2</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="" id="">
+                                                <option value="">朝向</option>
+                                                <option value="">朝向1</option>
+                                                <option value="">朝向2</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="" id="">
+                                                <option value="">楼层</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="" id="">
+                                                <option value="">建筑类别</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="" id="">
+                                                <option value="">房屋结构</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </span>
+                                        <span>
+                                            <select name="" id="">
+                                                <option value="">装修</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="esfNews">
+                            <div class="t cf">
+                                <div class="tt fl">
+                                    <div>惠房卡活动</div>
+                                </div>
+                                <div class="esfnewsm fr"><a href="">更多»</a></div>
+                            </div>
+                            <div class="d cf">
+                                
+
+
+                                    <div class="zgfb1 fl"><img width="199" height="199" alt="" src="images/zg/1_03.jpg"></div>
+                                    <div class="zgfb2 fl">
+                                        <div class="zgfb2t">济南某某装饰公司....</div>
+                                        <table>
+                                            <tbody><tr>
+                                                <td width="15%">服务类型:</td>
+                                                <td width="85%">小户型 公寓 小户型 公寓 小户型 公寓 小户型 公寓 小户型 公寓 小户型 公寓 小户型 公寓 小户型 公寓</td>
+                                            </tr>
+                                            <tr>
+                                                <td>承接价位:</td>
+                                                <td>0万-111万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>服务区域:</td>
+                                                <td>全济南</td>
+                                            </tr>
+                                            <tr>
+                                                <td>办公地址:</td>
+                                                <td>济南济南济南济南</td>
+                                            </tr>
+                                        </tbody></table>
+                                        <div class="zgfb2t zgfb2tel">400-400-400</div>
+                                    </div>
+                                    <div class="zgfb3 fl">
+                                        <ul>
+                                            <li class="zgfb3blue">营业执照已验证</li>
+                                            <li class="zgfb3gray">缴纳激动保障金</li>
+                                        </ul>
+                                        <div class="zgfb3b">
+                                            <img width="141" height="36" alt="" src="images/zg/1_12.jpg">
+                                            <br>
+                                            <img width="141" height="36" alt="" src="images/zg/1_15.jpg">
+                                        </div>
+                                        <div class="zgfb3view"><span>1321</span>人已浏览咨询</div>
+                                    </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-right esfMRight fr">
+                        <div class="esfGZSZDZ">
+                            <div class="f cf">
+                                <a href="">发布求购</a>
+                                <a class="g" href="">发布求租</a>
+                                <a href="">发布出售</a>
+                                <a class="g" href="">发布出租</a>
+                            </div>
+                            <div class="esfmrl">
+                                <div class="l">用户登录</div>
+                                <div class="nplbtn cf">
+                                    <div class="np fl">
+                                        <div class="u">用户名:
+                                            <input type="text">
+                                        </div>
+                                        <div class="p">密码:
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="lbtn fr">
+                                        <input type="botton" value="登录">
+                                    </div>
+                                </div>
+                                <div class="dx">
+                                    <input type="radio" value="a" name="2" checked="checked"><span>个人</span>
+                                    <input type="radio" value="b" name="2"><span>中介</span>
+                                    <input type="radio" value="c" name="2"><span>经纪人</span><b> <a href="">免费注册</a></b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-1 esfrmhd">
+                            <div class="title">市场前沿<span><a href="#">更多»</a></span></div>
+                            <div class="list list-h">
+                                <div class="first cf pr">
+                                    <div class="pic fl"><img width="175" height="112" src="images/villa_index_106.jpg"></div>
+                                    <div class="detail fr">
+                                        珀碧桂园创
+                                        <br>新高，首次珀碧桂
+                                    </div>
+                                </div>
+                                <div class="sqltc3zi pr">
+                                    首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂首次珀碧桂<a href="#">[详细]</a>
+                                </div>
+                                <ul class="esfrmhdli">
+                                    <li><a href="#"><span>[泰安最新]</span>房产动态播报房产动态播报2</a></li>
+                                    <li><a href="#"><span>[泰安最新]</span>房产动态播报房产动态播报2</a></li>
+                                    <li><a href="#"><span>[泰安最新]</span>房产动态播报房产动态播报2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad1100">
+                    <a href="#"><img width="1100" src="images/villa_index_91.jpg"></a>
+                </div>
+                <div class="esfzjlm">
+                    <div class="esfNews">
+                        <div class="t cf">
+                            <div class="tt fl">
+                                <div>中介聪盟</div>
+                            </div>
+                        </div>
+                        <div class="d cf">
+                            <ul class="cf">
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/esf/e_11.jpg" height="70" width="208" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad1100">
+                    <a href="#"><img width="1100" src="images/villa_index_91.jpg"></a>
+                </div>
+                <div class="ad1100">
+                    <a href="#"><img width="1100" src="images/villa_index_91.jpg"></a>
+                </div>
+                <div class="main-left esfgzfyML fl">
+                    <div class="esfgzfy esfgzfy1 cf">
+                        <div class="esfgzfyhd fl">
+                            <ul>
+                                <li class="on">推荐房源<img src="images/esf/e_15.jpg" height="18" width="10" alt=""></li>
+                                <li>热门房源<img src="images/esf/e_15.jpg" alt=""></li>
+                                <li>最新房源<img src="images/esf/e_15.jpg" alt=""></li>
+                                <li>十万火急<img src="images/esf/e_15.jpg" alt=""></li>
+                                <li>您可能感兴趣<img src="images/esf/e_15.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="esfgzfybd fl">
+                            <div>
+                                <div class="more cf"><span>更多»</span></div>
+                                <ul class="cf">
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="more cf"><span>更多»</span></div>
+                                <ul class="cf">
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭3</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭3</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭2</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="more cf"><span>更多»</span></div>
+                                <ul class="cf">
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭2</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="more cf"><span>更多»</span></div>
+                                <ul class="cf">
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="more cf"><span>更多»</span></div>
+                                <ul class="cf">
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="fl">
+                                        <div class="pic fl"><img src="images/villa_index_106.jpg" width="128" height="96" alt=""></div>
+                                        <div class="titmj fr">
+                                            <div class="t">超低价名士豪庭</div>
+                                            <div class="nst">名士豪庭<b>2室2厅</b></div>
+                                            <div class="mj">120m<i class="sup">2</i><span>180万/套</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script>
+                        jQuery(".esfgzfy1").slide({
+                            trigger: "click",
+                            mainCell: ".esfgzfybd",
+                            titCell: ".esfgzfyhd li"
+                        });
+                        </script>
+                    </div>
+                    <div class="esfgrfy esfgzfy2 a15427">
+                        <div class="t">
+                            <div class="tt fl">个人房源</div>
+                            <div class="img fl"><img src="images/esf/e_19.jpg" height="41" width="55" alt=""></div>
+                            <div class="w fr">
+                                <span>出售</span>
+                                <span>出租</span>
+                                <span>求购</span>
+                                <span>求租</span>
+                                <b><a href="">更多»</a></b>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <table>
+                                <tr class="th">
+                                    <td class="grfytdt" width="40%">标题</td>
+                                    <td width="12%">户型</td>
+                                    <td width="12%">面积</td>
+                                    <td width="12%">月租</td>
+                                    <td width="12%">出租方式</td>
+                                    <td width="12%">发布时间</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr class="th">
+                                    <td class="grfytdt" width="40%">标题</td>
+                                    <td width="12%">户型</td>
+                                    <td width="12%">面积</td>
+                                    <td width="12%">月租</td>
+                                    <td width="12%">出租方式</td>
+                                    <td width="12%">发布时间</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr class="th">
+                                    <td class="grfytdt" width="40%">标题</td>
+                                    <td width="12%">户型</td>
+                                    <td width="12%">面积</td>
+                                    <td width="12%">月租</td>
+                                    <td width="12%">出租方式</td>
+                                    <td width="12%">发布时间</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr class="th">
+                                    <td class="grfytdt" width="40%">标题</td>
+                                    <td width="12%">户型</td>
+                                    <td width="12%">面积</td>
+                                    <td width="12%">月租</td>
+                                    <td width="12%">出租方式</td>
+                                    <td width="12%">发布时间</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <script>
+                    jQuery(".esfgzfy2").slide({
+                        trigger: "click",
+                        mainCell: ".c",
+                        titCell: ".w span"
+                    });
+                    </script>
+                    <div class="esfgrfy esfgzfy2 esfgzfy3 a15427">
+                        <div class="t">
+                            <div class="tt fl">中介房源</div>
+                            <div class="img fl"><img src="images/esf/e_19.jpg" height="41" width="55" alt=""></div>
+                            <div class="w fr">
+                                <span>急售房源</span>
+                                <span>急租房源</span>
+                                <b><a href="">更多»</a></b>
+                            </div>
+                        </div>
+                        <div class="c">
+                            <table>
+                                <tr class="th">
+                                    <td class="grfytdt" width="40%">标题</td>
+                                    <td width="12%">户型</td>
+                                    <td width="12%">面积</td>
+                                    <td width="12%">月租</td>
+                                    <td width="12%">出租方式</td>
+                                    <td width="12%">发布时间</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr class="th">
+                                    <td class="grfytdt" width="40%">标题</td>
+                                    <td width="12%">户型</td>
+                                    <td width="12%">面积</td>
+                                    <td width="12%">月租</td>
+                                    <td width="12%">出租方式</td>
+                                    <td width="12%">发布时间</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                                <tr>
+                                    <td class="grfyt" width="40%"><a href="">青年易剧,免税,随时看房,8号档不不不不不不不不不不不不</a></td>
+                                    <td class="gre" width="12%">3室2厅</td>
+                                    <td class="mj" width="12%">200m <i class="sup">2</i></td>
+                                    <td class="jg" width="12%">2222元/月</td>
+                                    <td class="gre" width="12%">合租</td>
+                                    <td class="gre" width="12%">2015-02-02</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <script>
+                    jQuery(".esfgzfy3").slide({
+                        trigger: "click",
+                        mainCell: ".c",
+                        titCell: ".w span"
+                    });
+                    </script>
+                </div>
+                <div class="main-right esfgzfyMr fr">
+                    <div class="fbs">
+                        <div class="hottopic">
+                            <div class="title-more cf">
+                                <div class="hot-title fl">房博士</div>
+                            </div>
+                            <div class="hottopic-link">
+                                <div class="fbst">房博士帮办</div>
+                                <div class="fbsn cf">
+                                    <div class="fbspic fl">
+                                        <img height="122" width="92" src="images/index/fbs_07.jpg">
+                                    </div>
+                                    <div class="fbsnam fr">
+                                        2015-02-02
+                                        <br> 值班:谭百强
+                                        <br>
+                                        <br>
+                                        <a href="#"><img src="images/index/fbs_10.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="fbst">房博士帮办</div>
+                                <div class="newask">
+                                    · 怎样加强商品房管理????
+                                    <br>
+                                    <span>答:商品房设计商品房设计商品房设计商品房设计</span>
+                                </div>
+                                <div class="newask">
+                                    · 怎样加强商品房管理????
+                                    <br>
+                                    <span>答:商品房设计商品房设计商品房设计商品房设计</span>
+                                </div>
+                                <div class="ljdh">
+                                    <a href="#">房博士1<img src="images/index/fbs_18.jpg"></a>
+                                    <br>
+                                    <a href="#">房博士1<img src="images/index/fbs_18.jpg"></a>
+                                    <br>
+                                    <a href="#">房博士1<img src="images/index/fbs_18.jpg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hottopic esfTJJJR">
+                        <div class="title-more cf">
+                            <div class="hot-title fl">金牌经纪人</div>
+                            <div class="more fr"><a href="#">更多»</a></div>
+                        </div>
+                        <div class="hottopic-list">
+                            <div class="cf">
+                                <div class="pic fl"><img height="122" width="92" alt="" src="images/2li/2li_17.jpg"></div>
+                                <div class="esfTJJJRfr fr">
+                                    <span class="title">谭百强</span>
+                                    <br>
+                                    <span class="tel"><img height="22" width="12" alt="" src="images/2li/2li_21.jpg">18888888888</span>
+                                    <br>
+                                    <span>二手房专家,拥有多年房产经验.</span>
+                                    <br><span class="zxl"><a href="">在线留言</a></span>
+                                </div>
+                            </div>
+                            <div class="cf">
+                                <div class="pic fl"><img height="122" width="92" alt="" src="images/2li/2li_17.jpg"></div>
+                                <div class="esfTJJJRfr fr">
+                                    <span class="title">谭百强</span>
+                                    <br>
+                                    <span class="tel"><img height="22" width="12" alt="" src="images/2li/2li_21.jpg">18888888888</span>
+                                    <br>
+                                    <span>二手房专家,拥有多年房产经验.</span>
+                                    <br><span class="zxl"><a href="">在线留言</a></span>
+                                </div>
+                            </div>
+                            <div class="cf">
+                                <div class="pic fl"><img height="122" width="92" alt="" src="images/2li/2li_17.jpg"></div>
+                                <div class="esfTJJJRfr fr">
+                                    <span class="title">谭百强</span>
+                                    <br>
+                                    <span class="tel"><img height="22" width="12" alt="" src="images/2li/2li_21.jpg">18888888888</span>
+                                    <br>
+                                    <span>二手房专家,拥有多年房产经验.</span>
+                                    <br><span class="zxl"><a href="">在线留言</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad258">
+                        <a href=""><img height="93" width="258" src="images/2li/2li_30.jpg" alt=""></a>
+                    </div>
+                    <div class="ad258">
+                        <a href=""><img height="93" width="258" src="images/2li/2li_30.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ad1100">
+                <a href=""><img height="60" width="1100" alt="" src="images/ds/ds2_30.jpg"></a>
+            </div>
+        </div>
+        <div class="frindlink">
+            友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span>
+        </div>
+        <div class="footer">
+            Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有
+            <br> 就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号
+            <br> 京公网安备451546767646464号 网络文化经营许可证(2131)456号
+            <br> 违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com.
+        </div>
+    </div>
+</body>
+
+</html>
