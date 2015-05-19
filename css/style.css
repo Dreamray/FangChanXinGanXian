@@ -8504,6 +8504,7 @@ html {
     border-style:solid;
     border-width:1px;
     border-color:#4483ab #dcdcdc #dcdcdc;
+    height: 889px;
 }
 .hymlgrzxt{
     height: 37px;
@@ -8815,4 +8816,111 @@ html {
     background:url(../images/ka/2_03.jpg) no-repeat left 13px;
     white-space:nowrap;
     padding-left:8px;
+}
+.uchelpbtnt{
+    padding:8px 0 22px 18px;
+    border-bottom:dotted 1px #e5e5e5;
+}
+.uchelpbtntt{
+    color: #4d4d4d;
+    line-height: 2;
+}
+.uchelpbtntt span{
+    font-weight: bold;
+
+}
+.uchelpbtn a{
+    padding:5px 22px 8px;
+    background:#6db2df;
+    border-top:solid 1px #346b8f;
+    border-radius:28px;
+    color: #fff;
+    line-height: 4;
+    margin-right:11px;
+}
+.uchelcent{
+    line-height: 2;
+    color: #898989;
+    padding:8px 11px 22px 18px;
+    border-bottom:dotted 1px #e5e5e5;
+}
+.uchelcent span{
+    font-weight: bold;
+    color: #4483ab;
+}
+.ucwhatismy{
+    line-height: 2;
+    padding:8px 11px 22px 18px;
+}
+.ucwhatismy li{
+    background:url(../images/uc/2_03.jpg) no-repeat left 13px;
+    padding-left:9px;
+}
+.ucwhatismy li a{
+    color: #4483ab;
+
+}
+.uchyfwb{
+    background:#f2f2f3;
+    padding-bottom: 40px;
+}
+.uchyfw{
+    font-family: 微软雅黑;
+    background:#f2f2f3;
+}
+.uchyfwt{
+    background:#77b6df;
+    border-top:solid 1px #4483ab;
+    color: #fff;
+    font-size: 24px;
+    height: 50px;
+    text-align: center;
+    line-height: 1.9;
+}
+.uchyfwt img{
+    position: absolute;
+    bottom:-17px;
+    left:48%;
+}
+.uchyfwc{
+    padding:25px 25px 0;
+}
+.uchyfwc ul{
+    width: 110%;
+}
+.uchyfwc ul li{
+    padding:20px 20px 20px 0;
+    width: 246px;
+    float: left;
+    line-height: 2;
+}
+.uchyfwc ul li a{
+    color: #4d4d4d;
+    text-decoration: none;
+}
+.uchyfwc ul li a span{
+    color: #4483ab;
+}
+.uchyfwc ul li img{
+    float: left;
+    margin-right:11px;
+}
+.uchyfwculb{
+    border-bottom:dotted 1px #c9c9c9;
+    padding-bottom:15px;
+}
+.ucsenewhouse{
+    margin:0 25px;
+    line-height: 2;
+    padding:8px 0 8px;
+    border-bottom:dotted 1px #c9c9c9;
+}
+.ucsenewhouse span{
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ucsenewhouse a{
+    color: #4483ab;
+    margin:0 5px;
 }

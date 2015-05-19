@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>会员中心</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+<!--=================顶部条start====================-->
+	<div class="topbar-bg">
+		<div class="topbar cf">
+			<div class="loginBox pr fl">
+				<form action="">
+					<label class="logUsername pa">用户名：</label><input class="logInput1 pa" type="text" name="username"><label class="logPassword pa">密码：</label><input class="logInput2 pa" type="text" name="password"><input id="login" type="submit" value="登录"><div class="reg pa"><a href="#">注册</a></div>
+				</form>
+			</div>
+			<div class="qq-c fr">
+				<div class="qq"><a href="#">客服QQ：21487985</a></div>
+				<div class="addFav"><a href="#">加入收藏</a></div>
+				<div class="c-us"><a href="#">联系我们</a></div>
+				<div class="setHp"><a href="#" style="cursor:pointer">设为首页</a></div>
+			</div>
+		</div>
+	</div>
+<!--=================顶部条end====================-->
+<!--==================头部（logo到导航电话）start======================-->
+	<div class="headerBox">
+		<div class="headerTop cf">
+			<div class="logo"><a href="#"><img src="images/villa_index_34.jpg" width="178"></a></div>
+			<div class="city pr">
+				<div class="cityClick"><span>泰安</span><img src="images/villa_index_37.jpg" width="16"><br>[切换城市]</div>
+				<!--<div class="chooseCity pa"><span><a href="#">济南</a></span><span><a href="#">青岛</a></span><span><a href="#">泰安</a></span></div>-->
+			</div>
+			<div class="searchBox">
+				<div class="slideSearchBox pr">
+					<div class="hd">
+						<ul id="sSBMenu" class="cf">
+							<li class="ssbmli two"><a href="#">楼盘</a></li>
+							<li class="ssbmli three"><a href="#">二手房</a></li>
+							<li class="ssbmli four"><a href="#">家居建材</a></li>
+							<li class="ssbmli two"><a href="#">招标</a></li>
+							<li class="ssbmli two"><a href="#">文章</a></li>
+							<li class="ssbmli two"><a href="#">论坛</a></li>
+							<li class="ssbmli three"><a href="#">惠房卡</a></li>
+							<li class="ssbmli four"><a href="#">房屋定制</a></li>
+							<div class="chou-mapSearch pa cf">
+								<div class="chou fl"><a href="#">抽奖</a></div>
+								<div class="mapSearch fr"><a href="#">电子地图找房</a>	</div>
+							</div>
+						</ul><script>jQuery("#sSBMenu").slide({trigger:"click",titCell:".ssbmli"});</script>
+					</div>
+					<div class="bd">
+						<ul>
+							<li>
+								<div class="searchSelect pr">
+									<div class="hd2">
+										<ul class="cf">
+											<form action="#">
+												<li class="hd2-1">区域</li>
+												<select class="sSH1 pa">
+													<option value ="">区域1</option>
+													<option value ="">区域2</option>
+													<option value="">区域3</option>
+												</select>
+												<li class="hd2-2">版块</li>
+												<select class="sSH2 pa">
+													<option value ="">版块1</option>
+													<option value ="">版块2</option>
+													<option value="">版块3</option>
+												</select>
+												<li class="hd2-3">物业类型</li>
+												<select class="sSH3 pa">
+													<option value ="">物业类型1</option>
+													<option value ="">物业类型2</option>
+													<option value="">物业类型3</option>
+												</select>
+												<div class="sSInput">
+													<input type="text" name="" placeholder="关键字">
+												</div>
+												<div class="sSSubm">
+													<input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;搜索">
+												</div>
+											</form>
+										</ul>
+									</div>
+									<div class="bd2">
+										<ul class="bd2-1">
+											<li>区域1</li>
+											<li>区域2</li>
+											<li>区域3</li>
+										</ul>
+										<ul>
+											<li>版块1</li>
+											<li>版块2</li>
+											<li>版块3</li>
+										</ul>
+										<ul>
+											<li>物业1</li>
+											<li>物业2</li>
+											<li>物业3</li>
+										</ul>
+									</div>
+								</div>
+								<script>
+									jQuery(".searchSelect").slide({trigger:"click",titCell:".hd2 li",mainCell:".bd2"});
+									$(".bd2-1").css("display","none");
+									$(".hd2-1").click(function(){
+										$(".bd2-1").css("display","block");
+									});
+									$(".sSH1").change(function(){
+										$(".hd2-1").text($(".sSH1").find("option:selected").text());
+									});
+									$(".sSH2").change(function(){
+										$(".hd2-2").text($(".sSH2").find("option:selected").text());
+									});
+									$(".sSH3").change(function(){
+										$(".hd2-3").text($(".sSH3").find("option:selected").text());
+									});
+								</script>
+							</li>
+						</ul>
+						<div class="hotSearch"><span class="hS1"><a href="#">地铁沿线周边盘</a></span><span><a href="#">品牌楼盘小户型</a></span><span><a href="#">35平米高租售比两遍精品小户</a></span><span><a href="#">招商泰格公寓</a></span><span><a href="#">送面积盘</a></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mainNav cf">
+			<div class="mNSubNav mNSN1 fl">
+				<div class="mNSNTitle fl"><a href="#">房产</a></div>
+				<div class="mNSN-a mNSNa1 fr">
+					<div><span><a href="#">资讯</a></span><span><a href="#">楼盘</a></span><span><a href="#">写字楼商铺</a></span><span><a href="#">二手房</a></span></div>
+					<div><span><a href="#">别墅</a></span><span><a href="#">电商</a></span><span><a href="#">地产圈</a></span><span><a href="#">专题</a></span><span><a href="#">活动</a></span></div>
+				</div>
+			</div>
+			
+			<div class="mNSubNav mNSN2 fl">
+				<div class="mNSNTitle fl"><a href="#">装饰</a></div>
+				<div class="mNSN-a mNSNa2 fr">
+					<div><span><a href="#">资讯</a></span><span><a href="#">招标</a></span><span><a href="#">宝典</a></span><span><a href="#">装饰公司</a></span></div>
+					<div><span><a href="#">材料</a></span><span><a href="#">图库</a></span><span><a href="#">视频</a></span><span><a href="#">议和团</a></span></div>
+				</div>
+			</div>
+			
+			<div class="mNSubNav mNSN3 fl">
+				<div class="mNSNTitle fl"><a href="#">社区 </a></div>
+				<div class="mNSN-a mNSNa3 fr">
+					<div><span><a href="#">房产论坛</a></span><span><a href="#">生活</a></span><span><a href="#">业主论坛</a></span></div>
+					<div><span><a href="#">家居论坛</a></span><span><a href="#">营销</a></span><span><a href="#">家居设计</a></span></div>
+				</div>
+			</div>
+			<div class="mNSubNav mNSN4 fr"><img src="images/villa_index_60.jpg" width="166" alt="电话：028-4556897"></div>
+		</div>
+	</div>
+<!--==================头部（logo到导航电话）end======================-->
+
+<!--===================头部以下到最后 start====================-->
+<div class="wrapper">
+	<div class="container">
+		<div class="main cf">
+			<div class="hyML fl">
+				<div class="hymlgrzx">
+					<div class="hymlgrzxt">个人中心</div>
+					<div class="hymlgrzxc">
+						<div class="hymlgrzxcp">
+							<img src="images/hy/1_07.jpg" height="194" width="194" alt="">
+						</div>
+						<div class="uchelpbtnt">
+							<div class="uchelpbtntt"><span>帮助中心</span><br>
+							欢迎来到新干线</div>
+							<div class="uchelpbtn">
+								<a href="">修改头像</a>
+								<a href="">修改资料</a>
+								<a href="">修改密码</a>
+							</div>
+						</div>
+						<div class="uchelcent">
+							<span>帮助中心</span><br>
+							帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心,帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心帮助中心
+						</div>
+						<ul class="ucwhatismy">
+								<li><a href="">什么是我的新干线? </a></li>
+								<li><a href="">什么是我的新干线? </a></li>
+								<li><a href="">什么是我的新干线? </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="hyMR uchyfwb fr">
+				<div class="uchyfw">
+					<div class="uchyfwt pr">
+						新干线会员服务<img src="images/uc/1_03.jpg" height="17" width="33" alt="">
+					</div>
+					<div class="uchyfwc">
+						<div class="uchyfwculb">
+							<ul class="cf">
+								<li><a href=""><img src="images/uc/1_10.jpg" alt=""><span>找新房</span><br>同城新房搜索, 楼盘信息一网打尽</a></li>
+								<li><a href=""><img src="images/uc/1_12.jpg" alt=""><span>业主社区</span><br>人气最旺的房产论坛</a></li>
+								<li><a href=""><img src="images/uc/1_07.jpg" alt=""><span>找装修</span><br>为广大网友提供一站式服务</a></li>
+								<li><a href=""><img src="images/uc/1_20.jpg" alt=""><span>二手房</span><br>最大二手房信息平台</a></li>
+								<li><a href=""><img src="images/uc/1_21.jpg" alt=""><span>看房报名</span><br>万人看房团, 等你来参加</a></li>
+								<li><a href=""><img src="images/uc/1_18.jpg" alt=""><span>团购</span><br>最具实效的房产电子商务平台</a></li>
+								<li><a href=""><img src="images/uc/1_25.jpg" alt=""><span>租房</span><br>高效租房信息库</a></li>
+								<li><a href=""><img src="images/uc/1_26.jpg" alt=""><span>地图找房</span><br>快速反应出同城楼盘分布情况</a></li>
+								<li><a href=""><img src="images/uc/1_28.jpg" alt=""><span>找工作/找人才</span><br>最具针对性的求职招聘平台</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="ucsenewhouse">
+					<span>找新房</span>
+					<br>
+					<a href="">房产超市</a>
+					<a href="">搜房团购</a>
+					<a href="">搜索找房</a>
+					<a href="">地图找房</a>
+					<a href="">工具箱</a>
+				</div>
+				<div class="ucsenewhouse">
+					<span>找二手房</span>
+					<br>
+					<a href="">房产超市</a>
+					<a href="">地图找房</a>
+					<a href="">经纪人在线</a>
+					<a href="">房产估价</a>
+					<a href="">工具箱</a>
+				</div>
+				<div class="ucsenewhouse">
+					<span>租房</span>
+					<br>
+					<a href="">房产超市</a>
+					<a href="">地图找房</a>
+					<a href="">短租房</a>
+					<a href="">经纪人在线</a>
+				</div>
+				<div class="ucsenewhouse">
+					<span>发布个人信息</span>
+					<br>
+					<a href="">我的房产</a>
+					<a href="">按月出租</a>
+					<a href="">找工作</a>
+				</div>
+				<div class="ucsenewhouse">
+					<span>找装修</span>
+					<br>
+					<a href="">装修大学</a>
+					<a href="">建材超市</a>
+					<a href="">建材导购</a>
+					<a href="">装修案例</a>
+					<a href="">家居卖场</a>
+					<a href="">工具箱</a>
+				</div>
+				<div class="ucsenewhouse">
+					<span>您是公司/企业</span>
+					<br>
+					<a href="">写字楼</a>
+					<a href="">商铺</a>
+					<a href="">中国房地产数据库</a>
+					<a href="">搜房代理</a>
+					<a href="">招聘人才</a>
+				</div>
+				<div class="ucsenewhouse">
+					<span>来这结识朋友</span>
+					<br>
+					<a href="">博客</a>
+					<a href="">视频</a>
+					<a href="">业主论坛</a>
+					<a href="">业内论坛</a>
+					<a href="">社区网装修论坛</a>
+					<a href="">经纪人论坛</a>
+					<a href="">土地论坛</a>
+				</div>
+					
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+	<div class="frindlink">
+		友情链接：<span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span><span><a href="#" target="_blank">房地产网</a></span><span>|</span>
+	</div>
+	<div class="footer">
+		Copyright &copy; 2015 Soufun Holdings Limited, All Rights Reserved 北京搜房科技发展有限公司 版权所有<br>
+		就ICP证56464号 信息网络传播视听节目许可证照4546346341号 广播电视节目制作经营许可证(京)字第照54号<br>
+		京公网安备451546767646464号 网络文化经营许可证(2131)456号<br>
+		违和不良信息举报电话：010-54879786 举报邮箱：jubao@soufun.com.
+	</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
